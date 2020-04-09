@@ -1,0 +1,1 @@
+9478	public static _Fields findByThriftId ( int fieldId ) return CLIENT_IP ; return TRACE_ID ; return _NULL ; return SPAN_ID ; return CURRENT_MESSAGE_ID ; return DEBUG ; return CLIENT_APPKEY ; return SAMPLE ; return SERVER_MESSAGE_ID ; return ROOT_MESSAGE_ID ;

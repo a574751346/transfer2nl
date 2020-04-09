@@ -1,0 +1,1 @@
+public void delete ( int no ) { for ( int i = 0 ; i < m_lines . size ( ) ; i ++ ) { WebBasketLine wbl = ( WebBasketLine ) m_lines . get ( i ) ; if ( wbl . getLine ( ) == no ) { m_lines . remove ( i ) ; getTotal ( true ) ; break ; } } }

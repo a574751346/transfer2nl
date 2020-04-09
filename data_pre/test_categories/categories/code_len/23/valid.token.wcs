@@ -1,0 +1,4 @@
+17730	public void check ( ) while ( _BOOL ) then wait ( _NUM ) ; while ( _BOOL ) and if ( state == READY ) then return ;
+28222	public static String delimiterConverter ( String delimiter ) return delimiter ; return _STR + delimiter ;
+45815	public void deleteField ( FieldKey genericKey ) setComment ( _STR ) ; setYear ( _STR ) ; setGenre ( _STR ) ; setArtist ( _STR ) ; setTitle ( _STR ) ; setAlbum ( _STR ) ;
+49453	public synchronized void releaseLockAndNotify ( ) if ( owner == Thread . currentThread ( ) ) if ( acquireCount > _NUM ) then acquireCount -- ; if ( owner == Thread . currentThread ( ) ) ifnot ( acquireCount > _NUM ) and if ( waitCount > _NUM ) if ( expired ) then this . notifyAll ( ) ; if ( owner == Thread . currentThread ( ) ) ifnot ( acquireCount > _NUM ) and if ( waitCount > _NUM ) ifnot ( expired ) then this . notify ( ) ;

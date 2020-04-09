@@ -1,0 +1,510 @@
+40	public DistributedLogClientBuilder handshakeWithClientInfo ( boolean enabled ) { DistributedLogClientBuilder newBuilder = newBuilder ( this ) ; newBuilder . _clientConfig . setHandshakeWithClientInfo ( enabled ) ; return newBuilder ; }
+98	@ Override public boolean isEnemyFrom ( Player enemy ) { if ( this . getObjectId ( ) == enemy . getObjectId ( ) ) { return _BOOL ; } else if ( ( this . getAdminEnmity ( ) > _NUM || enemy . getAdminEnmity ( ) > _NUM ) ) { return _BOOL ; } else if ( canPvP ( enemy ) || this . getController ( ) . isDueling ( enemy ) ) { return _BOOL ; } else { return _BOOL ; } }
+118	public void commit ( ) throws IOException { if ( hasErrors ) { completeEdit ( this , _BOOL ) ; remove ( entry . key ) ; } else { completeEdit ( this , _BOOL ) ; } committed = _BOOL ; }
+222	public static float tan ( float fValue ) { return ( float ) Math . tan ( fValue ) ; }
+254	@ Deprecated public static String toString ( byte [ ] input ) throws IOException { return new String ( input ) ; }
+380	@ Override public void invalidateView ( ) { mDelegate . invalidateView ( ) ; }
+551	private void sendBroadcastUploadsAdded ( ) { Intent start = new Intent ( getUploadsAddedMessage ( ) ) ; sendStickyBroadcast ( start ) ; }
+576	public int findFirstVisibleItemPosition ( ) { final View child = findOneVisibleChild ( _NUM , layoutManager . getChildCount ( ) , _BOOL , _BOOL ) ; return child == _NULL ? RecyclerView . NO_POSITION : recyclerView . getChildAdapterPosition ( child ) ; }
+608	public static File [ ] convertFileCollectionToFileArray ( Collection < File > files ) { return files . toArray ( new File [ files . size ( ) ] ) ; }
+678	@ Override public void xmlDecl ( String version , String encoding , String standalone , Augmentations augs ) throws XNIException { }
+751	@ SuppressWarnings ( _CHAR unchecked _CHAR ) @ Override public Object apply ( String source , int lineNo , int columnNo , Object funcBody , Vector namesVec , Vector argsVec ) throws BSFException { throw new BSFException ( _CHAR The apply method is not yet supported for simple - methods '' ) ; }
+791	public FastConcurrentSkipListMap < K , V > clone ( ) { FastConcurrentSkipListMap < K , V > clone = _NULL ; try { clone = ( FastConcurrentSkipListMap < K , V > ) super . clone ( ) ; } catch ( CloneNotSupportedException e ) { throw new InternalError ( ) ; } clone . initialize ( ) ; clone . buildFromSorted ( this ) ; return clone ; }
+859	public int findFirstVisibleItemPosition ( ) { final View child = findOneVisibleChild ( _NUM , layoutManager . getChildCount ( ) , _BOOL , _BOOL ) ; return child == _NULL ? RecyclerView . NO_POSITION : recyclerView . getChildAdapterPosition ( child ) ; }
+865	public static MyServicePrx checkedCast ( Ice . ObjectPrx __obj , String __facet ) { return checkedCastImpl ( __obj , __facet , ice_staticId ( ) , MyServicePrx . class , MyServicePrxHelper . class ) ; }
+937	@ Override public void printStackTrace ( java . io . PrintStream s ) { printStackTrace ( new java . io . PrintWriter ( s ) ) ; }
+1164	public void add ( int [ ] vals , int offset , int length ) { ensureCapacity ( _pos + length ) ; System . arraycopy ( vals , offset , _data , _pos , length ) ; _pos += length ; }
+1230	public TrustManagerBuilder denyAll ( ) { mgr . add ( new DenyAllTrustManager ( ) ) ; return ( this ) ; }
+1244	static Object newInstance ( String className , ClassLoader cl , boolean doFallback ) throws ConfigurationError { return newInstance ( className , cl , doFallback , _BOOL ) ; }
+1309	@ Override public void xmlDecl ( String version , String encoding , String standalone , Augmentations augs ) throws XNIException { }
+1460	public static void runTask ( String id , Runnable task , long delay ) { if ( _CHAR _CHAR . equals ( id ) ) { HANDLER . postDelayed ( task , delay ) ; return ; } long time = SystemClock . uptimeMillis ( ) + delay ; HANDLER . postAtTime ( task , nextToken ( id ) , time ) ; }
+1627	@ Override public int hashCode ( ) { return Arrays . hashCode ( data ) ; }
+1654	@ Deprecated public int _INVALID_getAmount ( ) { return NumberConversions . ceil ( getAmount ( ) ) ; }
+1769	public static Builder newBuilder ( DataQueryParams params ) { return new DataQueryParams . Builder ( params ) ; }
+1864	public void addModule ( @ NotNull Module module ) { checkInitialized ( ) ; String moduleGradlePath = getModuleGradlePath ( module ) ; if ( moduleGradlePath != _NULL ) { VirtualFile moduleFile = module . getModuleFile ( ) ; assert moduleFile != _NULL ; addModule ( moduleGradlePath , VfsUtilCore . virtualToIoFile ( moduleFile . getParent ( ) ) ) ; } }
+2351	public AudioSearchQuery autoComplete ( Boolean value ) { return unsafeParam ( _CHAR auto_complete _CHAR , value ) ; }
+2374	@ Override public void reset ( ) throws IOException { }
+2481	private void sendRegistrationToServer ( String token ) { }
+2688	@ Nullable public static DocumentBuilder createNewDocumentBuilder ( ) { DocumentBuilderFactory factory = DocumentBuilderFactory . newInstance ( ) ; factory . setNamespaceAware ( _BOOL ) ; factory . setValidating ( _BOOL ) ; factory . setIgnoringComments ( _BOOL ) ; try { return factory . newDocumentBuilder ( ) ; } catch ( ParserConfigurationException e ) { Logger . getInstance ( DomPullParser . class ) . error ( e ) ; } return _NULL ; }
+2736	public static boolean isAccessLegal ( SootMethod container , SootClass target ) { return target . isPublic ( ) || container . getDeclaringClass ( ) . getPackageName ( ) . equals ( target . getPackageName ( ) ) ; }
+2777	public static SM_SYSTEM_MESSAGE STR_SKILL_SUCC_Pulled_A_TO_B ( String skilltarget , int num0 , String skillcaster , String skillname ) { return new SM_SYSTEM_MESSAGE ( _NUM , skilltarget , num0 , skillcaster , skillname ) ; }
+2919	private synchronized boolean waitResume ( ) { return _BOOL ; }
+3105	public void doPost ( HttpServletRequest request , HttpServletResponse response ) throws ServletException , IOException { doGet ( request , response ) ; }
+3151	public int findLastVisibleItemPosition ( ) { final View child = findOneVisibleChild ( layoutManager . getChildCount ( ) - _NUM , - _NUM , _BOOL , _BOOL ) ; return child == _NULL ? RecyclerView . NO_POSITION : recyclerView . getChildAdapterPosition ( child ) ; }
+3298	protected void sendPacket ( AionServerPacket msg ) { getConnection ( ) . sendPacket ( msg ) ; }
+3389	@ Override public void close ( ) throws IOException { if ( _NULL != dictionaryFileReader ) { dictionaryFileReader . close ( ) ; dictionaryFileReader = _NULL ; } }
+3622	public int findLastVisibleItemPosition ( ) { final View child = findOneVisibleChild ( layoutManager . getChildCount ( ) - _NUM , - _NUM , _BOOL , _BOOL ) ; return child == _NULL ? RecyclerView . NO_POSITION : recyclerView . getChildAdapterPosition ( child ) ; }
+3725	public SearchGetHintsQuery searchGlobal ( Boolean value ) { return unsafeParam ( _CHAR search_global _CHAR , value ) ; }
+3733	public boolean extended ( ) { return soot . PhaseOptions . getBoolean ( options , _CHAR extended _CHAR ) ; }
+3955	public void commit ( ) throws IOException { if ( hasErrors ) { completeEdit ( this , _BOOL ) ; remove ( entry . key ) ; } else { completeEdit ( this , _BOOL ) ; } }
+4073	private synchronized boolean waitResume ( ) { return _BOOL ; }
+4161	public ArtifactLocation jarForIntellijLibrary ( ) { if ( interfaceJar != _NULL ) { return interfaceJar ; } return classJar ; }
+4398	public boolean exactMatchExists ( String location ) { Set < String > keys = repositories . keySet ( ) ; for ( String url : keys ) { if ( url . equals ( location ) ) { return _BOOL ; } } return _BOOL ; }
+4399	@ Deprecated public static String toString ( byte [ ] input ) throws IOException { return new String ( input ) ; }
+4411	public void doGet ( HttpServletRequest request , HttpServletResponse response ) throws ServletException , IOException { this . doPost ( request , response ) ; }
+4647	public void preclose ( ) { preclosed = _BOOL ; }
+4652	public int read ( ) throws IOException { if ( totalRead >= totalExpected ) { return - _NUM ; } int result = in . read ( ) ; if ( result != - _NUM ) { totalRead ++ ; } return result ; }
+4686	public < RES > MatcherNext < RES , ARG > as ( AnyType < RES > dummy ) { return new MatcherNext < > ( arg ) ; }
+4781	private int indexOf ( final int i , final int j ) { return j < i ? i * ( i + _NUM ) / _NUM + j : j * ( j + _NUM ) / _NUM + i ; }
+4799	public double predict ( double x ) { return beta * x + alpha ; }
+4961	private boolean ownerCanReadTable ( String ownerId , String table ) { return _internalAuthorizer . hasPermissionByInternalId ( ownerId , getReadPermission ( table ) ) ; }
+5042	@ Override public void onCreate ( Bundle savedInstanceState ) { super . onCreate ( savedInstanceState ) ; setRetainInstance ( _BOOL ) ; setHasOptionsMenu ( _BOOL ) ; }
+5138	@ Override public void printStackTrace ( ) { printStackTrace ( new java . io . PrintWriter ( System . err , _BOOL ) ) ; }
+5182	public Object interpret ( FeatureVector fv ) { return interpret ( rootNode , fv ) ; }
+5380	@ Override public void invalidateView ( ) { mViewBinder . invalidateView ( ) ; }
+5406	public List < Constant > vals ( ) { return vals ; }
+5430	private void initHideFileListingListener ( View shareView ) { mOnHideFileListingPermissionInteractionListener = new OnHideFileListingPermissionInteractionListener ( ) ; ( ( SwitchCompat ) shareView . findViewById ( R . id . shareViaLinkFileListingPermissionSwitch ) ) . setOnCheckedChangeListener ( mOnHideFileListingPermissionInteractionListener ) ; }
+5639	public void onRelease ( K key , R resource ) { }
+5711	public static void log ( ) { RequestLog current = RLOG . get ( ) ; if ( current . info == _NULL ) { LOG . warn ( _CHAR Attempted to log while request log object was uninitialized '' ) ; return ; } LOG . info ( export ( ) ) ; current . clear ( ) ; }
+5944	public static void startActionBaz ( Context context , String param1 , String param2 ) { Intent intent = new Intent ( context , OnBootUpAlarmScheduler . class ) ; intent . setAction ( ACTION_BAZ ) ; intent . putExtra ( EXTRA_PARAM1 , param1 ) ; intent . putExtra ( EXTRA_PARAM2 , param2 ) ; context . startService ( intent ) ; }
+6061	public void inASTWhileNode ( ASTWhileNode node ) { nodeStack . add ( node ) ; }
+6086	@ Override public void onPatchInfoCorrupted ( File patchFile , String oldVersion , String newVersion , boolean isUpgradePatch ) { TinkerLog . i ( TAG , _CHAR patchReporter : patch info is corrupted . old : % s , new : % s , isUpgradeP : % b _CHAR , oldVersion , newVersion , isUpgradePatch ) ; Tinker . with ( context ) . cleanPatch ( ) ; }
+6095	public void loadData ( Table t , String query , String keyField , Object lock ) { loadData ( t , query , keyField , lock , _NULL ) ; }
+6260	public static String noSuchFieldExceptioin ( String className , String fieldName ) { return _CHAR The _CHAR + fieldName + _CHAR field in _CHAR + className + _CHAR class is necessary which does not exist . '' ; }
+6346	public synchronized void doneAppending ( ) { doneAppending = _BOOL ; notifyAll ( ) ; }
+6667	private String verifyRestoreCode ( String restoreCode , String code ) { if ( code == _NULL ) { return _CHAR code_parameter_is_null _CHAR ; } if ( restoreCode == _NULL ) { return _CHAR account_restore_code_is_null _CHAR ; } boolean validCode = passwordManager . matches ( code , restoreCode ) ; return validCode ? _NULL : _CHAR code_does_not_match_restoreCode - code : _CHAR_CHAR_CHAR restoreCode : _CHAR_CHAR_CHAR _CHAR ; }
+6686	@ Override public void invalidateView ( ) { mDelegate . invalidateView ( ) ; }
+6878	public String isRestorable ( ) { if ( restoreToken == _NULL ) { return _CHAR account_restoreToken_is_null _CHAR ; } if ( restoreCode == _NULL ) { return _CHAR account_restoreCode_is_null _CHAR ; } if ( restoreExpiry == _NULL ) { return _CHAR account_restoreExpiry_is_null _CHAR ; } return _NULL ; }
+6890	protected boolean doesSessionIdInCookieStoreExistAndMatchLatestSessionId ( ) { logger . debug ( _CHAR Check to see if session id in cookie store matches the session id used to get the latest CSRF token '' ) ; String sessionId = getAuthenticationSessionIdFromCookieStore ( ) ; return sessionId != _NULL && sessionId . equals ( latestSessionIdForLatestCsrfToken ) ; }
+6994	@ Nullable public static Document createEmptyPlainDocument ( ) { return createNewDocumentBuilder ( ) . newDocument ( ) ; }
+7045	public synchronized void addIndex ( String indexName ) { if ( checkIndex ( indexName ) ) { cacheIndicesTypes . put ( indexName , new HashSet < > ( ) ) ; log . debug ( _CHAR addIndex ( ) - Added index _CHAR + indexName + _CHAR in memory list _CHAR ) ; } else { throw new IllegalArgumentException ( _CHAR addIndex ( ) - Index _CHAR + indexName + _CHAR does not follow the format \ _CHAR indexPrefix_dateFormat \ _CHAR _CHAR ) ; } }
+7299	@ Override public Node parentNode ( ) { if ( fCurrentNode == _NULL ) return _NULL ; Node node = getParentNode ( fCurrentNode ) ; if ( node != _NULL ) { fCurrentNode = node ; } return node ; }
+7403	public < RES > Partial < RES , ARG > as ( AnyType < RES > dummy ) { return new Partial < > ( ) ; }
+7454	public static Object decodeToObject ( String encodedObject ) throws java . io . IOException , java . lang . ClassNotFoundException { return decodeToObject ( encodedObject , NO_OPTIONS , _NULL ) ; }
+8149	@ BeforeClass public void retrieveOAuthToken ( ) { given ( ) . when ( ) . then ( ) ; }
+8178	@ Override public void xmlDecl ( String version , String encoding , String standalone , Augmentations augs ) throws XNIException { fVersion = version ; fStandalone = _CHAR yes _CHAR . equals ( standalone ) ; }
+8460	public static void startActionFoo ( Context context , String param1 , String param2 ) { Intent intent = new Intent ( context , OnBootUpAlarmScheduler . class ) ; intent . setAction ( ACTION_FOO ) ; intent . putExtra ( EXTRA_PARAM1 , param1 ) ; intent . putExtra ( EXTRA_PARAM2 , param2 ) ; context . startService ( intent ) ; }
+8503	final public boolean addElement ( E e ) { if ( e == _NULL ) throw new RuntimeException ( _CHAR oops _CHAR ) ; if ( numElements == maxElements ) doubleCapacity ( ) ; elements [ numElements ++ ] = e ; return _BOOL ; }
+8567	public boolean isSingleDataValueSet ( ) { return dataSets . size ( ) == _NUM && periods . size ( ) == _NUM && organisationUnits . size ( ) == _NUM && dataElementGroups . isEmpty ( ) ; }
+9091	@ Deprecated public int _INVALID_getDamage ( ) { return NumberConversions . ceil ( getDamage ( ) ) ; }
+9312	public int hashCode ( ) { return host . toLowerCase ( ) . hashCode ( ) ^ port ; }
+9350	@ Override public synchronized void stop ( ) { LOGGER . info ( _CHAR Stopping the C2MON alive timer mechanism . '' ) ; timer . cancel ( ) ; running = _BOOL ; }
+9392	public void validate ( ) { final List < ValidationException > exceptionList = new ArrayList < ValidationException > ( ) ; validate ( exceptionList ) ; if ( ! exceptionList . isEmpty ( ) ) throw exceptionList . get ( _NUM ) ; }
+9519	public static boolean isXML11NCNameStart ( int c ) { return ( c < _NUM && ( XML11CHARS [ c ] & MASK_XML11_NCNAME_START ) != _NUM ) || ( _NUM <= c && c < _NUM ) ; }
+10284	public void resetPolicy ( ) { mPreferences . putString ( PREF_LAST_RESPONSE , Integer . toString ( Policy . RETRY ) ) ; setRetryUntil ( DEFAULT_RETRY_UNTIL ) ; setMaxRetries ( DEFAULT_MAX_RETRIES ) ; setRetryCount ( Long . parseLong ( DEFAULT_RETRY_COUNT ) ) ; setValidityTimestamp ( DEFAULT_VALIDITY_TIMESTAMP ) ; mPreferences . commit ( ) ; }
+10327	public static Pose toOpenGLPose ( TangoPoseData tangoPose ) { Matrix4 startServiceTDevice = tangoPoseToMatrix ( tangoPose ) ; Matrix4 openglWorldTDevice = OPENGL_T_TANGO_WORLD . clone ( ) . multiply ( startServiceTDevice ) ; return matrixToPose ( openglWorldTDevice ) ; }
+10809	public < RES > Partial < RES , ARG > as ( Class < RES > dummy ) { return new Partial < > ( ) ; }
+10826	public void reset ( ) throws IOException { stream . reset ( ) ; framePos = markpos ; pushBackLen = markPushBackLen ; if ( pushBackLen > _NUM ) { if ( pushBackBuffer == _NULL ) { pushBackBuffer = new byte [ frameSize - _NUM ] ; } System . arraycopy ( markPushBackBuffer , _NUM , pushBackBuffer , _NUM , pushBackLen ) ; } }
+10870	public Notation createNotation ( String name ) throws DOMException { if ( errorChecking && ! isXMLName ( name , xml11Version ) ) { String msg = DOMMessageFormatter . formatMessage ( DOMMessageFormatter . DOM_DOMAIN , _CHAR INVALID_CHARACTER_ERR _CHAR , _NULL ) ; throw new DOMException ( DOMException . INVALID_CHARACTER_ERR , msg ) ; } return new NotationImpl ( this , name ) ; }
+10903	public < T > T inject ( Class < T > clazz , WebElement scope , Object object ) { return inject ( clazz , scope , frameMap . get ( object ) ) ; }
+10921	public static void drawHorizontalZigZagLine ( Graphics2D g , int x1 , int x2 , int y ) { drawHorizontalZigZagLine ( g , x1 , x2 , y , CENTER_ZIGZAG , CENTER_ZIGZAG ) ; }
+11283	public boolean onError ( MediaPlayer player , int arg1 , int arg2 ) { Log . d ( LOG_TAG , _CHAR AudioPlayer . onError ( _CHAR + arg1 + _CHAR , _CHAR + arg2 + _CHAR ) _CHAR ) ; this . player . stop ( ) ; this . player . release ( ) ; sendErrorStatus ( arg1 ) ; return _BOOL ; }
+11316	public void subtractSupplements ( int count , int supplementId ) { subtractedSupplementsCount = count ; subtractedSupplementId = supplementId ; }
+11405	public final boolean equals ( Object obj ) { return super . equals ( obj ) ; }
+11590	public void java_io_ObjectInputStream_latestUserDefinedLoader ( SootMethod method , ReferenceVariable thisVar , ReferenceVariable returnVar , ReferenceVariable params [ ] ) { helper . assignObjectTo ( returnVar , Environment . v ( ) . getClassLoaderObject ( ) ) ; }
+11597	public void timeCheck ( ) throws TimeoutException { if ( startTime > _NUM && System . nanoTime ( ) > timeout ) { throw new TimeoutException ( ) ; } }
+11654	public Builder categoricalToOneHot ( String ... columnNames ) { for ( String s : columnNames ) { transform ( new CategoricalToOneHotTransform ( s ) ) ; } return this ; }
+11761	protected int doSocketRead ( ByteBuffer destinationBuffer ) throws IOException { return this . socketChannel . read ( destinationBuffer ) ; }
+11792	public static void drawVerticalZigZagLine ( Graphics2D g , int x , int y1 , int y2 ) { drawVerticalZigZagLine ( g , x , y1 , y2 , CENTER_ZIGZAG , CENTER_ZIGZAG ) ; }
+11927	public boolean canBeUsed ( Context ctx , @ Nullable Activity activity ) { UserRecoverableErrorHandler errorHandler = activity != _NULL ? new UserRecoverableErrorHandler . ModalDialog ( activity ) : new UserRecoverableErrorHandler . SystemNotification ( ) ; return ExternalAuthUtils . getInstance ( ) . canUseGooglePlayServices ( ctx , errorHandler ) ; }
+11959	@ Override public Scan open ( ) { SortScan ss1 = ( SortScan ) sp1 . open ( ) ; SortScan ss2 = ( SortScan ) sp2 . open ( ) ; return new MergeJoinScan ( ss1 , ss2 , fldName1 , fldName2 ) ; }
+11975	public Type buildArrayOrAddDimension ( Type type ) { if ( type instanceof ArrayType ) { ArrayType array = ( ArrayType ) type ; return array . makeArrayType ( ) ; } else return ArrayType . v ( type , _NUM ) ; }
+11999	public static WebSiteProperties defaults ( Delegator delegator ) { return new WebSiteProperties ( delegator ) ; }
+12111	@ Deprecated public void _INVALID_setAmount ( int amount ) { setAmount ( amount ) ; }
+12176	public static SM_SYSTEM_MESSAGE STR_SKILL_SUCC_CarveSignet_A_TO_B ( String skillcaster , int num0 , String skilltarget , String skillname ) { return new SM_SYSTEM_MESSAGE ( _NUM , skillcaster , num0 , skilltarget , skillname ) ; }
+12294	public static void doInitializeAndInstallGenerator ( Context context ) { UniqueIdentificationGenerator idGenerator = new UuidBasedUniqueIdentificationGenerator ( context , INVALIDATIONS_UUID_PREF_KEY ) ; InvalidationClientNameGenerator clientNameGenerator = new UniqueIdInvalidationClientNameGenerator ( idGenerator ) ; InvalidationClientNameProvider . get ( ) . setPreferredClientNameGenerator ( clientNameGenerator ) ; }
+12344	@ Deprecated public static String toString ( byte [ ] input ) throws IOException { return new String ( input ) ; }
+12448	@ Deprecated public static String toString ( byte [ ] input ) throws IOException { return new String ( input ) ; }
+12634	public < T > T inject ( Class < T > clazz , String framePath ) { return inject ( clazz , FramePath . parsePath ( framePath ) ) ; }
+12640	public JSlider createSlider ( ) { JSlider slider = new JSlider ( m_model ) ; slider . addFocusListener ( getSliderAdjuster ( ) ) ; return slider ; }
+12909	@ NotNull public static String sha1 ( @ NotNull File keyStoreFile ) throws Exception { return sha1 ( keyStoreFile , _NULL , _NULL ) ; }
+13360	@ Override public void close ( ) throws IOException { writeColumnSortInfo ( ) ; if ( _NULL != sortIndexThriftWriter ) { sortIndexThriftWriter . close ( ) ; } }
+13521	@ Override public String leaveDTD ( ) { if ( _writer == _dtdWriter ) { _line . append ( _text ) ; _text = new StringBuffer ( _NUM ) ; flushLine ( _BOOL ) ; _writer = _docWriter ; return _dtdWriter . toString ( ) ; } return _NULL ; }
+13524	@ Override public void close ( ) throws IOException { if ( _NULL != dictionarySortIndexThriftReader ) { dictionarySortIndexThriftReader . close ( ) ; } }
+13710	private void gen ( FlowSet outSet , Unit u ) { for ( ValueBox useBox : u . getUseBoxes ( ) ) { if ( useBox . getValue ( ) instanceof BinopExpr ) outSet . add ( useBox . getValue ( ) ) ; } }
+14401	public Builder updateWhenIdle ( Boolean updateWhenIdle ) { this . updateWhenIdle = updateWhenIdle ; return this ; }
+14402	public void java_util_TimeZone_getSystemTimeZoneID ( SootMethod method , ReferenceVariable thisVar , ReferenceVariable returnVar , ReferenceVariable params [ ] ) { helper . assignObjectTo ( returnVar , Environment . v ( ) . getStringObject ( ) ) ; }
+14538	private synchronized boolean waitResume ( ) { while ( isPaused ( ) && ! isCancelled ( ) && ! isDone ( ) ) { try { debugPrint ( _CHAR paused waiting _CHAR ) ; wait ( ) ; } catch ( InterruptedException ie ) { } } return ! isCancelled ( ) && ! isDone ( ) ; }
+15070	public boolean intersects ( BoundingVolume bv ) { return bv . intersectsBoundingBox ( this ) ; }
+15145	protected static LazyNode cValueNull ( int index ) { return new LazyNode ( VALUE_NULL , index ) ; }
+15333	public void commit ( ) throws IOException { if ( hasErrors ) { completeEdit ( this , _BOOL ) ; remove ( entry . key ) ; } else { completeEdit ( this , _BOOL ) ; } }
+15520	public boolean onError ( MediaPlayer player , int arg1 , int arg2 ) { Log . d ( LOG_TAG , _CHAR AudioPlayer . onError ( _CHAR + arg1 + _CHAR , _CHAR + arg2 + _CHAR ) _CHAR ) ; this . player . stop ( ) ; this . player . release ( ) ; sendErrorStatus ( arg1 ) ; return _BOOL ; }
+15559	protected double computeObjectiveValue ( double x ) { super . incrementEvaluationCount ( ) ; return function . value ( x ) ; }
+15662	public < RES > Partial < RES , ARG > as ( RES dummy ) { return new Partial < > ( ) ; }
+15663	public static RoundedBitmapDrawable bitmapToCircularBitmapDrawable ( Resources resources , Bitmap bitmap ) { RoundedBitmapDrawable roundedBitmap = RoundedBitmapDrawableFactory . create ( resources , bitmap ) ; roundedBitmap . setCircular ( _BOOL ) ; return roundedBitmap ; }
+15734	public double computeObjectiveValue ( double [ ] params ) { super . incrementEvaluationCount ( ) ; return function . value ( params ) ; }
+15965	public boolean equivTo ( Object c ) { return equals ( c ) ; }
+16496	protected void matched ( Object actualValue , short valueType , ShortList itemValueType , boolean isNil ) { if ( DEBUG_METHODS3 ) { System . out . println ( toString ( ) + _CHAR # matched ( \ _CHAR _CHAR + actualValue + _CHAR \ _CHAR ) _CHAR ) ; } }
+17071	public void onNewIntentWithGesture ( Intent intent ) { mIntentToken = new byte [ _NUM ] ; mSecureRandom . nextBytes ( mIntentToken ) ; intent . putExtra ( EXTRA_USER_GESTURE_TOKEN , mIntentToken ) ; mUri = IntentHandler . getUrlFromIntent ( intent ) ; }
+17074	public static File [ ] convertFileCollectionToFileArray ( Collection < File > files ) { return files . toArray ( new File [ files . size ( ) ] ) ; }
+17145	public static byte [ ] decodeWebSafe ( String s ) throws Base64DecoderException { byte [ ] bytes = s . getBytes ( ) ; return decodeWebSafe ( bytes , _NUM , bytes . length ) ; }
+17389	public static Pose toOpenGlCameraPose ( TangoPoseData devicePose , DeviceExtrinsics extrinsics ) { Matrix4 startServiceTdevice = tangoPoseToMatrix ( devicePose ) ; Matrix4 openglTDevice = OPENGL_T_TANGO_WORLD . clone ( ) . multiply ( startServiceTdevice ) ; Matrix4 openglWorldTOpenglCamera = openglTDevice . multiply ( extrinsics . getDeviceTColorCamera ( ) ) . multiply ( COLOR_CAMERA_T_OPENGL_CAMERA ) ; return matrixToPose ( openglWorldTOpenglCamera ) ; }
+17396	public void commit ( ) throws IOException { if ( hasErrors ) { completeEdit ( this , _BOOL ) ; remove ( entry . key ) ; } else { completeEdit ( this , _BOOL ) ; } }
+17531	@ Override public void xmlDecl ( String version , String encoding , String standalone , Augmentations augs ) throws XNIException { if ( fDocumentHandler != _NULL && ! fOnlyPassPrefixMappingEvents ) { fDocumentHandler . xmlDecl ( version , encoding , standalone , augs ) ; } }
+17569	public void commit ( ) throws IOException { if ( hasErrors ) { completeEdit ( this , _BOOL ) ; remove ( entry . key ) ; } else { completeEdit ( this , _BOOL ) ; } }
+17717	public static Object decodeToObject ( String encodedObject ) throws java . io . IOException , java . lang . ClassNotFoundException { return decodeToObject ( encodedObject , NO_OPTIONS , _NULL ) ; }
+17735	public static File [ ] convertFileCollectionToFileArray ( Collection < File > files ) { return files . toArray ( new File [ files . size ( ) ] ) ; }
+17819	public static double safeSqrt ( double x ) { return ( x < _NUM ? - Math . sqrt ( - x ) : Math . sqrt ( x ) ) ; }
+17855	public boolean canLookup ( DestinationName destination , String role ) { return canProduce ( destination , role ) || canConsume ( destination , role ) ; }
+17870	@ Override public void xmlDecl ( String version , String encoding , String standalone , Augmentations augs ) throws XNIException { if ( fDocumentHandler != _NULL ) { fDocumentHandler . xmlDecl ( version , encoding , standalone , augs ) ; } }
+17880	public int addRow ( ) { int r = m_rows . addRow ( ) ; updateRowCount ( ) ; fireTableEvent ( r , r , TableModelEvent . ALL_COLUMNS , TableModelEvent . INSERT ) ; return r ; }
+17971	public void loadData ( Table t , String query , Object lock ) { loadData ( t , query , _NULL , lock , _NULL ) ; }
+18331	protected void sendPacket ( CsServerPacket msg ) { getConnection ( ) . sendPacket ( msg ) ; }
+18410	public void add ( short [ ] vals , int offset , int length ) { ensureCapacity ( _pos + length ) ; System . arraycopy ( vals , offset , _data , _pos , length ) ; _pos += length ; }
+18557	public void resetRowSelection ( ) { if ( ! updatingListSelectionModel ) { updatingListSelectionModel = _BOOL ; try { super . resetRowSelection ( ) ; } finally { updatingListSelectionModel = _BOOL ; } } }
+18574	public static List < String > asStringList ( Collection < ? extends Object > objects ) { List < String > list = new ArrayList < > ( ) ; for ( Object object : objects ) { list . add ( String . valueOf ( object ) ) ; } return list ; }
+18696	public boolean isAssignableFrom ( final Class < ? > other ) { if ( other == _NULL ) { return _BOOL ; } if ( this . isParameterized ( ) ) { return _BOOL ; } return this . getRawType ( ) . isAssignableFrom ( other ) ; }
+18746	public boolean twrHandlesException ( TypeDecl exceptionType ) { ASTNode $ State state = state ( ) ; try { if ( catchHandlesException ( exceptionType ) ) return _BOOL ; if ( hasFinally ( ) && ! getFinally ( ) . canCompleteNormally ( ) ) return _BOOL ; return handlesException ( exceptionType ) ; } finally { } }
+19037	public Entity createEntity ( String name ) throws DOMException { if ( errorChecking && ! isXMLName ( name , xml11Version ) ) { String msg = DOMMessageFormatter . formatMessage ( DOMMessageFormatter . DOM_DOMAIN , _CHAR INVALID_CHARACTER_ERR _CHAR , _NULL ) ; throw new DOMException ( DOMException . INVALID_CHARACTER_ERR , msg ) ; } return new EntityImpl ( this , name ) ; }
+19047	public void shutdown ( ) { for ( int i = _NUM ; i < numberOfQueues ; i ++ ) { executors [ i ] . shutdown ( ) ; } }
+19111	public double predict ( double x ) { return beta * x + alpha ; }
+19310	public DocumentType createDocumentType ( String qualifiedName , String publicID , String systemID ) throws DOMException { return new DocumentTypeImpl ( this , qualifiedName , publicID , systemID ) ; }
+19459	public S2CellId parent ( int level ) { long newLsb = lowestOnBitForLevel ( level ) ; return new S2CellId ( ( id & - newLsb ) | newLsb ) ; }
+19498	public static int copy ( InputStream in , OutputStream out ) throws IOException { return copy ( in , out , _BOOL ) ; }
+19506	public V remove ( Object key ) { int hash = hash ( key . hashCode ( ) ) ; return segmentFor ( hash ) . remove ( key , hash , _NULL ) ; }
+19581	public static String toSootAT ( String type ) { return type ; }
+19939	public Builder clickable ( Boolean clickable ) { this . clickable = clickable ; return this ; }
+20164	public static File [ ] convertFileCollectionToFileArray ( Collection < File > files ) { return files . toArray ( new File [ files . size ( ) ] ) ; }
+20260	public static String bind ( String key , Object [ ] args ) { try { return MessageFormat . format ( bind ( key ) , args ) ; } catch ( MissingResourceException e ) { return key ; } catch ( NullPointerException e ) { return _CHAR ! _CHAR + key + _CHAR ! _CHAR ; } }
+20263	public final String readMapleAsciiString ( ) { return readAsciiString ( readShort ( ) ) ; }
+20573	public static byte [ ] decodeWebSafe ( String s ) throws Base64DecoderException { byte [ ] bytes = s . getBytes ( ) ; return decodeWebSafe ( bytes , _NUM , bytes . length ) ; }
+20656	private synchronized boolean waitResume ( ) { return _BOOL ; }
+20969	protected void sendPacket ( LsServerPacket msg ) { getConnection ( ) . sendPacket ( msg ) ; }
+20977	@ Override public void startValueScopeFor ( IdentityConstraint identityConstraint , int initialDepth ) { ValueStoreBase valueStore = fValueStoreCache . getValueStoreFor ( identityConstraint , initialDepth ) ; valueStore . startValueScope ( ) ; }
+21131	public void invalidateAll ( ) { invalidate ( ALL_ITEMS ) ; }
+21186	public void commit ( ) throws IOException { if ( hasErrors ) { completeEdit ( this , _BOOL ) ; remove ( entry . key ) ; } else { completeEdit ( this , _BOOL ) ; } committed = _BOOL ; }
+21566	public int numberOfBins ( ) { return m_nbins ; }
+21599	public static boolean isRedirect ( HttpResponse httpResponse ) { switch ( httpResponse . getStatus ( ) . code ( ) ) { case _NUM : case _NUM : case _NUM : case _NUM : case _NUM : return _BOOL ; default : return _BOOL ; } }
+21667	public void incrementSendCount ( ) { sendCount ++ ; lastSent = Calendar . getInstance ( ) . getTime ( ) ; }
+21806	public V putIfAbsentElseGet ( K key , V value ) { V oldVal = this . putIfAbsent ( key , value ) ; return oldVal == _NULL ? value : oldVal ; }
+21820	public boolean isWordWrapEnabled ( ) { return mWordWrapEnabled ; }
+21833	private Comparable < ? super K > comparable ( Object key ) throws ClassCastException { if ( key == _NULL ) throw new NullPointerException ( ) ; if ( comparator != _NULL ) return new ComparableUsingComparator < K > ( ( K ) key , comparator ) ; else return ( Comparable < ? super K > ) key ; }
+21836	@ Override public void onViewRecycled ( ListBaseViewHolder holder ) { long begin = System . currentTimeMillis ( ) ; holder . setComponentUsing ( _BOOL ) ; recycleViewList . add ( holder ) ; WXLogUtils . d ( TAG , _CHAR Recycle holder _CHAR + ( System . currentTimeMillis ( ) - begin ) + _CHAR Thread : _CHAR + Thread . currentThread ( ) . getName ( ) ) ; }
+21936	public static SM_SYSTEM_MESSAGE STR_MSG_FATIGUE_UPGRADE_LEVEL ( String value0 ) { return new SM_SYSTEM_MESSAGE ( _NUM , value0 ) ; }
+21963	public void addRule ( String ruleExpression , T resultIfMatched ) { mRuleMap . add ( new MimeMatcherRule ( ruleExpression , resultIfMatched ) ) ; }
+22047	public static void assertEquals ( Complex expected , Complex actual , double delta ) { Assert . assertEquals ( expected . getReal ( ) , actual . getReal ( ) , delta ) ; Assert . assertEquals ( expected . getImaginary ( ) , actual . getImaginary ( ) , delta ) ; }
+22072	public void interrupt ( ) { _interrupted = _BOOL ; for ( SingleProducer producer : _producers . values ( ) ) { Iterator threads = producer . orderedThreadEventsMap . values ( ) . iterator ( ) ; while ( threads . hasNext ( ) ) { LockSupport . unpark ( ( Thread ) threads . next ( ) ) ; threads . remove ( ) ; } } }
+22081	static Object newInstance ( String className , ClassLoader cl , boolean doFallback ) throws ConfigurationError { return newInstance ( className , cl , doFallback , _BOOL , _BOOL ) ; }
+22219	public boolean node_elim_opt ( ) { return soot . PhaseOptions . getBoolean ( options , _CHAR node - elim - opt _CHAR ) ; }
+22452	public synchronized void close ( ) throws JMSException { if ( m_closed ) { return ; } if ( _logger . isLoggable ( Level . FINE ) ) { _logger . fine ( _CHAR GSMessageProducerImpl . close ( ) : _CHAR + toString ( ) ) ; } m_session . removeProducer ( this ) ; m_session = _NULL ; m_closed = _BOOL ; }
+22518	public static long createBookmarksFolderOnce ( Context context , String title , long parentId ) { Long id = chromeBrowserProviderCall ( Long . class , ChromeBrowserProvider . CLIENT_API_CREATE_BOOKMARKS_FOLDER_ONCE , context , argsToBundle ( title , parentId ) ) ; return id != _NULL ? id . longValue ( ) : INVALID_BOOKMARK_ID ; }
+22619	@ Deprecated public static String toString ( byte [ ] input ) throws IOException { return new String ( input ) ; }
+22730	public static < T > IStoredList < T > createList ( boolean reuseLocks ) { return createStoredList ( _BOOL , reuseLocks ) ; }
+22731	public String toBriefString ( ) { return super . toString ( ) ; }
+22920	public void interrupt ( ) { if ( waitingQuery ) { sendJson ( Json . object ( ACTION , ACTION_QUERY_ABORT ) ) ; waitingQuery = _BOOL ; } else { System . exit ( _NUM ) ; } }
+23049	@ Deprecated public void _INVALID_setDamage ( int damage ) { setDamage ( damage ) ; }
+23071	public String leaveDTD ( ) throws IOException { if ( _writer == _dtdWriter ) { flushLine ( _BOOL ) ; _writer = _docWriter ; return _dtdWriter . toString ( ) ; } return _NULL ; }
+23074	public < RES > Partial < RES , ARG > as ( ) { return new Partial < > ( ) ; }
+23266	private static String escapeprometheus ( String s ) { s = s . replaceAll ( _CHAR ^ [ ^ a - zA - Z_ : ] + _CHAR , _CHAR _CHAR ) ; s = s . replaceAll ( _CHAR [ ^ a - zA - Z0 - _NUM : ] + _CHAR , _CHAR _CHAR ) ; return s . toLowerCase ( ) ; }
+23439	protected void postProcessEntity ( T entity ) throws Exception { }
+24257	protected void onSaveRingtone ( Uri ringtoneUri ) { persistString ( ringtoneUri != _NULL ? ringtoneUri . toString ( ) : _CHAR _CHAR ) ; }
+24270	public void loadData ( Table t , String query , String keyField , Object lock , DataSourceWorker . Listener listener ) { DataSourceWorker . Entry e = new DataSourceWorker . Entry ( this , t , query , keyField , lock , listener ) ; DataSourceWorker . submit ( e ) ; }
+24342	public void incrementReceiveCount ( ) { receiveCount ++ ; lastReceived = Calendar . getInstance ( ) . getTime ( ) ; }
+24445	public boolean isIncluded ( ) { return this . include ; }
+24605	protected void processLPC ( LpCoeffs coeffs , double [ ] residual ) { }
+24633	public static double regularizedBeta ( double x , double a , double b , double epsilon ) { return regularizedBeta ( x , a , b , epsilon , Integer . MAX_VALUE ) ; }
+24652	public Object remove ( Object key ) { Object underlying = this . underlyingObjectGetter . getUnderlyingObject ( key ) ; return removeUsingUnderlying ( underlying ) ; }
+24977	public static S2Point ortho ( S2Point a ) { return a . ortho ( ) ; }
+25104	public boolean node_elim_opt ( ) { return soot . PhaseOptions . getBoolean ( options , _CHAR node - elim - opt _CHAR ) ; }
+25384	public < RES > MatcherNext < RES , ARG > as ( RES dummy ) { return new MatcherNext < > ( arg ) ; }
+25670	@ SuppressWarnings ( _CHAR rawtypes _CHAR ) public Parameter newCollectionValuedParameter ( Object name , Class type ) { throw new RuntimeException ( _CHAR Unsupported operation . '' ) ; }
+25727	public Object remove ( Object key ) { Object underlying = this . underlyingObjectGetter . getUnderlyingObject ( key ) ; return removeUsingUnderlying ( underlying ) ; }
+26056	private void sendBroadcastUploadStarted ( UploadFileOperation upload ) { Intent start = new Intent ( getUploadStartMessage ( ) ) ; start . putExtra ( EXTRA_REMOTE_PATH , upload . getRemotePath ( ) ) ; start . putExtra ( EXTRA_OLD_FILE_PATH , upload . getOriginalStoragePath ( ) ) ; start . putExtra ( ACCOUNT_NAME , upload . getAccount ( ) . name ) ; sendStickyBroadcast ( start ) ; }
+26071	public CriteriaHibernateSpaceDataSourceConfigurer augmentInitialLoadEntries ( boolean augmentInitialLoadEntries ) { this . augmentInitialLoadEntries = augmentInitialLoadEntries ; return this ; }
+26256	public final boolean equals ( Object obj ) { return super . equals ( obj ) ; }
+26404	public Stream < RangeWithCount > stream ( ) { return buckets_ . stream ( ) . map ( _NULL ) ; }
+26550	@ Override public void invalidateView ( ) { mViewBinder . invalidateView ( ) ; }
+26725	public void onSearchResultsLoaded ( boolean wasPrefetch ) { mPanelMetrics . onSearchResultsLoaded ( wasPrefetch ) ; }
+26785	public static double regularizedBeta ( double x , double a , double b ) { return regularizedBeta ( x , a , b , DEFAULT_EPSILON , Integer . MAX_VALUE ) ; }
+26842	protected void postProcessEntity ( T entity , WebOptions options , Map < String , String > parameters ) throws Exception { }
+26898	protected void sendPacket ( AionServerPacket msg ) { getConnection ( ) . sendPacket ( msg ) ; }
+26907	public void commit ( ) throws IOException { if ( hasErrors ) { completeEdit ( this , _BOOL ) ; remove ( entry . key ) ; } else { completeEdit ( this , _BOOL ) ; } committed = _BOOL ; }
+26930	public void commit ( ) throws IOException { if ( hasErrors ) { completeEdit ( this , _BOOL ) ; remove ( entry . key ) ; } else { completeEdit ( this , _BOOL ) ; } }
+26968	@ Override public void xmlDecl ( String version , String encoding , String standalone , Augmentations augs ) throws XNIException { }
+26986	public Builder clickable ( Boolean clickable ) { this . clickable = clickable ; return this ; }
+27232	public static Value noLocal ( Value val ) { if ( val != _NULL && ! isLocal ( val ) ) return val ; else return _NULL ; }
+27397	public static boolean shoudUseLightForegroundOnBackground ( int backgroundColor ) { return getContrastForColor ( backgroundColor ) >= CONTRAST_LIGHT_ITEM_THRESHOLD ; }
+27486	public boolean isUseDefinedMargin ( ) { return mUseDefinedMargin ; }
+27651	public boolean extended ( ) { return soot . PhaseOptions . getBoolean ( options , _CHAR extended _CHAR ) ; }
+27747	public boolean isWordWrapEnabled ( ) { return mWordWrapEnabled ; }
+27768	public Builder clickable ( Boolean clickable ) { this . clickable = clickable ; return this ; }
+27791	void announceforAccessibility ( ) { mMessageView . announceForAccessibility ( mMessageView . getContentDescription ( ) ) ; }
+28056	public < RES > MatcherNext < RES , ARG > as ( ) { return new MatcherNext < > ( arg ) ; }
+28360	public static File removeExtension ( File file ) { String absolutePath = file . getAbsolutePath ( ) ; if ( absolutePath . contains ( _CHAR . _CHAR ) ) { return new File ( absolutePath . substring ( _NUM , absolutePath . lastIndexOf ( _CHAR ) ) ) ; } else { return file ; } }
+28369	@ Override public void close ( ) throws IOException { if ( _NULL != dictionaryMetadataFileReader ) { dictionaryMetadataFileReader . close ( ) ; dictionaryMetadataFileReader = _NULL ; } }
+28583	protected void sendPacket ( GsServerPacket msg ) { getConnection ( ) . sendPacket ( msg ) ; }
+28774	public static MyServicePrx checkedCast ( Ice . ObjectPrx __obj , String __facet , java . util . Map < String , String > __ctx ) { return checkedCastImpl ( __obj , __facet , __ctx , ice_staticId ( ) , MyServicePrx . class , MyServicePrxHelper . class ) ; }
+28859	private void clearDictionaryFromQueryModel ( ) { if ( _NULL != queryModel ) { Map < String , Dictionary > columnToDictionaryMapping = queryModel . getColumnToDictionaryMapping ( ) ; if ( _NULL != columnToDictionaryMapping ) { for ( Map . Entry < String , Dictionary > entry : columnToDictionaryMapping . entrySet ( ) ) { CarbonUtil . clearDictionaryCache ( entry . getValue ( ) ) ; } } } }
+28865	@ Override public final String readMapleAsciiString ( ) { return readAsciiString ( readShort ( ) ) ; }
+28955	public static String bind ( String key , Object [ ] args ) { try { return MessageFormat . format ( bind ( key ) , args ) ; } catch ( MissingResourceException e ) { return key ; } catch ( NullPointerException e ) { return _CHAR ! _CHAR + key + _CHAR ! _CHAR ; } }
+29252	public static GapisConnection connect ( ) { GapisProcess gapis ; synchronized ( myInstanceLock ) { if ( myInstance == _NULL ) { myInstance = new GapisProcess ( ) ; } gapis = myInstance ; } return gapis . doConnect ( ) ; }
+29278	@ Deprecated public static String toString ( byte [ ] input ) throws IOException { return new String ( input ) ; }
+29569	public void preclose ( ) { preclosed = _BOOL ; }
+29575	@ Override public boolean logOut ( final String tokenHeader ) { return _BOOL ; }
+29661	public static boolean isEmptyTag ( String tagName ) { return isElement ( tagName , EMPTY ) ; }
+29932	static Principal [ ] reduce ( Principal [ ] principals ) { return reduce0 ( principals . clone ( ) ) ; }
+30030	@ Override public void deleteItem ( Long id ) { alarmMapper . deleteAlarm ( id ) ; }
+30186	public void reset ( final Vector3D newPole ) { this . pole = newPole . normalize ( ) ; this . x = newPole . orthogonal ( ) ; this . y = Vector3D . crossProduct ( newPole , x ) . normalize ( ) ; }
+30187	public void commit ( ) throws IOException { if ( hasErrors ) { completeEdit ( this , _BOOL ) ; remove ( entry . key ) ; } else { completeEdit ( this , _BOOL ) ; } committed = _BOOL ; }
+30416	public AdsCreateTargetGroupQuery createTargetGroup ( UserActor actor , int accountId , String name ) { return new AdsCreateTargetGroupQuery ( getClient ( ) , actor , accountId , name ) ; }
+30417	public static Object decodeToObject ( String encodedObject ) throws java . io . IOException , ClassNotFoundException { return decodeToObject ( encodedObject , NO_OPTIONS , _NULL ) ; }
+30516	@ BeforeClass public void retrieveOAuthToken ( ) { given ( ) . auth ( ) . preemptive ( ) . basic ( _CHAR oauth _CHAR , _CHAR gimmeatoken _CHAR ) . when ( ) . get ( _CHAR / v1 / oauth2 / token _CHAR ) . then ( ) . log ( ) . body ( ) ; }
+30613	@ Override public boolean isComplexItem ( ) { return ( this . fieldName != _NULL ) ; }
+30657	public static SM_SYSTEM_MESSAGE STR_SKILL_SUMMON_COOLDOWN ( String value0 ) { return new SM_SYSTEM_MESSAGE ( _NUM , value0 ) ; }
+30961	public void loadData ( Table t , String query , String keyField ) { loadData ( t , query , keyField , _NULL , _NULL ) ; }
+31120	private boolean hasLeaked ( LeakKey < N > leakKey ) { return leakedSources . contains ( leakKey ) ; }
+31181	public static ByteBuffer encode ( String string ) throws CharacterCodingException { return encode ( string , _BOOL ) ; }
+31308	public static byte [ ] decodeWebSafe ( String s ) throws Base64DecoderException { byte [ ] bytes = s . getBytes ( ) ; return decodeWebSafe ( bytes , _NUM , bytes . length ) ; }
+31519	public void unregister ( Object recipient ) { unregisterFromLists ( recipient , recipientsOfSubclassesAction ) ; unregisterFromLists ( recipient , recipientsStrictAction ) ; cleanup ( ) ; }
+31558	public < RES > MatcherNext < RES , ARG > as ( Class < RES > dummy ) { return new MatcherNext < > ( arg ) ; }
+31714	@ Override public void xmlDecl ( String version , String encoding , String standalone , Augmentations augs ) throws XNIException { fGrammarBucket . setStandalone ( standalone != _NULL && standalone . equals ( _CHAR yes _CHAR ) ) ; if ( fDocumentHandler != _NULL ) { fDocumentHandler . xmlDecl ( version , encoding , standalone , augs ) ; } }
+31791	private static Random initRandom ( long seed ) { System . out . printf ( _CHAR % s using random seed : % d % n _CHAR , PersistentSortedQueueTest . class . getSimpleName ( ) , seed ) ; Random random = new Random ( seed ) ; PersistentSortedQueue . RANDOM = random ; PersistentSortedQueueTest . RANDOM = random ; return random ; }
+32008	public void addRoot ( ProtoElement root ) { roots . add ( root ) ; }
+32045	public static void logPromoOpenCount ( int count ) { RecordHistogram . recordCountHistogram ( _CHAR Search . ContextualSearchPromoOpenCount _CHAR , count ) ; }
+32058	public static EquivalentValue equiVal ( Value val ) { if ( val == _NULL ) return _NULL ; return new EquivalentValue ( val ) ; }
+32080	public void loadData ( Table t , String query ) { loadData ( t , query , _NULL , _NULL , _NULL ) ; }
+32277	public synchronized void doneAppending ( ) { doneAppending = _BOOL ; notifyAll ( ) ; }
+32409	public static String locale2xmllang ( Locale locale ) { if ( locale == _NULL ) throw new IllegalArgumentException ( _CHAR Locale must not be _NULL _CHAR ) ; String country = locale . getCountry ( ) ; if ( ! _CHAR _CHAR . equals ( country ) ) return locale . getLanguage ( ) + _CHAR - _CHAR + country ; return locale . getLanguage ( ) ; }
+32456	protected SoftReference < List < Row >> softlyReferenced ( List < Row > rows ) { return new SoftReference < > ( rows ) ; }
+32521	public Vector3f mult ( float scalar , Vector3f product ) { if ( _NULL == product ) { product = new Vector3f ( ) ; } product . x = x * scalar ; product . y = y * scalar ; product . z = z * scalar ; return product ; }
+32566	public Builder keepInnerClass ( boolean val ) { keepInnerClass = val ; return this ; }
+32644	public void unknownEntry ( Vector strings ) { if ( strings != _NULL && strings . size ( ) > _NUM ) { String keyword = ( String ) strings . elementAt ( _NUM ) ; catalogManager . debug . message ( _NUM , _CHAR Unrecognized token parsing catalog _CHAR , keyword ) ; } }
+33032	void appendOp ( int length , int op ) { int totalLen = m_ops . getOp ( OpMap . MAPINDEX_LENGTH ) ; m_ops . setOp ( totalLen , op ) ; m_ops . setOp ( totalLen + OpMap . MAPINDEX_LENGTH , length ) ; m_ops . setOp ( OpMap . MAPINDEX_LENGTH , totalLen + length ) ; }
+33136	public X509Certificate generateX509Certificate ( PrivateKey key , SecureRandom random ) throws SecurityException , SignatureException , InvalidKeyException { try { return generateX509Certificate ( key , _CHAR BC _CHAR , random ) ; } catch ( NoSuchProviderException e ) { throw new SecurityException ( _CHAR BC provider not installed ! _CHAR ) ; } }
+33148	public Image scaleAbsolute ( float fitWidth , float fitHeight ) { float horizontalScaling = fitWidth / xObject . getWidth ( ) ; float verticalScaling = fitHeight / xObject . getHeight ( ) ; return scale ( horizontalScaling , verticalScaling ) ; }
+33210	public void send ( PushMessage message , String realm ) throws PushNotificationException { PushNotificationDelegate delegate = getDelegateForRealm ( realm ) ; if ( delegate == _NULL ) { throw new PushNotificationException ( _CHAR No delegate for supplied realm . Check service exists and init has '' + '' been called . '' ) ; } delegate . send ( message ) ; }
+33268	public static Pose toOpenGLPose ( TangoPoseData tangoPose ) { Matrix4 startServiceTDevice = tangoPoseToMatrix ( tangoPose ) ; Matrix4 openglWorldTDevice = OPENGL_T_TANGO_WORLD . clone ( ) . multiply ( startServiceTDevice ) ; return matrixToPose ( openglWorldTDevice ) ; }
+33453	final boolean isOnSyncQueue ( Node node ) { if ( node . waitStatus == Node . CONDITION || node . prev == _NULL ) return _BOOL ; if ( node . next != _NULL ) return _BOOL ; return findNodeFromTail ( node ) ; }
+33533	public boolean addEdge ( DigraphNode node ) { if ( outNodes . contains ( node ) ) { return _BOOL ; } outNodes . add ( node ) ; node . inNodes . add ( this ) ; node . incrementInDegree ( ) ; return _BOOL ; }
+33685	private void append ( StringBuffer result , CharacterIterator iterator ) { if ( iterator . first ( ) != CharacterIterator . DONE ) { char aChar ; result . append ( iterator . first ( ) ) ; while ( ( aChar = iterator . next ( ) ) != CharacterIterator . DONE ) { result . append ( aChar ) ; } } }
+33944	@ Deprecated public void _INVALID_setDamage ( int damage ) { setDamage ( damage ) ; }
+33955	public org . omg . CORBA . TypeCode _type ( ) { return ORB . init ( ) . get_primitive_tc ( TCKind . tk_char ) ; }
+34124	public static void updateScrollMode ( JScrollPane scroll , JTable table ) { int width1 = table . getPreferredScrollableViewportSize ( ) . width ; int width2 = scroll . getViewport ( ) . getWidth ( ) ; table . setAutoResizeMode ( width1 > width2 ? JTable . AUTO_RESIZE_OFF : JTable . AUTO_RESIZE_SUBSEQUENT_COLUMNS ) ; }
+34213	public UnsavedChangesDialog . Result checkUnsavedChanges ( ) { return UnsavedChangesDialog . Result . DO_NOT_SAVE ; }
+34281	public void reset ( ) throws IOException { throw new IOException ( _CHAR mark / reset not supported _CHAR ) ; }
+34626	private boolean accept ( char ... acceptableSymbols ) { boolean symbolPresent = _BOOL ; for ( char c : acceptableSymbols ) { if ( data [ index ] == c ) symbolPresent = _BOOL ; } return symbolPresent ; }
+34627	static < T > T newInstance ( Class < T > type , String className , ClassLoader cl , boolean doFallback ) throws FactoryConfigurationError { return newInstance ( type , className , cl , doFallback , _BOOL ) ; }
+34773	public RecordedRequest takeRequest ( ) throws InterruptedException { return requestQueue . take ( ) ; }
+34787	public static ClassModder hookMethodStart ( AbstractMatcher < String > matcher , String methodName , String methodDesc , String injectedMethodOwner , String injectedMethodName ) { return hookMethodStart ( matcher , methodName , methodDesc , injectedMethodOwner , injectedMethodName , _CHAR ( ) V _CHAR ) ; }
+34912	public String toXMLString ( ) throws FSMsgException { return this . toXMLString ( _BOOL , _BOOL ) ; }
+35114	public void sendError ( int sc , String msg ) throws IOException { if ( this . _getHttpServletResponse ( ) != _NULL ) { this . _getHttpServletResponse ( ) . sendError ( sc , msg ) ; } }
+35168	public boolean equals ( Object obj ) { if ( obj == _NULL ) return _BOOL ; PatternEntry other = ( PatternEntry ) obj ; boolean result = chars . equals ( other . chars ) ; return result ; }
+35187	public char last ( ) { pos = offset + count ; if ( count != _NUM ) { pos -= _NUM ; return array [ pos ] ; } return DONE ; }
+35648	static boolean isLoggingStackTraceElement ( StackTraceElement trace ) { String name = trace . getClassName ( ) ; return name . startsWith ( Thread . class . getName ( ) ) || name . startsWith ( DebugTracer . class . getName ( ) ) || name . startsWith ( OPENDJ_LOGGER_ADAPTER_CLASS_NAME ) || name . startsWith ( LocalizedLogger . class . getName ( ) ) ; }
+35837	@ Override public void onViewRecycled ( ListBaseViewHolder holder ) { long begin = System . currentTimeMillis ( ) ; holder . setComponentUsing ( _BOOL ) ; recycleViewList . add ( holder ) ; WXLogUtils . d ( TAG , _CHAR Recycle holder _CHAR + ( System . currentTimeMillis ( ) - begin ) + _CHAR Thread : _CHAR + Thread . currentThread ( ) . getName ( ) ) ; }
+35846	public static boolean isXML11NCNameStart ( int c ) { return ( c < _NUM && ( XML11CHARS [ c ] & MASK_XML11_NCNAME_START ) != _NUM ) || ( _NUM <= c && c < _NUM ) ; }
+35927	public void hasValidAnnotations ( ) { assertThatAnnotatedClassHasValidI18n ( ) ; assertThatAnnotatedClassHasAnnotatedMethods ( ) ; assertThatAllSchemasAreValid ( ) ; }
+35949	public static LdapException newLdapException ( ResultCode resultCode , Throwable cause ) { return newLdapException ( resultCode , _NULL , cause ) ; }
+35984	public static boolean isValidServerId ( String serverID ) { if ( isSiteId ( serverID ) ) { return _BOOL ; } return idToServerTable . containsKey ( serverID ) ; }
+36107	public void commit ( ) throws IOException { synchronized ( DiskLruCache . this ) { if ( hasErrors ) { completeEdit ( this , _BOOL ) ; removeEntry ( entry ) ; } else { completeEdit ( this , _BOOL ) ; } committed = _BOOL ; } }
+36225	public void fireTableRowsUpdated ( int firstRow , int lastRow ) { fireTableChanged ( new TableModelEvent ( this , firstRow , lastRow , TableModelEvent . ALL_COLUMNS , TableModelEvent . UPDATE ) ) ; }
+36586	public static byte parseByte ( String string ) throws NumberFormatException { return parseByte ( string , _NUM ) ; }
+36646	public void commitResize ( ) { resizeWidgetIfNeeded ( _BOOL ) ; requestLayout ( ) ; }
+36787	@ Override public String findSecurityReference ( String name ) { referencesLock . readLock ( ) . lock ( ) ; try { return references . get ( name ) ; } finally { referencesLock . readLock ( ) . unlock ( ) ; } }
+36816	public TagField createField ( ID3v23FieldKey id3Key , String value ) throws KeyNotFoundException , FieldDataInvalidException { if ( id3Key == _NULL ) { throw new KeyNotFoundException ( ) ; } return super . doCreateTagField ( new FrameAndSubId ( id3Key . getFrameId ( ) , id3Key . getSubId ( ) ) , value ) ; }
+36825	@ Override public void leftOver ( Serializable msg , Member sender ) { System . out . println ( _CHAR Received a left over message from [ _CHAR + sender . getName ( ) + _CHAR ] with data [ _CHAR + msg + _CHAR ] _CHAR ) ; }
+36956	public void printStackTrace ( java . io . PrintStream s ) { printStackTrace ( new java . io . PrintWriter ( s ) ) ; }
+36972	public static GSSAPISASLBindRequest newGSSAPISASLBindRequest ( final String authenticationID , final char [ ] password ) { return new GSSAPISASLBindRequestImpl ( authenticationID , getBytes ( password ) ) ; }
+36987	public final boolean equals ( Object obj ) { return super . equals ( obj ) ; }
+37313	@ Deprecated public int _INVALID_getDamage ( ) { return NumberConversions . ceil ( getDamage ( ) ) ; }
+37371	private boolean accept ( char ... acceptableSymbols ) { boolean symbolPresent = _BOOL ; for ( char c : acceptableSymbols ) { if ( data [ index ] == c ) symbolPresent = _BOOL ; } return symbolPresent ; }
+37602	public UnsavedChangesDialog . Result checkUnsavedChanges ( ) { UnsavedChangesDialog . Result result ; if ( vlvIndexPanel . isVisible ( ) ) { result = vlvIndexPanel . checkUnsavedChanges ( ) ; } else if ( standardIndexPanel . isVisible ( ) ) { result = standardIndexPanel . checkUnsavedChanges ( ) ; } else { result = UnsavedChangesDialog . Result . DO_NOT_SAVE ; } return result ; }
+37662	final boolean isOnSyncQueue ( Node node ) { if ( node . waitStatus == Node . CONDITION || node . prev == _NULL ) return _BOOL ; if ( node . next != _NULL ) return _BOOL ; return findNodeFromTail ( node ) ; }
+37787	public void printStackTrace ( PrintStream s ) { if ( ! isJDK14OrAbove && causeOnJDK13OrBelow != _NULL ) { printStackTrace0 ( new PrintWriter ( s ) ) ; } else { super . printStackTrace ( s ) ; } }
+37967	public boolean isInStep ( Position position , RouteLeg route , int stepIndex ) throws ServicesException , TurfException { double distance = getDistanceToStep ( position , route , stepIndex ) ; return ( distance <= offRouteThresholdKm ) ; }
+38329	public void clear ( ) { removeAllElements ( ) ; }
+38383	private void checkStartWarningLabel ( ) { boolean visible = ! getStartCheckBox ( ) . isSelected ( ) ; if ( visible ) { final UserData userData = getApplication ( ) . getUserData ( ) ; visible = userData . getReplicationOptions ( ) . getType ( ) != DataReplicationOptions . Type . STANDALONE ; } getWarningLabel ( ) . setVisible ( visible ) ; }
+38397	public int hashCode ( ) { return uid . hashCode ( ) ; }
+38425	public static String escape ( String s ) { if ( s == _NULL ) return _NULL ; StringBuffer sb = new StringBuffer ( ) ; escape ( s , sb ) ; return sb . toString ( ) ; }
+38493	public static final void removeLoggingBehavior ( LoggingBehavior behavior ) { synchronized ( loggingBehaviors ) { loggingBehaviors . remove ( behavior ) ; } }
+38515	@ Override public String toString ( ) { return _CHAR Expected { _CHAR + _CHAR value = _CHAR + this . value + _CHAR ; }
+38646	public DN child ( final String dn ) { Reject . ifNull ( dn ) ; return child ( valueOf ( dn ) ) ; }
+38670	static < T > T newInstance ( Class < T > type , String className , ClassLoader cl , boolean doFallback ) throws FactoryConfigurationError { return newInstance ( type , className , cl , doFallback , _BOOL ) ; }
+38673	public void commit ( ) throws IOException { if ( hasErrors ) { completeEdit ( this , _BOOL ) ; remove ( entry . key ) ; } else { completeEdit ( this , _BOOL ) ; } committed = _BOOL ; }
+38733	static boolean isValidKeyEventForKeyBindings ( KeyEvent e ) { return _BOOL ; }
+38736	@ Override public boolean is_empty ( ) { if ( is_nan ) return _BOOL ; return this == EMPTY ; }
+38774	public LinkedListNode addLast ( Object object ) { LinkedListNode node = new LinkedListNode ( object , head , head . previous ) ; node . previous . next = node ; node . next . previous = node ; return node ; }
+38843	public static Object decodeToObject ( String encodedObject ) throws java . io . IOException , ClassNotFoundException { return decodeToObject ( encodedObject , NO_OPTIONS , _NULL ) ; }
+38923	public void debugMessage ( String message ) { debug . message ( message ) ; }
+39303	private void sendRegistrationToServer ( String token ) { }
+39393	public boolean isSkipFirstHeader ( ) { return skipFirstHeader ; }
+39641	private void buildTStore ( MethodVisitor methodVisitor , CodeInfo info , Ins . TStore tStore ) { buildValueAccess ( methodVisitor , info , tStore . newValue ( ) , _BOOL ) ; methodVisitor . visitVarInsn ( tStore . mode ( ) , tStore . index ( ) ) ; info . pop ( _NUM ) ; info . registerLocal ( tStore . index ( ) ) ; }
+39952	public boolean isServiceIdentifier ( ) { return ( as . isServiceIdentifier ( ) ) ; }
+40136	public void printStackTrace ( ) { printStackTrace ( new java . io . PrintWriter ( System . err , _BOOL ) ) ; }
+40189	public void fireTableRowsInserted ( int firstRow , int lastRow ) { fireTableChanged ( new TableModelEvent ( this , firstRow , lastRow , TableModelEvent . ALL_COLUMNS , TableModelEvent . INSERT ) ) ; }
+40547	@ Override public ContainerListener [ ] findContainerListeners ( ) { ContainerListener [ ] results = new ContainerListener [ _NUM ] ; return listeners . toArray ( results ) ; }
+40615	@ Override public Script parse ( GroovyCodeSource codeSource ) throws CompilationFailedException { Script s = super . parse ( codeSource ) ; if ( execution != _NULL ) execution . loadedScripts . put ( s . getClass ( ) . getName ( ) , codeSource . getScriptText ( ) ) ; prepareScript ( s ) ; return s ; }
+40788	public Builder withUserId ( String userId ) { this . userId = userId ; return this ; }
+40798	public final boolean isQueued ( Thread thread ) { if ( thread == _NULL ) throw new NullPointerException ( ) ; for ( Node p = tail ; p != _NULL ; p = p . prev ) if ( p . thread == thread ) return _BOOL ; return _BOOL ; }
+40881	protected LayoutManager createLayoutManager ( ) { if ( tabPane . getTabLayoutPolicy ( ) == JTabbedPane . SCROLL_TAB_LAYOUT ) { return new TabbedPaneScrollLayout ( ) ; } else { return new TabbedPaneLayout ( ) ; } }
+40981	public void addRule ( String ruleExpression , T resultIfMatched ) { mRuleMap . add ( new MimeMatcherRule ( ruleExpression , resultIfMatched ) ) ; }
+41025	public W3CEndpointReferenceBuilder attribute ( QName name , String value ) { if ( name == _NULL || value == _NULL ) { throw new IllegalArgumentException ( _CHAR The extension attribute name or value can not be _NULL . _CHAR ) ; } attributes . put ( name , value ) ; return this ; }
+41047	@ Override public String toString ( ) { return _CHAR CrestQuery { _CHAR + _CHAR queryId = _CHAR_CHAR\ _CHAR + _CHAR , queryFilter = _CHAR + queryFilter + _CHAR , fields = _CHAR + fields + _CHAR ; }
+41137	public static Pose toOpenGlCameraPose ( TangoPoseData devicePose , DeviceExtrinsics extrinsics ) { Matrix4 startServiceTdevice = tangoPoseToMatrix ( devicePose ) ; Matrix4 openglTDevice = OPENGL_T_TANGO_WORLD . clone ( ) . multiply ( startServiceTdevice ) ; Matrix4 openglWorldTOpenglCamera = openglTDevice . multiply ( extrinsics . getDeviceTColorCamera ( ) ) . multiply ( COLOR_CAMERA_T_OPENGL_CAMERA ) ; return matrixToPose ( openglWorldTOpenglCamera ) ; }
+41142	private void updateToggleButton ( Action action , Icon icon ) { toggleButton . setAction ( action ) ; toggleButton . setIcon ( icon ) ; toggleButton . setText ( _NULL ) ; }
+41192	public boolean isValidValue ( long value ) { return ( value >= getMinimum ( ) && value <= getMaximum ( ) ) ; }
+41357	@ Override public JsonGenerator useDefaultPrettyPrinter ( ) { return this ; }
+41361	public void printStackTrace ( java . io . PrintStream s ) { printStackTrace ( new java . io . PrintWriter ( s ) ) ; }
+41436	public static String guessDisplayLocaleFromSession ( Session in_session ) { return localeToString ( SessionUtils . guessLocaleFromSession ( in_session ) ) ; }
+41483	public void close ( ) { flush ( ) ; writeln ( _CHAR < / java > _CHAR ) ; try { out . close ( ) ; } catch ( IOException e ) { getExceptionListener ( ) . exceptionThrown ( e ) ; } }
+41829	public void paintArrowButtonBorder ( SynthContext context , Graphics g , int x , int y , int w , int h ) { }
+41844	private void writeAdminConnectorContents ( ServerDescriptor desc , int maxLabelWidth ) { ConnectionHandlerDescriptor adminConnector = desc . getAdminConnector ( ) ; LocalizableMessage text = adminConnector != _NULL ? INFO_CTRL_PANEL_ADMIN_CONNECTOR_DESCRIPTION . get ( adminConnector . getPort ( ) ) : INFO_NOT_AVAILABLE_SHORT_LABEL . get ( ) ; writeLabelValue ( INFO_CTRL_PANEL_ADMIN_CONNECTOR_LABEL . get ( ) , text . toString ( ) , maxLabelWidth ) ; }
+41909	public boolean isMethodHandleInvoke ( ) { final int bits = MH_INVOKE_MODS & ~ Modifier . PUBLIC ; final int negs = Modifier . STATIC ; if ( testFlags ( bits | negs , bits ) && clazz == MethodHandle . class ) { return isMethodHandleInvokeName ( name ) ; } return _BOOL ; }
+41995	public String simpleQueryForString ( ) { acquireReference ( ) ; try { return getSession ( ) . executeForString ( getSql ( ) , getBindArgs ( ) , getConnectionFlags ( ) , _NULL ) ; } catch ( SQLiteDatabaseCorruptException ex ) { onCorruption ( ) ; throw ex ; } finally { releaseReference ( ) ; } }
+42059	public void actionPerformed ( ActionEvent ae ) { if ( scrollBar == _NULL || ! scrollBar . getValueIsAdjusting ( ) ) { if ( timer != _NULL ) timer . stop ( ) ; updateSize ( ) ; timer = _NULL ; scrollBar = _NULL ; } }
+42073	protected View createRow ( ) { return new Row ( getElement ( ) ) ; }
+42141	public void unsetCompression ( ) { if ( getCompressionMode ( ) != MODE_EXPLICIT ) { throw new IllegalStateException ( _CHAR Compression mode not MODE_EXPLICIT ! _CHAR ) ; } this . compressionQuality = JPEG . DEFAULT_QUALITY ; }
+42296	private RealConnection findHealthyConnection ( int connectTimeout , int readTimeout , int writeTimeout , boolean connectionRetryEnabled , boolean doExtensiveHealthChecks ) throws IOException , RouteException { while ( _BOOL ) { RealConnection candidate = findConnection ( connectTimeout , readTimeout , writeTimeout , connectionRetryEnabled ) ; if ( connection . isHealthy ( doExtensiveHealthChecks ) ) { return candidate ; } connectionFailed ( ) ; } }
+42319	public void debugWarning ( String message ) { debug . warning ( message ) ; }
+42413	public void identityRenamed ( String universalId ) { if ( DelegationManager . debug . messageEnabled ( ) ) { DelegationManager . debug . message ( _CHAR DelegationPolicyImpl : renamed universalId = _CHAR + universalId ) ; } cleanupCache ( ) ; }
+42484	public SearchResults searchIDs ( java . security . Principal principal , Guid guid , int scope , String searchFilter , SearchControl searchControl ) throws InvalidSearchFilterException , UMSException { String attrNames [ ] = { _CHAR objectclass _CHAR } ; return search ( principal , guid , scope , searchFilter , attrNames , _BOOL , searchControl ) ; }
+42591	public boolean isCached ( ) { return _BOOL ; }
+42711	public static Object parse ( Reader in ) { try { JSONParser parser = new JSONParser ( ) ; return parser . parse ( in ) ; } catch ( Exception e ) { return _NULL ; } }
+42719	static < T > T newInstance ( Class < T > type , String className , ClassLoader cl , boolean doFallback ) throws DatatypeConfigurationException { return newInstance ( type , className , cl , doFallback , _BOOL ) ; }
+42734	public void addDirtyRegion ( Applet applet , int x , int y , int w , int h ) { addDirtyRegion0 ( applet , x , y , w , h ) ; }
+42764	public void updateOperationErrMsgAndResCode ( ) { }
+42859	@ Deprecated public static String toString ( byte [ ] input ) throws IOException { return new String ( input ) ; }
+43160	public Subject removeSubject ( String subjectName ) throws ObjectInUseException , PolicyException , SSOException { return removeSubject ( subjectName , _BOOL ) ; }
+43302	@ Override public Principal authenticate ( String username , String credentials ) { Principal authenticatedUser = super . authenticate ( username , credentials ) ; return filterLockedAccounts ( username , authenticatedUser ) ; }
+43420	protected void writeLineSeparator ( ) throws IOException { boolean oldReplace = replaceEntities ; replaceEntities = _BOOL ; super . writeLineSeparator ( ) ; replaceEntities = oldReplace ; indented = _BOOL ; }
+43550	public boolean isFocusTraversable ( ) { Component comp = getTextComponent ( ) ; if ( comp instanceof JTextComponent ) { if ( ( ( JTextComponent ) comp ) . isEditable ( ) ) { return _BOOL ; } } return _BOOL ; }
+43571	public static void siteAndServerInfo ( SSOServerInfo svrInfo ) { agentSvrInfo = svrInfo ; }
+43573	public String toString ( ) { return _CHAR _CHAR + value ; }
+43590	@ Deprecated public void _INVALID_setDamage ( int damage ) { setDamage ( damage ) ; }
+43621	public void close ( ) throws IOException { if ( sink != _NULL ) { sink . receivedLast ( ) ; } }
+43807	public void clear ( ) { int index1 = delegate . size ( ) - _NUM ; delegate . removeAllElements ( ) ; if ( index1 >= _NUM ) { fireIntervalRemoved ( this , _NUM , index1 ) ; } }
+43894	public static String toBinaryString ( int i ) { return IntegralToString . intToBinaryString ( i ) ; }
+44038	private int checkWindows ( int windowSize ) throws Exception { return searchNbMonitorEntries ( _CHAR ( max - rcv - window = _CHAR + windowSize + _CHAR ) _CHAR ) ; }
+44073	public static boolean isXML11NCNameStart ( int c ) { return ( c < _NUM && ( XML11CHARS [ c ] & MASK_XML11_NCNAME_START ) != _NUM ) || ( _NUM <= c && c < _NUM ) ; }
+44216	public final boolean containsDescriptor ( final MetadataDescriptor lookup ) { assert lookup != _NULL ; return this . descriptors . containsKey ( this . perfPoint . setDescriptor ( lookup ) ) ; }
+44228	public static void removeAll ( ) { synchronized ( registeredLocalBackendsLock ) { for ( LocalBackendWorkflowElement localBackend : registeredLocalBackends . values ( ) ) { deregisterLocalBackend ( localBackend . getBaseDN ( ) ) ; } } }
+44305	public int hashCode ( ) { int hash = _NUM ; for ( int i = _NUM ; i < rdns . size ( ) ; i ++ ) { Rdn rdn = rdns . get ( i ) ; hash += rdn . hashCode ( ) ; } return hash ; }
+44313	public static byte [ ] decodeWebSafe ( String s ) throws Base64DecoderException { byte [ ] bytes = s . getBytes ( ) ; return decodeWebSafe ( bytes , _NUM , bytes . length ) ; }
+44491	public Duration minus ( Duration duration ) { long secsToSubtract = duration . getSeconds ( ) ; int nanosToSubtract = duration . getNano ( ) ; if ( secsToSubtract == Long . MIN_VALUE ) { return plus ( Long . MAX_VALUE , - nanosToSubtract ) . plus ( _NUM , _NUM ) ; } return plus ( - secsToSubtract , - nanosToSubtract ) ; }
+44544	private boolean acquireValidLock ( ) { if ( shutdownCalled ) { return _BOOL ; } else { rwlock . writeLock ( ) . lock ( ) ; } return _BOOL ; }
+44580	public static final boolean isLoggingBehaviorEnabled ( LoggingBehavior behavior ) { synchronized ( loggingBehaviors ) { return Settings . isDebugEnabled ( ) && loggingBehaviors . contains ( behavior ) ; } }
+44650	private void doBaseDN ( DN baseDN , Set < DN > deleteDNset ) { for ( DN deletedEntryDN : deleteDNset ) { searchBaseDN ( baseDN , deletedEntryDN , _NULL ) ; } }
+44657	public static File [ ] convertFileCollectionToFileArray ( Collection < File > files ) { return files . toArray ( new File [ files . size ( ) ] ) ; }
+44709	public static void initPackage ( String packageName ) throws IOException { Logger logger = Logger . getLogger ( packageName ) ; if ( disableLoggingToConsole ( ) ) { logger . setUseParentHandlers ( _BOOL ) ; } logger . addHandler ( fileHandler ) ; logger . info ( getInitialLogRecord ( ) ) ; }
+44770	public Object clone ( ) { SIPRequest retval = ( SIPRequest ) super . clone ( ) ; retval . transactionPointer = _NULL ; if ( this . requestLine != _NULL ) retval . requestLine = ( RequestLine ) this . requestLine . clone ( ) ; return retval ; }
+44787	public void printStackTrace ( ) { printStackTrace ( new java . io . PrintWriter ( System . err , _BOOL ) ) ; }
+44821	public boolean isMultiline ( ) { return getFieldFlag ( FF_MULTILINE ) ; }
+45141	public String debugDump ( int indent ) { return super . debugDump ( indent ) ; }
+45237	public void paintArrowButtonBackground ( SynthContext context , Graphics g , int x , int y , int w , int h ) { }
+45302	@ Override public void dump ( final String prefix , final FileDescriptor fd , final PrintWriter writer , final String [ ] args ) { delegate . dump ( prefix , fd , writer , args ) ; }
+45353	@ Override public String toString ( ) { return value != _NULL ? String . format ( _CHAR Optional [ % s ] _CHAR , value ) : _CHAR Optional . empty _CHAR ; }
+45387	private void sendRegistrationToServer ( String token ) { }
+45393	public UnsavedChangesDialog . Result checkUnsavedChanges ( ) { if ( schemaElementPanel != _NULL ) { return schemaElementPanel . checkUnsavedChanges ( ) ; } return UnsavedChangesDialog . Result . DO_NOT_SAVE ; }
+45433	public void invalidate ( ) { valid = _BOOL ; }
+45455	public static Position [ ] simplify ( Position [ ] points , boolean highestQuality ) { return simplify ( points , SIMPLIFY_DEFAULT_TOLERANCE , highestQuality ) ; }
+45496	public static boolean canWrite ( String path ) { final File file = new File ( path ) ; if ( file . exists ( ) ) { return file . canWrite ( ) ; } final File parentFile = file . getParentFile ( ) ; return parentFile != _NULL && parentFile . canWrite ( ) ; }
+45592	static double computeFinalSum ( double [ ] summands ) { double tmp = summands [ _NUM ] + summands [ _NUM ] ; double simpleSum = summands [ summands . length - _NUM ] ; if ( Double . isNaN ( tmp ) && Double . isInfinite ( simpleSum ) ) return simpleSum ; else return tmp ; }
+45731	protected void paintChildren ( Graphics g ) { super . paintChildren ( g ) ; SplitPaneUI ui = getUI ( ) ; if ( ui != _NULL ) { Graphics tempG = g . create ( ) ; ui . finishedPaintingChildren ( this , tempG ) ; tempG . dispose ( ) ; } }
+45745	public void removeAllChildren ( ) { for ( int i = getChildCount ( ) - _NUM ; i >= _NUM ; i -- ) { remove ( i ) ; } }
+45817	public void update ( Graphics g ) { paint ( g ) ; }
+45823	public void reset ( ) { cipher . reset ( ) ; }
+45833	@ SuppressWarnings ( _CHAR unchecked _CHAR ) private void heapify ( ) { for ( int i = ( size >> > _NUM ) - _NUM ; i >= _NUM ; i -- ) siftDown ( i , ( E ) queue [ i ] ) ; }
+46013	public boolean isValidID3v2FrameIdentifier ( String identifier ) { Matcher m = ID3v23Frame . validFrameIdentifier . matcher ( identifier ) ; return m . matches ( ) ; }
+46056	public void replace ( int offset , int length , View [ ] views ) { super . replace ( offset , length , views ) ; invalidateGrid ( ) ; }
+46129	private void sendRegistrationToServer ( String token ) { }
+46413	public static ServerSideSortResponseControl newControl ( final ResultCode result , final String attributeDescription ) { Reject . ifNull ( result ) ; if ( attributeDescription != _NULL ) { return new ServerSideSortResponseControl ( _BOOL , result , AttributeDescription . valueOf ( attributeDescription ) ) ; } else { return new ServerSideSortResponseControl ( _BOOL , result , _NULL ) ; } }
+46461	public void destroySession ( Session requester , SessionID sessionToDestroy ) throws SessionException { if ( sessionToDestroy == _NULL ) { return ; } sessionOperationStrategy . getOperation ( sessionToDestroy ) . destroy ( requester , resolveSession ( sessionToDestroy ) ) ; }
+46578	protected void checkState ( boolean openForWrite ) throws IllegalArgumentException { if ( this . openForWrite != openForWrite ) { cleanup ( ) ; if ( openForWrite ) throw new IllegalArgumentException ( _CHAR Ca n _CHAR_CHAR_CHAR t read message , this factory is writing . '' ) ; } if ( this . closed ) { cleanup ( ) ; throw new IllegalArgumentException ( _CHAR Factory has been closed . '' ) ; } }
+46598	private int handleAEIOUY ( String value , DoubleMetaphoneResult result , int index ) { if ( index == _NUM ) { result . append ( _CHAR ) ; } return index + _NUM ; }
+46624	public void paintArrowButtonBorder ( SynthContext context , Graphics g , int x , int y , int w , int h ) { paintBorder ( context , g , x , y , w , h , _NULL ) ; }
+46677	public boolean removeOperation ( Operation operation ) { return opQueue . remove ( operation ) ; }
+46719	public void externalEntityDecl ( String name , String publicId , String systemId ) throws SAXException { if ( _NULL != m_resultDeclHandler ) m_resultDeclHandler . externalEntityDecl ( name , publicId , systemId ) ; }
+46781	public void signXML ( ) throws SAMLException { String certAlias = SystemConfigurationUtil . getProperty ( Constants . SAML_XMLSIG_CERT_ALIAS ) ; signXML ( certAlias ) ; }
+46808	@ Override public boolean remove ( Object o ) { if ( locked ) throw new IllegalStateException ( sm . getString ( _CHAR resourceSet . locked _CHAR ) ) ; return ( super . remove ( o ) ) ; }
+46817	Mark skipUntilETag ( String tag ) { Mark ret = skipUntil ( _CHAR < / _CHAR + tag ) ; if ( ret != _NULL ) { skipSpaces ( ) ; if ( nextChar ( ) != _CHAR ) ret = _NULL ; } return ret ; }
+46975	public static ArgumentException unableToResetMandatoryProperty ( AbstractManagedObjectDefinition < ? , ? > d , String name , String setOption ) { LocalizableMessage message = ERR_DSCFG_ERROR_UNABLE_TO_RESET_MANDATORY_PROPERTY . get ( d . getUserFriendlyPluralName ( ) , name , setOption ) ; return new ArgumentException ( message ) ; }
+47008	private void unRegisterAuth ( LDAPURL ldapUrl ) throws LdapException { String key = makeKeyFromLDAPUrl ( ldapUrl ) ; authTable . remove ( key ) ; notifyListeners ( ) ; }
+47036	public final boolean isQueued ( Thread thread ) { if ( thread == _NULL ) throw new NullPointerException ( ) ; for ( Node p = tail ; p != _NULL ; p = p . prev ) if ( p . thread == thread ) return _BOOL ; return _BOOL ; }
+47069	@ Override public JsonGenerator useDefaultPrettyPrinter ( ) { return this ; }
+47333	public void fireTableRowsDeleted ( int firstRow , int lastRow ) { fireTableChanged ( new TableModelEvent ( this , firstRow , lastRow , TableModelEvent . ALL_COLUMNS , TableModelEvent . DELETE ) ) ; }
+47395	public static boolean isBase64 ( final byte [ ] arrayOctet ) { for ( int i = _NUM ; i < arrayOctet . length ; i ++ ) { if ( ! isBase64 ( arrayOctet [ i ] ) && ! isWhiteSpace ( arrayOctet [ i ] ) ) { return _BOOL ; } } return _BOOL ; }
+47631	public Shape createStrokedShape ( Shape s ) { sun . java2d . pipe . RenderingEngine re = sun . java2d . pipe . RenderingEngine . getInstance ( ) ; return re . createStrokedShape ( s , width , cap , join , miterlimit , dash , dash_phase ) ; }
+47748	@ Deprecated public void _INVALID_setAmount ( int amount ) { setAmount ( amount ) ; }
+47791	public static String parseSyntaxOID ( String definition ) throws DirectoryException { return parseOID ( definition , ERR_PARSING_LDAP_SYNTAX_OID ) ; }
+47823	protected final void endOfInput ( ) throws IOException { if ( state != STATE_READING_RESPONSE_BODY ) throw new IllegalStateException ( _CHAR state : _CHAR + state ) ; detachTimeout ( timeout ) ; state = STATE_CLOSED ; if ( streamAllocation != _NULL ) { streamAllocation . streamFinished ( Http1xStream . this ) ; } }
+47896	public Duration plus ( Duration duration ) { return plus ( duration . getSeconds ( ) , duration . getNano ( ) ) ; }
+48032	public boolean isCached ( ) { return _BOOL ; }
+48180	public boolean isVorbisCommentHeader ( byte [ ] headerData ) { String vorbis = Utils . getString ( headerData , VorbisHeader . FIELD_CAPTURE_PATTERN_POS , VorbisHeader . FIELD_CAPTURE_PATTERN_LENGTH , _CHAR ISO - _NUM - _NUM _CHAR ) ; return ! ( headerData [ VorbisHeader . FIELD_PACKET_TYPE_POS ] != VorbisPacketType . COMMENT_HEADER . getType ( ) || ! vorbis . equals ( VorbisHeader . CAPTURE_PATTERN ) ) ; }
+48237	@ NonNull public static Interpolator flip ( Interpolator interpolator ) { return new FlipInterpolator ( interpolator ) ; }
+48362	@ Override public ShapeTile simplify ( ) { if ( is_empty ( ) ) return ShapeTileSimplex . EMPTY ; else if ( is_IntBox ( ) ) return bounding_box ( ) ; else if ( is_IntOctagon ( ) ) return to_octagon ( ) ; else return this ; }
+48854	public void close ( ) throws IOException { closed = _BOOL ; if ( sink != _NULL ) { sink . receivedLast ( ) ; } }
+48872	public void externalEntityDecl ( String name , String publicId , String systemId ) throws SAXException { }
+49065	public Component add ( String title , Component component ) { if ( ! ( component instanceof UIResource ) ) { addTab ( title , component ) ; } else { super . add ( title , component ) ; } return component ; }
+49084	protected boolean shouldStartEditingTimer ( EventObject event ) { if ( ( event instanceof MouseEvent ) && SwingUtilities . isLeftMouseButton ( ( MouseEvent ) event ) ) { MouseEvent me = ( MouseEvent ) event ; return ( me . getClickCount ( ) == _NUM && inHitRegion ( me . getX ( ) , me . getY ( ) ) ) ; } return _BOOL ; }
+49240	public Object clone ( ) { PageFormat newPage ; try { newPage = ( PageFormat ) super . clone ( ) ; newPage . mPaper = ( Paper ) mPaper . clone ( ) ; } catch ( CloneNotSupportedException e ) { e . printStackTrace ( ) ; newPage = _NULL ; } return newPage ; }
+49258	public static ArgumentException missingMandatoryNonInteractiveArgument ( Argument arg ) { LocalizableMessage msg = ERR_DSCFG_ERROR_MISSING_NON_INTERACTIVE_ARG . get ( arg . getLongIdentifier ( ) ) ; return new ArgumentException ( msg ) ; }
+49280	final boolean isOnSyncQueue ( Node node ) { if ( node . waitStatus == Node . CONDITION || node . prev == _NULL ) return _BOOL ; if ( node . next != _NULL ) return _BOOL ; return findNodeFromTail ( node ) ; }
+49386	public void preSingleLogoutProcess ( String hostedProviderID , HttpServletRequest request , HttpServletResponse response , String userDN , FSLogoutNotification logoutRequest , FSLogoutResponse logoutResponse , String sloProfile ) { FSUtils . debug . message ( _CHAR In FSDefaultSPAdapter . preSingleLogoutProcess . '' ) ; }
+49466	public static String expandVariables ( final String s ) { return expandVariables ( s , _BOOL ) ; }
+49484	public TypeCode _type ( ) { return ORB . init ( ) . get_primitive_tc ( TCKind . tk_any ) ; }
+49554	public final boolean isQueued ( Thread thread ) { if ( thread == _NULL ) throw new NullPointerException ( ) ; for ( Node p = tail ; p != _NULL ; p = p . prev ) if ( p . thread == thread ) return _BOOL ; return _BOOL ; }
+49564	public static byte [ ] decodeWebSafe ( String s ) throws Base64DecoderException { byte [ ] bytes = s . getBytes ( ) ; return decodeWebSafe ( bytes , _NUM , bytes . length ) ; }
+50156	public int columnAtPoint ( Point point ) { int x = point . x ; if ( ! getComponentOrientation ( ) . isLeftToRight ( ) ) { x = getWidthInRightToLeft ( ) - x - _NUM ; } return getColumnModel ( ) . getColumnIndexAtX ( x ) ; }
+50164	public void close ( ) { sendMessage ( new CloseWebsocketMessage ( ) ) ; }
+50187	public void clearCache ( ) { this . application = _NULL ; }
+50192	public final boolean isQueued ( Thread thread ) { if ( thread == _NULL ) throw new NullPointerException ( ) ; for ( Node p = tail ; p != _NULL ; p = p . prev ) if ( p . thread == thread ) return _BOOL ; return _BOOL ; }
+50202	public static Object decodeToObject ( String encodedObject ) throws java . io . IOException , ClassNotFoundException { return decodeToObject ( encodedObject , NO_OPTIONS , _NULL ) ; }
+50223	public boolean checkMinDegree ( int value ) { if ( value >= ROLE_CARDINALITY_INFINITY && ( minDegree == ROLE_CARDINALITY_INFINITY || value >= minDegree ) ) { return _BOOL ; } else { return _BOOL ; } }
+50286	public static short parseShort ( String string ) throws NumberFormatException { return parseShort ( string , _NUM ) ; }
+50380	public TagField createField ( ID3v22FieldKey id3Key , String value ) throws KeyNotFoundException , FieldDataInvalidException { if ( id3Key == _NULL ) { throw new KeyNotFoundException ( ) ; } return super . doCreateTagField ( new FrameAndSubId ( id3Key . getFrameId ( ) , id3Key . getSubId ( ) ) , value ) ; }
+50438	public PdfPage removePage ( int pageNum ) { PdfPage pdfPage = getPage ( pageNum ) ; if ( pdfPage . isFlushed ( ) ) { Logger logger = LoggerFactory . getLogger ( PdfPage . class ) ; logger . warn ( LogMessageConstant . REMOVING_PAGE_HAS_ALREADY_BEEN_FLUSHED ) ; } if ( internalRemovePage ( -- pageNum ) ) { return pdfPage ; } else { return _NULL ; } }
+50600	public boolean hasValue ( ) { return mValue != _NULL ; }
+50633	public boolean isValidID3v2FrameIdentifier ( String identifier ) { Matcher m = ID3v22Frame . validFrameIdentifier . matcher ( identifier ) ; return m . matches ( ) ; }
+50639	private void writeJavaVersionContents ( ServerDescriptor desc , int maxLabelWidth ) { writeLabelValue ( INFO_JAVA_VERSION_LABEL . get ( ) , getJavaVersion ( desc ) , maxLabelWidth ) ; }
+50711	@ Deprecated public int _INVALID_getAmount ( ) { return NumberConversions . ceil ( getAmount ( ) ) ; }
+50753	public void replace ( int offset , int length , View [ ] views ) { super . replace ( offset , length , views ) ; invalidateGrid ( ) ; }
+50962	public void addDirtyRegion ( Window window , int x , int y , int w , int h ) { addDirtyRegion0 ( window , x , y , w , h ) ; }
+51022	public static boolean tryEnqueueRequest ( Operation operation ) throws DirectoryException { checkCanEnqueueRequest ( operation , _BOOL ) ; return directoryServer . workQueue . trySubmitOperation ( operation ) ; }
+51158	final boolean inTemporaryOutputState ( ) { return ( getEncoding ( ) == _NULL ) ; }
+51172	public void debugMessage ( String message , Exception e ) { debug . message ( message , e ) ; }
+51276	public static boolean isAllowed ( String url , String method ) throws IOException { AuthorizeFaceletsTag authorizeTag = new AuthorizeFaceletsTag ( ) ; authorizeTag . setUrl ( url ) ; authorizeTag . setMethod ( method ) ; return authorizeTag . authorizeUsingUrlCheck ( ) ; }
+51631	public boolean containsValue ( Object value ) { return dataMap . containsValue ( value ) ; }
+51639	public Connection createConnection ( String addr ) throws SdpException { return createConnection ( _CHAR IN _CHAR , _CHAR IP4 _CHAR , addr ) ; }
+51846	@ Deprecated public int _INVALID_getDamage ( ) { return NumberConversions . ceil ( getDamage ( ) ) ; }
+51849	public long simpleQueryForLong ( ) { acquireReference ( ) ; try { return getSession ( ) . executeForLong ( getSql ( ) , getBindArgs ( ) , getConnectionFlags ( ) , _NULL ) ; } catch ( SQLiteDatabaseCorruptException ex ) { onCorruption ( ) ; throw ex ; } finally { releaseReference ( ) ; } }
+52030	@ SuppressWarnings ( _CHAR unchecked _CHAR ) private static < T extends Throwable > void sneakyThrow2 ( Throwable t ) throws T { throw ( T ) t ; }
+52033	public void mergeWith ( PropertyOptions options ) throws XMPException { if ( options != _NULL ) { setOptions ( getOptions ( ) | options . getOptions ( ) ) ; } }
+52078	void onShutdown ( ) { }
+52124	public W3CEndpointReferenceBuilder element ( Element element ) { if ( element == _NULL ) { throw new IllegalArgumentException ( _CHAR The extension element can not be _NULL . _CHAR ) ; } elements . add ( element ) ; return this ; }
+52226	private boolean checkNonBlockingWrite ( ) { boolean nonBlocking = ! ob . isBlocking ( ) ; if ( nonBlocking && ! ob . isReady ( ) ) { throw new IllegalStateException ( sm . getString ( _CHAR coyoteOutputStream . nbNotready _CHAR ) ) ; } return nonBlocking ; }
+52270	public static int parseInt ( String string ) throws NumberFormatException { return parseInt ( string , _NUM ) ; }
+52336	public void reset ( ) { synchronized ( membersLock ) { map . clear ( ) ; members = EMPTY_MEMBERS ; } }
+52704	private static SearchScope elaborateScopeForSearchInSubordinates ( SearchScope currentScope ) { switch ( currentScope . asEnum ( ) ) { case BASE_OBJECT : return _NULL ; case SINGLE_LEVEL : return SearchScope . BASE_OBJECT ; case SUBORDINATES : case WHOLE_SUBTREE : return SearchScope . WHOLE_SUBTREE ; default : return currentScope ; } }
+52749	private Comparable < ? super K > comparable ( Object key ) throws ClassCastException { if ( key == _NULL ) throw new NullPointerException ( ) ; if ( comparator != _NULL ) return new ComparableUsingComparator < K > ( ( K ) key , comparator ) ; else return ( Comparable < ? super K > ) key ; }
+52765	int [ ] findNearestArea ( int pixelX , int pixelY , int spanX , int spanY , int [ ] result ) { return findNearestArea ( pixelX , pixelY , spanX , spanY , spanX , spanY , _BOOL , result , _NULL ) ; }
+52826	public void debugWarning ( String message , Exception e ) { debug . warning ( message , e ) ; }
+52945	public void printStackTrace ( PrintWriter s ) { if ( ! isJDK14OrAbove && causeOnJDK13OrBelow != _NULL ) { printStackTrace0 ( s ) ; } else { super . printStackTrace ( s ) ; } }
+53025	@ Override public boolean equals ( Object otherInstant ) { if ( this == otherInstant ) { return _BOOL ; } if ( otherInstant instanceof Instant ) { Instant other = ( Instant ) otherInstant ; return this . seconds == other . seconds && this . nanos == other . nanos ; } return _BOOL ; }
+53027	void copyValue ( MutableBigInteger src ) { int len = src . intLen ; if ( value . length < len ) value = new int [ len ] ; System . arraycopy ( src . value , src . offset , value , _NUM , len ) ; intLen = len ; offset = _NUM ; }
+53093	public String toString ( ) { String initState = _CHAR _CHAR ; switch ( state ) { case UNINITIALIZED : initState = _CHAR < not initialized > _CHAR ; break ; case VERIFY : initState = _CHAR < initialized for verifying > '' ; break ; case SIGN : initState = _CHAR < initialized for signing > '' ; break ; } return _CHAR Signature object : _CHAR + getAlgorithm ( ) + initState ; }
+53118	public void signXML ( ) throws SAMLException { String certAlias = SystemConfigurationUtil . getProperty ( Constants . SAML_XMLSIG_CERT_ALIAS ) ; signXML ( certAlias ) ; }
+53349	public boolean isCached ( ) { return _BOOL ; }
+53412	byte [ ] unwrap ( final byte [ ] bytes , final int offset , final int len ) throws SaslException { return saslServer . unwrap ( bytes , offset , len ) ; }
+53442	public char last ( ) { pos = offset + count ; if ( count != _NUM ) { pos -= _NUM ; return array [ pos ] ; } return DONE ; }
+53510	protected boolean tryEnqueueRequest ( Operation op ) throws DirectoryException { return DirectoryServer . tryEnqueueRequest ( op ) ; }
+53544	public final boolean equals ( Object obj ) { return super . equals ( obj ) ; }
+53689	public void _write ( OutputStream output ) { output . write_string ( value ) ; }
+53722	void notifyLogFileRotation ( Log < ? , ? > log ) throws ChangelogException { if ( logsCNIndexDB . contains ( log ) ) { updateCNIndexDBLastRotationTime ( timeService . now ( ) ) ; } }
+53780	public int indexOf ( Object elem , int index ) { return delegate . indexOf ( elem , index ) ; }
+53912	public boolean isCached ( ) { return _BOOL ; }
+53975	public void printStackTrace ( java . io . PrintStream s ) { printStackTrace ( new java . io . PrintWriter ( s ) ) ; }
+54003	public Map < String , List < FileItem >> parseParameterMap ( HttpServletRequest request ) throws FileUploadException { return parseParameterMap ( new ServletRequestContext ( request ) ) ; }
+54008	private void updateMnemonicProperties ( ) { int newMnemonic = model . getMnemonic ( ) ; if ( mnemonic != newMnemonic ) { int oldValue = mnemonic ; mnemonic = newMnemonic ; firePropertyChange ( MNEMONIC_CHANGED_PROPERTY , oldValue , mnemonic ) ; updateDisplayedMnemonicIndex ( getText ( ) , mnemonic ) ; revalidate ( ) ; repaint ( ) ; } }
+54011	public String toXMLString ( boolean includeNS , boolean declareNS ) throws FSMsgException { return toXMLString ( includeNS , declareNS , _BOOL ) ; }
+54140	public static Position [ ] simplify ( Position [ ] points , double tolerance ) { return simplify ( points , tolerance , SIMPLIFY_DEFAULT_HIGHEST_QUALITY ) ; }
+54279	public boolean checkMaxDegree ( int value ) { if ( value >= ROLE_CARDINALITY_INFINITY && ( maxDegree == ROLE_CARDINALITY_INFINITY || ( value != ROLE_CARDINALITY_INFINITY && value <= maxDegree ) ) ) { return _BOOL ; } else { return _BOOL ; } }
+54281	@ Override public void updateOperationErrMsgAndResCode ( ) { setResultCode ( ResultCode . NO_SUCH_OBJECT ) ; appendErrorMessage ( ERR_COMPARE_NO_SUCH_ENTRY . get ( getEntryDN ( ) ) ) ; }
+54382	final boolean isOnSyncQueue ( Node node ) { if ( node . waitStatus == Node . CONDITION || node . prev == _NULL ) return _BOOL ; if ( node . next != _NULL ) return _BOOL ; return findNodeFromTail ( node ) ; }
+54451	void copyValue ( int [ ] val ) { int len = val . length ; if ( value . length < len ) value = new int [ len ] ; System . arraycopy ( val , _NUM , value , _NUM , len ) ; intLen = len ; offset = _NUM ; }
+54656	public char last ( ) { pos = offset + count ; if ( count != _NUM ) { pos -= _NUM ; return array [ pos ] ; } return DONE ; }
+54812	public Object clone ( ) { return ( new CompositeName ( getAll ( ) ) ) ; }
+54912	protected static boolean isAncestorOrgDeleted ( SSOToken token , String dn , int profileType ) throws AMException { return complianceServices . isAncestorOrgDeleted ( token , dn , profileType ) ; }
+54945	public void externalEntityDecl ( String name , String publicId , String systemId ) throws SAXException { if ( DEBUG ) System . out . println ( _CHAR TransformerHandlerImpl # externalEntityDecl : _CHAR + name + _CHAR , _CHAR + publicId + _CHAR , _CHAR + systemId ) ; if ( _NULL != m_declHandler ) { m_declHandler . externalEntityDecl ( name , publicId , systemId ) ; } }
+54979	private MacKeyEntry generateAndPublishKeyEntry ( final String algorithm , final int keyLengthBits ) throws CryptoManagerException { Reject . ifNull ( algorithm ) ; final MacKeyEntry keyEntry = generateKeyEntry ( algorithm , keyLengthBits ) ; publishKeyEntry ( keyEntry ) ; macKeyEntryCache . put ( keyEntry . getKeyID ( ) , keyEntry ) ; return keyEntry ; }
+55072	public void reset ( ) throws IOException { stream . reset ( ) ; framePos = markpos ; pushBackLen = markPushBackLen ; if ( pushBackLen > _NUM ) { if ( pushBackBuffer == _NULL ) { pushBackBuffer = new byte [ frameSize - _NUM ] ; } System . arraycopy ( markPushBackBuffer , _NUM , pushBackBuffer , _NUM , pushBackLen ) ; } }
+55117	public void commit ( ) throws IOException { if ( hasErrors ) { completeEdit ( this , _BOOL ) ; remove ( entry . key ) ; } else { completeEdit ( this , _BOOL ) ; } committed = _BOOL ; }
+55211	private void implPutAll ( Map < ? , ? > t ) { for ( Map . Entry < ? , ? > e : t . entrySet ( ) ) { implPut ( e . getKey ( ) , e . getValue ( ) ) ; } }
+55340	public boolean isErrorConcealed ( ) { return getErrorConcealment ( ) . equals ( GUID . GUID_AUDIO_ERROR_CONCEALEMENT_INTERLEAVED ) ; }
+55536	protected void paintChild ( Graphics g , Rectangle alloc , int index ) { View child = getView ( index ) ; child . paint ( g , alloc ) ; }
+55541	public static ClassModder hookMethodEnd ( AbstractMatcher < String > matcher , String methodName , String methodDesc , String injectedMethodOwner , String injectedMethodName ) { return hookMethodEnd ( matcher , methodName , methodDesc , injectedMethodOwner , injectedMethodName , _CHAR ( ) V _CHAR ) ; }
+55766	static void recycleWriter ( LDAPWriter < ASN1BufferWriter > writer ) { writer . getASN1Writer ( ) . recycle ( ) ; ThreadCache . putToCache ( WRITER_INDEX , writer ) ; }
+55951	public void commit ( ) throws IOException { if ( hasErrors ) { completeEdit ( this , _BOOL ) ; remove ( entry . key ) ; } else { completeEdit ( this , _BOOL ) ; } committed = _BOOL ; }
+55994	public void removeAllChildren ( ) { for ( int i = getChildCount ( ) - _NUM ; i >= _NUM ; i -- ) { remove ( i ) ; } }
+56116	public static void showInternalMessageDialog ( Component parentComponent , Object message , String title , int messageType ) { showInternalMessageDialog ( parentComponent , message , title , messageType , _NULL ) ; }
+56205	public void rotate_90_deg ( int p_component_no , int p_factor , PlaPointInt p_pole ) { BrdComponent curr_component = get ( p_component_no ) ; undo_list . save_for_undo ( curr_component ) ; curr_component . rotate_90_deg ( p_factor , p_pole ) ; }
+56283	public char last ( ) { if ( chars . length > _NUM ) { pos = chars . length - _NUM ; } else { pos = _NUM ; } return current ( ) ; }

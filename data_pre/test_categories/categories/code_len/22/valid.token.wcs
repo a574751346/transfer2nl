@@ -1,0 +1,3 @@
+31571	public static boolean canRun ( ) return SystemInfo . isMac || SystemInfo . isWindows ; if ( ourInitialCheck == _NULL ) then ourInitialCheck = checkHaxmInstallation ( ) ; return _BOOL ;
+33017	public void flushPending ( ) if ( m_cdataTagOpen ) then closeCDATA ( ) ; if ( m_writer != _NULL ) then m_writer . flush ( ) ; if ( m_needToCallStartDocument ) then startDocumentInternal ( ) ; if ( m_elemContext . m_startTagOpen ) then closeStartTag ( ) ;
+53237	public void dispatch ( ) finishedDispatching ( _BOOL ) ; if ( catchExceptions ) then runnable . run ( ) ;

@@ -1,0 +1,1 @@
+public DistributedLogNamespaceBuilder perLogStatsLogger ( StatsLogger statsLogger ) { this . _perLogStatsLogger = statsLogger ; return this ; }

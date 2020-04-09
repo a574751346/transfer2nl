@@ -1,0 +1,650 @@
+37	@ Override public List < Order > searchOrder ( OrderReqDto reqDto ) { return sessionTemplate . selectList ( NAMESPACE + _CHAR . searchOrder _CHAR , reqDto ) ; }
+188	public double det ( ) { return new LUDecomposition ( this ) . det ( ) ; }
+266	@ Override public void forceUpdate ( ) { zScores . clear ( ) ; }
+279	public CholeskyDecomposition chol ( ) { return new CholeskyDecomposition ( this ) ; }
+451	public void stopWatch ( ) { _time = UNWATCHED ; }
+477	public PhotosSaveWallPhotoQuery server ( Integer value ) { return unsafeParam ( _CHAR server _CHAR , value ) ; }
+493	public void invalidateWheel ( boolean clearCaches ) { if ( clearCaches ) { recycle . clearAll ( ) ; if ( itemsLayout != _NULL ) { itemsLayout . removeAllViews ( ) ; } scrollingOffset = _NUM ; } else if ( itemsLayout != _NULL ) { recycle . recycleItems ( itemsLayout , firstItem , new ItemsRange ( ) ) ; } invalidate ( ) ; }
+509	@ Override public void onConnected ( Session session ) { startPublishing ( ) ; }
+538	public VideoSearchQuery extended ( Boolean value ) { return unsafeParam ( _CHAR extended _CHAR , value ) ; }
+658	public VideoGetCommentsQueryWithExtended sort ( VideoGetCommentsSort value ) { return unsafeParam ( _CHAR sort _CHAR , value ) ; }
+667	public void recalculateInfluence ( ) { calculateInfluence ( ) ; }
+711	public NotesCreateCommentQuery guid ( String value ) { return unsafeParam ( _CHAR guid _CHAR , value ) ; }
+747	public PhotosSaveMessagesPhotoQuery hash ( String value ) { return unsafeParam ( _CHAR hash _CHAR , value ) ; }
+750	public MonsterCursor queryMonsters ( ) { return mHelper . queryMonsters ( ) ; }
+830	protected MarketReorderAlbumsQuery albumId ( int value ) { return unsafeParam ( _CHAR album_id _CHAR , value ) ; }
+845	public static void v ( String tag , String msg ) { if ( LOG_ENABLE ) { Log . v ( tag , buildMsg ( msg ) ) ; } }
+847	public NewsfeedSearchQueryWithExtended fields ( List < EnumParam > value ) { return unsafeParam ( _CHAR fields _CHAR , value ) ; }
+898	public static boolean writeFile ( String filePath , InputStream stream , boolean append ) { return writeFile ( filePath != _NULL ? new File ( filePath ) : _NULL , stream , append ) ; }
+901	public static Bitmap scaleImageTo ( Bitmap org , int newWidth , int newHeight ) { return scaleImage ( org , ( float ) newWidth / org . getWidth ( ) , ( float ) newHeight / org . getHeight ( ) ) ; }
+945	public CholeskyDecomposition chol ( ) { return new CholeskyDecomposition ( this ) ; }
+1074	public SkillCursor querySkillFromTree ( long id ) { return mHelper . querySkillFromTree ( id ) ; }
+1113	private void parseExtras ( Bundle savedInstanceState ) { if ( getIntent ( ) != _NULL ) { mTitle = getIntent ( ) . getStringExtra ( EXTRA_TITLE ) ; } if ( savedInstanceState != _NULL ) { mTitle = savedInstanceState . getString ( EXTRA_TITLE ) ; } }
+1316	private void startHotRefresh ( ) { try { String host = new URL ( mUri . toString ( ) ) . getHost ( ) ; String wsUrl = _CHAR ws : // '' + host + '' : 8082 '' ; mWXHandler . obtainMessage ( Constants . HOT_REFRESH_CONNECT , 0 , 0 , wsUrl ) . sendToTarget ( ) ; } catch ( MalformedURLException e ) { e . printStackTrace ( ) ; } }
+1349	public Bindings add ( String property , JComboBox combo ) { combo . addActionListener ( this ) ; return add ( new JComboBoxBinding ( property , combo , _NUM ) ) ; }
+1404	protected MarketEditAlbumQuery albumId ( int value ) { return unsafeParam ( _CHAR album_id _CHAR , value ) ; }
+1691	public void clearCache ( ) { mInternalCache . clear ( ) ; mInternalCache = new InternalCache ( ) ; mInternalHtmlCache . clear ( ) ; }
+1730	public AppsSendRequestQuery text ( String value ) { return unsafeParam ( _CHAR text _CHAR , value ) ; }
+1755	public static void i ( String msg ) { if ( LOG_ENABLE ) { Log . i ( TAG , buildMsg ( msg ) ) ; } }
+1827	public static void e ( String msg ) { if ( LOG_ENABLE ) { Log . e ( TAG , buildMsg ( msg ) ) ; } }
+1849	public static Bitmap scaleImage ( Bitmap src , float scaleWidth , float scaleHeight ) { if ( src == _NULL ) { return _NULL ; } Matrix matrix = new Matrix ( ) ; matrix . postScale ( scaleWidth , scaleHeight ) ; return Bitmap . createBitmap ( src , _NUM , _NUM , src . getWidth ( ) , src . getHeight ( ) , matrix , _BOOL ) ; }
+2045	public LeadsCheckUserQuery country ( String value ) { return unsafeParam ( _CHAR country _CHAR , value ) ; }
+2046	protected MarketAddAlbumQuery title ( String value ) { return unsafeParam ( _CHAR title _CHAR , value ) ; }
+2051	public VideoSearchQuery longer ( Integer value ) { return unsafeParam ( _CHAR longer _CHAR , value ) ; }
+2205	public AccountGetInfoQuery fields ( AccountGetInfoField ... value ) { return unsafeParam ( _CHAR fields _CHAR , value ) ; }
+2237	public static final Scheduler sharedInstance ( ) { return INSTANCE ; }
+2332	public VideoCreateCommentQuery guid ( String value ) { return unsafeParam ( _CHAR guid _CHAR , value ) ; }
+2337	public void release ( final UnsummonType unsummonType ) { SummonsService . release ( getOwner ( ) , unsummonType , isAttacked ) ; }
+2368	public MessagesGetLongPollHistoryQuery fields ( EnumParam ... value ) { return unsafeParam ( _CHAR fields _CHAR , value ) ; }
+2386	public NewsfeedGetRecommendedQuery fields ( EnumParam ... value ) { return unsafeParam ( _CHAR fields _CHAR , value ) ; }
+2491	public void loading ( ) { mHintView . setVisibility ( View . GONE ) ; mProgressBar . setVisibility ( View . VISIBLE ) ; }
+2572	public void scale ( double r , double s , double t ) { Matrix3D tmp = new Matrix3D ( ) ; tmp . set ( _NUM , _NUM , r ) ; tmp . set ( _NUM , _NUM , s ) ; tmp . set ( _NUM , _NUM , t ) ; preMultiply ( tmp ) ; }
+2671	public FriendsGetMutualQuery order ( FriendsGetMutualOrder value ) { return unsafeParam ( _CHAR order _CHAR , value ) ; }
+2790	public int read ( ) throws IOException { return ins . read ( ) ; }
+2912	protected MarketGetByIdQuery itemIds ( List < String > value ) { return unsafeParam ( _CHAR item_ids _CHAR , value ) ; }
+3050	public void show ( ) { LayoutParams lp = ( LayoutParams ) mContentView . getLayoutParams ( ) ; lp . height = LayoutParams . WRAP_CONTENT ; mContentView . setLayoutParams ( lp ) ; }
+3067	public int size ( ) { return label2label . size ( ) ; }
+3166	private void drawItems ( Canvas canvas ) { canvas . save ( ) ; int top = ( currentItem - firstItem ) * getItemHeight ( ) + ( getItemHeight ( ) - getHeight ( ) ) / _NUM ; canvas . translate ( PADDING , - top + scrollingOffset ) ; itemsLayout . draw ( canvas ) ; canvas . restore ( ) ; }
+3293	@ Override public void maybeStartTrackingJob ( JobStatus taskStatus ) { if ( taskStatus . hasIdleConstraint ( ) ) { synchronized ( mTrackedTasks ) { mTrackedTasks . add ( taskStatus ) ; taskStatus . idleConstraintSatisfied . set ( mIdleTracker . isIdle ( ) ) ; } } }
+3319	public MarketGetCategoriesQuery count ( Integer value ) { return unsafeParam ( _CHAR count _CHAR , value ) ; }
+3349	public PhotosGetQuery count ( Integer value ) { return unsafeParam ( _CHAR count _CHAR , value ) ; }
+3365	public final void createView ( WXVContainer parent , int index ) { if ( ! isLazy ( ) ) { createViewImpl ( parent , index ) ; } }
+3461	@ Override public void onPause ( ) { super . onPause ( ) ; mapView . onPause ( ) ; stopLocationUpdates ( ) ; }
+3467	protected MarketGetByIdQueryWithExtended itemIds ( String ... value ) { return unsafeParam ( _CHAR item_ids _CHAR , value ) ; }
+3507	public MessagesGetHistoryAttachmentsQuery fields ( EnumParam ... value ) { return unsafeParam ( _CHAR fields _CHAR , value ) ; }
+3555	public void restart ( ) throws RemoteException { ( ( IInternalRemoteJSpaceAdmin ) adminImpl ) . restart ( ) ; }
+3573	public FriendsGetOnlineQuery order ( FriendsGetOnlineOrder value ) { return unsafeParam ( _CHAR order _CHAR , value ) ; }
+3587	public CreateSiteWindow openCreateSiteWindow ( ) { grid . getActionBar ( ) . expandDropDown ( SiteAdminButtons . NEW ) ; grid . getActionBar ( ) . clickDropDownOption ( SiteAdminButtons . NEW_SITE ) ; createSiteWindow . waitToBeDisplayed ( ) ; return createSiteWindow ; }
+3623	public Iterable < T > asIterable ( ) { return internalArray ; }
+3720	public int size ( ) { return size ; }
+3723	public void remove ( ) { }
+3773	public boolean disableCharacteristicIndicate ( ) { return disableCharacteristicIndicate ( getCharacteristic ( ) ) ; }
+3840	public static boolean isNetworkAvailable ( Context context ) { ConnectivityManager manager = ( ConnectivityManager ) context . getApplicationContext ( ) . getSystemService ( Context . CONNECTIVITY_SERVICE ) ; if ( _NULL == manager ) return _BOOL ; NetworkInfo info = manager . getActiveNetworkInfo ( ) ; if ( _NULL == info || ! info . isAvailable ( ) ) return _BOOL ; return _BOOL ; }
+3873	public static void d ( String tag , String msg ) { if ( LOG_ENABLE && Log . isLoggable ( tag , Log . DEBUG ) ) { Log . d ( tag , buildMsg ( msg ) ) ; } }
+3926	protected MarketEditQuery price ( float value ) { return unsafeParam ( _CHAR price _CHAR , value ) ; }
+3929	protected PhotosGetCommentsQueryWithExtended extended ( Boolean value ) { return unsafeParam ( _CHAR extended _CHAR , value ) ; }
+4007	public static void initManager ( Context context ) { if ( mInstance == _NULL ) { mInstance = new AssetsDatabaseManager ( context ) ; } }
+4020	public static Intent createIntent ( Context ctx ) { return createIntent ( ctx , _NULL ) ; }
+4159	public void onEmojiconDeleteEvent ( ) { if ( ! TextUtils . isEmpty ( editText . getText ( ) ) ) { KeyEvent event = new KeyEvent ( _NUM , _NUM , _NUM , KeyEvent . KEYCODE_DEL , _NUM , _NUM , _NUM , _NUM , KeyEvent . KEYCODE_ENDCALL ) ; editText . dispatchKeyEvent ( event ) ; } }
+4210	protected MarketEditAlbumQuery title ( String value ) { return unsafeParam ( _CHAR title _CHAR , value ) ; }
+4265	public WidgetsGetPagesQuery period ( String value ) { return unsafeParam ( _CHAR period _CHAR , value ) ; }
+4274	public static boolean isNetworkAvailable ( Context context ) { ConnectivityManager manager = ( ConnectivityManager ) context . getApplicationContext ( ) . getSystemService ( Context . CONNECTIVITY_SERVICE ) ; if ( _NULL == manager ) return _BOOL ; NetworkInfo info = manager . getActiveNetworkInfo ( ) ; if ( _NULL == info || ! info . isAvailable ( ) ) return _BOOL ; return _BOOL ; }
+4322	public NewsfeedGetQuery fields ( List < EnumParam > value ) { return unsafeParam ( _CHAR fields _CHAR , value ) ; }
+4657	private String i18n ( int key , Object ... args ) { return getContext ( ) . getString ( key , args ) ; }
+4703	public VideoSearchQueryWithExtended longer ( Integer value ) { return unsafeParam ( _CHAR longer _CHAR , value ) ; }
+4768	public WeaponCursor queryWeapon ( ) { return mHelper . queryWeapon ( ) ; }
+4821	public XSSimpleTypeDecl newXSSimpleTypeDecl ( ) { return new XSSimpleTypeDecl ( ) ; }
+4901	public void upDateProgress ( int progress ) { upDateProgress ( ( float ) progress / _NUM ) ; }
+4932	public AppsSendRequestQuery separate ( Boolean value ) { return unsafeParam ( _CHAR separate _CHAR , value ) ; }
+5017	public static void w ( String msg ) { if ( LOG_ENABLE ) { Log . w ( TAG , buildMsg ( msg ) ) ; } }
+5151	public double det ( ) { return new LUDecomposition ( this ) . det ( ) ; }
+5215	public BoardGetTopicsQuery preview ( BoardGetTopicsPreview value ) { return unsafeParam ( _CHAR preview _CHAR , value ) ; }
+5247	public static void put ( Context context , String fileName , String key , Object ser ) { put ( context , fileName , key , ser , _NULL ) ; }
+5268	public AccountLookupContactsQuery fields ( List < UserField > value ) { return unsafeParam ( _CHAR fields _CHAR , value ) ; }
+5304	protected MarketAddQuery description ( String value ) { return unsafeParam ( _CHAR description _CHAR , value ) ; }
+5310	public void updateView ( String what ) { if ( getClassification ( ) . getName ( ) . equals ( _CHAR _NULL _CHAR ) ) { classification = ClassificationManager . get ( Classification . Taxonomy , _BOOL ) ; getViewerJTree ( ) . update ( ) ; } super . updateView ( what ) ; updateStatusBar ( ) ; }
+5463	public static void e ( String msg , Exception e ) { if ( LOG_ENABLE ) { Log . e ( TAG , buildMsg ( msg ) , e ) ; } }
+5555	protected AuthConfirmQuery code ( String value ) { return unsafeParam ( _CHAR code _CHAR , value ) ; }
+5629	public WallGetQueryWithExtended fields ( EnumParam ... value ) { return unsafeParam ( _CHAR fields _CHAR , value ) ; }
+5922	public BoardGetCommentsQuery sort ( BoardGetCommentsSort value ) { return unsafeParam ( _CHAR sort _CHAR , value ) ; }
+5936	public MessagesDeleteQuery spam ( Boolean value ) { return unsafeParam ( _CHAR spam _CHAR , value ) ; }
+6030	public FriendsGetRequestsQuery sort ( FriendsGetRequestsSort value ) { return unsafeParam ( _CHAR sort _CHAR , value ) ; }
+6032	public void reset ( byte [ ] buf , int offset , int length ) { this . buf = buf ; this . offset = offset ; this . length = length ; }
+6064	protected MarketAddToAlbumQuery itemId ( int value ) { return unsafeParam ( _CHAR item_id _CHAR , value ) ; }
+6083	public LUDecomposition lu ( ) { return new LUDecomposition ( this ) ; }
+6124	public StorageGetQuery key ( String value ) { return unsafeParam ( _CHAR key _CHAR , value ) ; }
+6292	public static App inst ( ) { if ( instance == _NULL ) { throw new NullPointerException ( _CHAR App is not initialized yet _CHAR ) ; } return instance ; }
+6334	public static void debug ( ) { DEBUG = _BOOL ; }
+6358	public void stopScrolling ( ) { scroller . stopScrolling ( ) ; }
+6402	protected GroupsCreateQuery title ( String value ) { return unsafeParam ( _CHAR title _CHAR , value ) ; }
+6518	public static SM_SYSTEM_MESSAGE STR_MSG_EXCEED_SUCCEED ( DescriptionId nameId ) { return new SM_SYSTEM_MESSAGE ( _NUM , new Object [ ] { nameId } ) ; }
+6535	public AccountGetActiveOffersQuery count ( Integer value ) { return unsafeParam ( _CHAR count _CHAR , value ) ; }
+6560	public MarketGetCategoriesQuery offset ( Integer value ) { return unsafeParam ( _CHAR offset _CHAR , value ) ; }
+6713	public void putSingleString ( Activity activity , String key , String string ) throws ClassNotFoundException { HashMap < String , String > hashMap = receiveHashMap ( activity ) ; hashMap . put ( key , string ) ; pushHashMap ( activity , hashMap ) ; }
+6729	private void invalidateLayouts ( ) { itemsLayout = _NULL ; valueLayout = _NULL ; scrollingOffset = _NUM ; }
+6756	public static void w ( String msg , Exception e ) { if ( LOG_ENABLE ) { Log . w ( TAG , buildMsg ( msg ) , e ) ; } }
+6780	public LocationCursor queryLocations ( ) { return mHelper . queryLocations ( ) ; }
+6799	public static void debug ( ) { DEBUG = _BOOL ; }
+6804	protected GroupsGetInvitesQueryWithExtended extended ( Boolean value ) { return unsafeParam ( _CHAR extended _CHAR , value ) ; }
+6841	public void shutdownAll ( ) { ChannelGroupFuture future = channelGroup . close ( ) ; future . awaitUninterruptibly ( ) ; loginToClientChannelFactory . releaseExternalResources ( ) ; nioServer . shutdown ( ) ; }
+6926	public static void i ( String tag , String msg ) { if ( LOG_ENABLE ) { Log . i ( tag , buildMsg ( msg ) ) ; } }
+6929	protected LeadsMetricHitQuery data ( String value ) { return unsafeParam ( _CHAR data _CHAR , value ) ; }
+6944	public AccountSetPushSettingsQuery key ( String value ) { return unsafeParam ( _CHAR key _CHAR , value ) ; }
+6952	public static boolean copyFile ( String sourceFilePath , String destFilePath ) { InputStream inputStream = _NULL ; try { inputStream = new FileInputStream ( sourceFilePath ) ; } catch ( FileNotFoundException e ) { throw new RuntimeException ( _CHAR FileNotFoundException occurred . '' , e ) ; } return writeFile ( destFilePath , inputStream ) ; }
+7009	public void reset ( ) { if ( mBitmap != _NULL ) mBitmap . recycle ( ) ; }
+7357	public FaveGetLinksQuery offset ( Integer value ) { return unsafeParam ( _CHAR offset _CHAR , value ) ; }
+7361	public AccountSetPushSettingsQuery value ( List < String > value ) { return unsafeParam ( _CHAR value _CHAR , value ) ; }
+7408	public NewsfeedSearchQueryWithExtended fields ( EnumParam ... value ) { return unsafeParam ( _CHAR fields _CHAR , value ) ; }
+7438	private boolean stopIndicate ( ) { return bleManager . stopIndicate ( UUID_SERVICE , UUID_INDICATE ) ; }
+7452	protected MarketDeleteQuery itemId ( int value ) { return unsafeParam ( _CHAR item_id _CHAR , value ) ; }
+7458	public MarketEditQuery deleted ( Boolean value ) { return unsafeParam ( _CHAR deleted _CHAR , value ) ; }
+7462	protected MarketDeleteCommentQuery commentId ( int value ) { return unsafeParam ( _CHAR comment_id _CHAR , value ) ; }
+7524	public AppsGetQuery appId ( Integer value ) { return unsafeParam ( _CHAR app_id _CHAR , value ) ; }
+7587	private static String stringRepeat ( String str , int times ) { StringBuilder builder = new StringBuilder ( ) ; for ( int i = _NUM ; i < times ; ++ i ) { builder . append ( str ) ; } return builder . toString ( ) ; }
+7694	public AppsGetCatalogQuery fields ( List < EnumParam > value ) { return unsafeParam ( _CHAR fields _CHAR , value ) ; }
+7756	public void componentShown ( ComponentEvent ev ) { }
+7903	public void normal ( ) { mHintView . setVisibility ( View . VISIBLE ) ; mProgressBar . setVisibility ( View . GONE ) ; }
+7979	public AdsCreateTargetGroupQuery lifetime ( Integer value ) { return unsafeParam ( _CHAR lifetime _CHAR , value ) ; }
+8040	public void keyReleased ( KeyEvent ke ) { if ( ( ke . getModifiers ( ) & InputEvent . SHIFT_MASK ) != _NUM ) { viewer . resetCursor ( ) ; } }
+8042	protected OrdersGetAmountQuery votes ( String ... value ) { return unsafeParam ( _CHAR votes _CHAR , value ) ; }
+8184	public void registerListener ( FCMListener fcmListener ) { this . mFCMListener = fcmListener ; }
+8254	public void exit ( Context context ) { exit ( context , _BOOL ) ; }
+8264	public void rotateImage ( RotateDegrees degrees ) { rotateImage ( degrees , mAnimationDurationMillis ) ; }
+8300	protected MarketReorderItemsQuery itemId ( int value ) { return unsafeParam ( _CHAR item_id _CHAR , value ) ; }
+8353	public static void i ( String msg ) { if ( LOG_ENABLE ) { Log . i ( TAG , buildMsg ( msg ) ) ; } }
+8489	private void drawItems ( Canvas canvas ) { canvas . save ( ) ; int top = ( currentItem - firstItem ) * getItemHeight ( ) + ( getItemHeight ( ) - getHeight ( ) ) / _NUM ; canvas . translate ( PADDING , - top + scrollingOffset ) ; itemsLayout . draw ( canvas ) ; canvas . restore ( ) ; }
+8497	public PhotosGetQueryWithExtended offset ( Integer value ) { return unsafeParam ( _CHAR offset _CHAR , value ) ; }
+8581	protected AdsCheckLinkQuery linkType ( AdsCheckLinkType value ) { return unsafeParam ( _CHAR link_type _CHAR , value ) ; }
+8728	public static void w ( String tag , String msg ) { if ( LOG_ENABLE ) { Log . w ( tag , buildMsg ( msg ) ) ; } }
+8785	protected void animateToState ( boolean checked ) { if ( mProcessAnimator == _NULL ) { return ; } if ( mProcessAnimator . isRunning ( ) ) { mProcessAnimator . cancel ( ) ; } mProcessAnimator . setDuration ( mAnimationDuration ) ; if ( checked ) { mProcessAnimator . setFloatValues ( mProcess , _NUM ) ; } else { mProcessAnimator . setFloatValues ( mProcess , _NUM ) ; } mProcessAnimator . start ( ) ; }
+8842	protected MarketReportQuery reason ( ReportReason value ) { return unsafeParam ( _CHAR reason _CHAR , value ) ; }
+8845	public boolean disableCharacteristicNotify ( ) { return disableCharacteristicNotify ( getCharacteristic ( ) ) ; }
+8855	public void onTimeOut ( ) { staticsManagerImpl . onScheduleTimeOut ( ) ; }
+8873	public static Bitmap scaleImage ( Bitmap src , float scaleWidth , float scaleHeight ) { if ( src == _NULL ) { return _NULL ; } Matrix matrix = new Matrix ( ) ; matrix . postScale ( scaleWidth , scaleHeight ) ; return Bitmap . createBitmap ( src , _NUM , _NUM , src . getWidth ( ) , src . getHeight ( ) , matrix , _BOOL ) ; }
+9053	void finishScrolling ( ) { if ( isScrollingPerformed ) { notifyScrollingListenersAboutEnd ( ) ; isScrollingPerformed = _BOOL ; } invalidateLayouts ( ) ; invalidate ( ) ; }
+9247	public VideoGetQueryWithExtended videos ( String ... value ) { return unsafeParam ( _CHAR videos _CHAR , value ) ; }
+9280	public ArmorCursor queryArmorSearch ( String search ) { return mHelper . queryArmorSearch ( search ) ; }
+9380	public String toString ( ) { SimpleDateFormat df = new SimpleDateFormat ( _CHAR yyyy - MM - dd HH : mm : ss _CHAR ) ; return _CHAR source_ip_addr = _CHAR + this . source_ip_addr + _CHAR , _CHAR + _CHAR file_size = _CHAR + this . file_size + _CHAR , _CHAR + _CHAR create_timestamp = _CHAR + df . format ( this . create_timestamp ) + _CHAR , _CHAR + _CHAR crc32 = _CHAR + this . crc32 ; }
+9395	public VideoSearchQuery filters ( List < VideoSearchFilter > value ) { return unsafeParam ( _CHAR filters _CHAR , value ) ; }
+9476	public WidgetsGetCommentsQuery order ( String value ) { return unsafeParam ( _CHAR order _CHAR , value ) ; }
+9491	public double dist ( double x , double y ) { double distX = this . x - x ; double distY = this . y - y ; return Math . sqrt ( distX * distX + distY * distY ) ; }
+9531	@ SubscribeEvent public void onSleepInBed ( PlayerSleepInBedEvent event ) { if ( ! BWConfig . hardcoreBeds ) return ; if ( EntityPlayerExt . isSurvival ( event . getEntityPlayer ( ) ) ) event . setResult ( EntityPlayer . SleepResult . NOT_SAFE ) ; }
+9544	public QuestCursor queryQuests ( ) { return mHelper . queryQuests ( ) ; }
+9553	public static RecyclerView . ViewHolder createViewHolder ( ViewGroup parent ) { View view = LayoutInflater . from ( parent . getContext ( ) ) . inflate ( R . layout . item_message , _NULL ) ; return new MessageHolder ( view ) ; }
+9571	public void evalNotifications ( DispatchContext dctx , Map < String , ? extends Object > context , Map < String , Object > result ) { for ( ModelNotification notify : this . notifications ) { notify . callNotify ( dctx , this , context , result ) ; } }
+9662	public static void d ( String tag , String msg ) { if ( LOG_ENABLE && Log . isLoggable ( tag , Log . DEBUG ) ) { Log . d ( tag , buildMsg ( msg ) ) ; } }
+9794	protected MarketGetByIdQueryWithExtended itemIds ( List < String > value ) { return unsafeParam ( _CHAR item_ids _CHAR , value ) ; }
+9933	protected GroupsEditQuery groupId ( int value ) { return unsafeParam ( _CHAR group_id _CHAR , value ) ; }
+10023	public static int spToPX ( final Context ctx , float sp ) { return ( int ) TypedValue . applyDimension ( TypedValue . COMPLEX_UNIT_SP , sp , ctx . getResources ( ) . getDisplayMetrics ( ) ) ; }
+10037	public static void makeSnackBar ( View parentView , String str , int length ) { final Snackbar snackbar = Snackbar . make ( parentView , str , length ) ; snackbar . show ( ) ; }
+10093	public void invalidateWheel ( boolean clearCaches ) { if ( clearCaches ) { recycle . clearAll ( ) ; if ( itemsLayout != _NULL ) { itemsLayout . removeAllViews ( ) ; } scrollingOffset = _NUM ; } else if ( itemsLayout != _NULL ) { recycle . recycleItems ( itemsLayout , firstItem , new ItemsRange ( ) ) ; } invalidate ( ) ; }
+10163	public static void removeRunable ( Runnable runnable ) { HANDLER . removeCallbacks ( runnable ) ; }
+10181	public int size ( ) { return v . length ; }
+10217	public FriendsGetRequestsQueryWithExtended sort ( FriendsGetRequestsSort value ) { return unsafeParam ( _CHAR sort _CHAR , value ) ; }
+10389	public AdsGetSuggestionsQuery ids ( String value ) { return unsafeParam ( _CHAR ids _CHAR , value ) ; }
+10393	public void remove ( ) { }
+10399	public void show ( ) { mContentView . setVisibility ( View . VISIBLE ) ; }
+10407	public WallGetCommentsQueryWithExtended sort ( WallGetCommentsSort value ) { return unsafeParam ( _CHAR sort _CHAR , value ) ; }
+10486	public EncounterResult encounterPokemon ( ) throws LoginFailedException , RemoteServerException { return AsyncHelper . toBlocking ( encounterPokemonAsync ( ) ) ; }
+10531	public PhotosGetCommentsQuery fields ( List < EnumParam > value ) { return unsafeParam ( _CHAR fields _CHAR , value ) ; }
+10601	protected NewsfeedUnignoreItemQuery itemId ( int value ) { return unsafeParam ( _CHAR item_id _CHAR , value ) ; }
+10636	protected MarketRemoveFromAlbumQuery itemId ( int value ) { return unsafeParam ( _CHAR item_id _CHAR , value ) ; }
+10683	@ Override public void forceUpdate ( ) { dataMatrix . clear ( ) ; }
+10704	public boolean isUseInvertedIndex ( ) { return useInvertedIndex ; }
+10706	public static void hidekeyboard ( Activity activity ) { try { ( ( InputMethodManager ) activity . getSystemService ( Context . INPUT_METHOD_SERVICE ) ) . hideSoftInputFromWindow ( activity . getCurrentFocus ( ) . getWindowToken ( ) , InputMethodManager . HIDE_NOT_ALWAYS ) ; } catch ( Exception ex ) { ex . printStackTrace ( ) ; } }
+10755	public GatheringCursor queryGatheringItem ( long id ) { return mHelper . queryGatheringItem ( id ) ; }
+10827	@ Override public boolean dispatchTouchEvent ( MotionEvent ev ) { return _BOOL ; }
+10831	public PhotosEditQuery longitude ( Float value ) { return unsafeParam ( _CHAR longitude _CHAR , value ) ; }
+10906	private void drawItems ( Canvas canvas ) { canvas . save ( ) ; int top = ( currentItem - firstItem ) * getItemHeight ( ) + ( getItemHeight ( ) - getHeight ( ) ) / _NUM ; canvas . translate ( PADDING , - top + scrollingOffset ) ; itemsLayout . draw ( canvas ) ; canvas . restore ( ) ; }
+10925	public PhotosGetCommentsQueryWithExtended fields ( List < EnumParam > value ) { return unsafeParam ( _CHAR fields _CHAR , value ) ; }
+10941	public void remove ( ) { }
+10977	public void startWatch ( ) { _time = _watchdogGroup . _timerLogical ; }
+11094	public int size ( ) { return m_size ; }
+11158	public static void i ( String tag , String msg ) { if ( LOG_ENABLE ) { Log . i ( tag , buildMsg ( msg ) ) ; } }
+11244	protected void unknownPacket ( int id , String state ) { log . warn ( String . format ( _CHAR Unknown packet received from Game server : _NUM % _NUM state = % s _CHAR , id , state ) ) ; }
+11296	public static void moveFile ( String oldPath , String newPath ) { File fileOld = new File ( oldPath ) ; if ( fileOld . exists ( ) ) { File fileNew = new File ( newPath ) ; fileOld . renameTo ( fileNew ) ; } }
+11359	private void startScrolling ( ) { if ( ! isScrollingPerformed ) { isScrollingPerformed = _BOOL ; notifyScrollingListenersAboutStart ( ) ; } }
+11423	public double norm2 ( ) { return ( new SingularValueDecomposition ( this ) . norm2 ( ) ) ; }
+11462	public CholeskyDecomposition chol ( ) { return new CholeskyDecomposition ( this ) ; }
+11482	public WidgetsGetCommentsQuery fields ( EnumParam ... value ) { return unsafeParam ( _CHAR fields _CHAR , value ) ; }
+11488	@ Override public void fatalError ( SAXParseException exception ) { errorCount ++ ; fatalCount ++ ; if ( showErrors && ( errorCount + warningCount < maxMessages ) ) { message ( _CHAR Fatal error _CHAR , exception ) ; } }
+11501	public Iterable < T > asIterable ( ) { return internalArray ; }
+11599	public double det ( ) { return new LUDecomposition ( this ) . det ( ) ; }
+11609	public AppsGetCatalogQuery filter ( AppsGetCatalogFilter value ) { return unsafeParam ( _CHAR filter _CHAR , value ) ; }
+11665	public VideoGetQueryWithExtended videos ( List < String > value ) { return unsafeParam ( _CHAR videos _CHAR , value ) ; }
+11680	public PhotosSaveMessagesPhotoQuery server ( Integer value ) { return unsafeParam ( _CHAR server _CHAR , value ) ; }
+11721	public PhotosGetCommentsQueryWithExtended sort ( PhotosGetCommentsSort value ) { return unsafeParam ( _CHAR sort _CHAR , value ) ; }
+11993	public void init ( final Long aliveTagInterval , final String confName ) { this . aliveTagInterval = aliveTagInterval ; this . confName = confName ; }
+12004	protected StorageSetQuery key ( String value ) { return unsafeParam ( _CHAR key _CHAR , value ) ; }
+12034	public StorageGetQuery keys ( String ... value ) { return unsafeParam ( _CHAR keys _CHAR , value ) ; }
+12044	public PhotosGetCommentsQuery sort ( PhotosGetCommentsSort value ) { return unsafeParam ( _CHAR sort _CHAR , value ) ; }
+12086	public static void v ( String msg ) { if ( LOG_ENABLE ) { Log . v ( TAG , buildMsg ( msg ) ) ; } }
+12092	public void removeBites ( ) { setImageDrawable ( drawableChomp ) ; bitesTakenMap = new HashMap < > ( ) ; for ( int direction : BITE_DIRECTIONS_LIST ) { bitesTakenMap . put ( direction , _NUM ) ; } hasAllBitesTaken = _BOOL ; numBitesForOneDirection = ( imageCircleRadius * _NUM ) / biteRadius ; }
+12097	public static double atan ( double x ) { return atan ( x , _NUM . _NUM , _BOOL ) ; }
+12234	protected MarketEditCommentQuery commentId ( int value ) { return unsafeParam ( _CHAR comment_id _CHAR , value ) ; }
+12308	public static void flushWriter ( Writer wr ) { if ( wr != _NULL ) { try { wr . flush ( ) ; } catch ( IOException e ) { e . printStackTrace ( ) ; } } }
+12482	public ScheduledFuture < ? > scheduleTaskManager ( Runnable r , long delay ) { return schedule ( r , delay ) ; }
+12521	public Bindings add ( String property , JList list ) { registerPropertyChangeListener ( list ) ; return add ( new JListBinding ( property , list ) ) ; }
+12555	public void clearLabels ( ) { sample2label . clear ( ) ; }
+12565	public void stopScrolling ( ) { scroller . stopScrolling ( ) ; }
+12676	public AuthConfirmQuery intro ( Integer value ) { return unsafeParam ( _CHAR intro _CHAR , value ) ; }
+12800	@ Override public synchronized void close ( ) { if ( myDataBase != _NULL ) myDataBase . close ( ) ; super . close ( ) ; }
+12834	public WidgetsGetPagesQuery order ( String value ) { return unsafeParam ( _CHAR order _CHAR , value ) ; }
+12896	public void initData ( ) { noteDb = new NoteDatabase ( aty ) ; datas = noteDb . query ( ) ; if ( datas != _NULL ) { adapter = new NotebookAdapter ( aty , datas ) ; } else { getServerData ( ) ; } }
+13119	public HectorCassandraClientConfigurer hosts ( String hosts ) { this . hosts = hosts ; return this ; }
+13146	protected WallGetCommentsQueryWithExtended extended ( Boolean value ) { return unsafeParam ( _CHAR extended _CHAR , value ) ; }
+13277	public static Bitmap scaleImage ( Bitmap org , float scaleWidth , float scaleHeight ) { if ( org == _NULL ) { return _NULL ; } Matrix matrix = new Matrix ( ) ; matrix . postScale ( scaleWidth , scaleHeight ) ; return Bitmap . createBitmap ( org , _NUM , _NUM , org . getWidth ( ) , org . getHeight ( ) , matrix , _BOOL ) ; }
+13363	private void drawFireworks ( final Canvas canvas ) { if ( ! mIsAnimationStarted || mRocketAnimationPercent < _NUM . _NUM ) { return ; } mFireworksDrawer . draw ( canvas , canvas . getWidth ( ) , ( int ) getCurveYStart ( ) ) ; }
+13365	public MarketCreateCommentQuery stickerId ( Integer value ) { return unsafeParam ( _CHAR sticker_id _CHAR , value ) ; }
+13545	public WallGetCommentsQuery sort ( WallGetCommentsSort value ) { return unsafeParam ( _CHAR sort _CHAR , value ) ; }
+13594	public SecureSetUserLevelQuery levels ( List < String > value ) { return unsafeParam ( _CHAR levels _CHAR , value ) ; }
+13628	public void stopSchedule ( ) { StatLog . d ( LOG_TAG , _CHAR stopSchedule ( ) _CHAR ) ; statiPollMgr . stop ( ) ; }
+13678	public static void initManager ( Context context ) { if ( mInstance == _NULL ) { mInstance = new AssetsDatabaseManager ( context ) ; } }
+13704	public void normal ( ) { mHintView . setVisibility ( View . VISIBLE ) ; mProgressBar . setVisibility ( View . GONE ) ; }
+13749	public String toString ( ) { String s = _CHAR { _CHAR ; for ( int j = _NUM ; j < size ( ) ; j ++ ) s += ( j == _NUM ? _CHAR _CHAR : _CHAR , _CHAR ) + get ( j ) ; return s + _CHAR } _CHAR ; }
+13799	public GroupsEditQuery description ( String value ) { return unsafeParam ( _CHAR description _CHAR , value ) ; }
+13822	protected NewsfeedIgnoreItemQuery itemId ( int value ) { return unsafeParam ( _CHAR item_id _CHAR , value ) ; }
+13928	public static void e ( String msg , Exception e ) { if ( LOG_ENABLE ) { Log . e ( TAG , buildMsg ( msg ) , e ) ; } }
+14028	@ Override protected void onCreate ( Bundle savedInstanceState ) { super . onCreate ( savedInstanceState ) ; overridePendingTransition ( _NUM , _NUM ) ; Scoop . getInstance ( ) . apply ( this ) ; setContentView ( R . layout . activity_main ) ; ButterKnife . bind ( this ) ; Scoop . getInstance ( ) . bind ( this ) ; setSupportActionBar ( mAppBar ) ; }
+14166	public void scale ( Vector3D v ) { scale ( v . get ( _NUM ) , v . get ( _NUM ) , v . get ( _NUM ) ) ; }
+14192	public void onActivityResult ( int requestCode , int resultCode , Intent data ) { for ( Map . Entry < PlatformType , SSOHandler > entry : mMapSSOHandler . entrySet ( ) ) { entry . getValue ( ) . onActivityResult ( requestCode , resultCode , data ) ; } }
+14289	public void componentResized ( ComponentEvent ev ) { viewer . setSize ( viewer . getSize ( ) ) ; }
+14290	private void drawItems ( Canvas canvas ) { canvas . save ( ) ; int top = ( currentItem - firstItem ) * getItemHeight ( ) + ( getItemHeight ( ) - getHeight ( ) ) / _NUM ; canvas . translate ( PADDING , - top + scrollingOffset ) ; itemsLayout . draw ( canvas ) ; canvas . restore ( ) ; }
+14404	public void upDateProgress ( float progress ) { setProgressInternal ( progress ) ; }
+14454	@ Override protected void readImpl ( ) { name = readS ( ) ; message = readS ( ) ; }
+14515	public void loading ( ) { }
+14575	public String provideNetworkType ( ) { return _CHAR unknown _CHAR ; }
+14603	public static SM_SYSTEM_MESSAGE STR_REGISTER_ITEM_MSG_UPGRADE_CANNOT ( DescriptionId nameId ) { return new SM_SYSTEM_MESSAGE ( _NUM , new Object [ ] { nameId } ) ; }
+14662	public void keyTyped ( KeyEvent ke ) { }
+14881	public DecorationCursor queryDecorations ( ) { return mHelper . queryDecorations ( ) ; }
+14919	public WidgetsGetPagesQuery count ( Integer value ) { return unsafeParam ( _CHAR count _CHAR , value ) ; }
+14943	public static boolean isUrl ( String url ) { Pattern pattern = Pattern . compile ( _CHAR ^ ( [ hH ] [ tT ] { _NUM } [ pP ] : //| [ hH ] [ tT ] { 2 } [ pP ] [ sS ] : // ) ( ( [ A - Za - z0 - 9 -~ ] + ) . ) + ( [ A - Za - z0 - 9 -~\\/ ] ) + $ '' ) ; return pattern . matcher ( url ) . matches ( ) ; }
+15163	protected ExecuteStorageFunctionQuery funcV ( Integer value ) { return unsafeParam ( _CHAR func_v _CHAR , value ) ; }
+15203	public PhotosGetQueryWithExtended count ( Integer value ) { return unsafeParam ( _CHAR count _CHAR , value ) ; }
+15222	public StorageSetQuery value ( String value ) { return unsafeParam ( _CHAR value _CHAR , value ) ; }
+15335	@ Override public void forceUpdate ( ) { previousScalingType = _NULL ; }
+15375	public WallSearchQueryWithExtended fields ( List < EnumParam > value ) { return unsafeParam ( _CHAR fields _CHAR , value ) ; }
+15382	public PhotosSaveWallPhotoQuery hash ( String value ) { return unsafeParam ( _CHAR hash _CHAR , value ) ; }
+15482	public static void flushWriter ( Writer wr ) { if ( wr != _NULL ) { try { wr . flush ( ) ; } catch ( IOException e ) { e . printStackTrace ( ) ; } } }
+15645	public WallGetCommentsQuery extended ( Boolean value ) { return unsafeParam ( _CHAR extended _CHAR , value ) ; }
+15670	public PhotosGetCommentsQueryWithExtended fields ( EnumParam ... value ) { return unsafeParam ( _CHAR fields _CHAR , value ) ; }
+15714	public LUDecomposition lu ( ) { return new LUDecomposition ( this ) ; }
+15721	public boolean isSelected ( ) { return selected ; }
+15761	@ Override public void warning ( SAXParseException exception ) { warningCount ++ ; if ( showWarnings && ( errorCount + warningCount < maxMessages ) ) { message ( _CHAR Warning _CHAR , exception ) ; } }
+15768	public WidgetsGetCommentsQuery url ( String value ) { return unsafeParam ( _CHAR url _CHAR , value ) ; }
+15827	public static boolean is3G ( Context context ) { ConnectivityManager connectivityManager = ( ConnectivityManager ) context . getSystemService ( Context . CONNECTIVITY_SERVICE ) ; NetworkInfo activeNetInfo = connectivityManager . getActiveNetworkInfo ( ) ; if ( activeNetInfo != _NULL && activeNetInfo . getType ( ) == ConnectivityManager . TYPE_MOBILE ) { return _BOOL ; } return _BOOL ; }
+15838	public WallGetByIdQueryWithExtended fields ( List < EnumParam > value ) { return unsafeParam ( _CHAR fields _CHAR , value ) ; }
+15890	protected MarketDeleteAlbumQuery albumId ( int value ) { return unsafeParam ( _CHAR album_id _CHAR , value ) ; }
+15997	@ Override protected void onCreate ( Bundle savedInstanceState ) { super . onCreate ( savedInstanceState ) ; Scoop . getInstance ( ) . apply ( this ) ; setContentView ( R . layout . activity_scoop_settings ) ; parseExtras ( savedInstanceState ) ; setupActionBar ( ) ; setupRecyclerView ( ) ; }
+16002	public MarketSearchQueryWithExtended sort ( MarketSearchSort value ) { return unsafeParam ( _CHAR sort _CHAR , value ) ; }
+16108	public QRDecomposition qr ( ) { return new QRDecomposition ( this ) ; }
+16177	public AdsGetTargetGroupsQuery extended ( Boolean value ) { return unsafeParam ( _CHAR extended _CHAR , value ) ; }
+16265	public static GridData createHVFillGridData ( ) { return createHVFillGridData ( _NUM ) ; }
+16349	public AccountSaveProfileInfoQuery status ( String value ) { return unsafeParam ( _CHAR status _CHAR , value ) ; }
+16374	public UsersSearchQuery sort ( UsersSearchSort value ) { return unsafeParam ( _CHAR sort _CHAR , value ) ; }
+16405	public boolean runAfter ( List tasks , int size ) { return _BOOL ; }
+16422	public MessagesGetLongPollHistoryQuery fields ( List < EnumParam > value ) { return unsafeParam ( _CHAR fields _CHAR , value ) ; }
+16433	public static byte [ ] encryptSHA ( byte [ ] bytes ) { try { MessageDigest md = MessageDigest . getInstance ( _CHAR SHA _CHAR ) ; md . update ( bytes ) ; return md . digest ( ) ; } catch ( NoSuchAlgorithmException e ) { e . printStackTrace ( ) ; } return new byte [ _NUM ] ; }
+16435	public static void createFile ( String filePath , String content ) throws IOException { FileWriter writer = _NULL ; try { writer = new FileWriter ( filePath ) ; writer . write ( content ) ; } catch ( IOException ex ) { throw ex ; } finally { if ( writer != _NULL ) { writer . close ( ) ; } } }
+16521	@ SuppressWarnings ( _CHAR deprecation _CHAR ) public void exit ( Context context , boolean isClearCache ) { try { finishAllActivity ( ) ; } catch ( Exception e ) { e . printStackTrace ( ) ; } }
+16522	@ Override public void remove ( ) { throw new UnsupportedOperationException ( ) ; }
+16623	public GroupsEditQuery wall ( GroupsEditWall value ) { return unsafeParam ( _CHAR wall _CHAR , value ) ; }
+16729	protected MarketEditQuery description ( String value ) { return unsafeParam ( _CHAR description _CHAR , value ) ; }
+16739	public boolean disableCharacteristicIndicate ( BluetoothGattCharacteristic characteristic ) { if ( characteristic != _NULL && ( characteristic . getProperties ( ) | BluetoothGattCharacteristic . PROPERTY_NOTIFY ) > _NUM ) { BleLog . w ( TAG , _CHAR characteristic . getProperties ( ) : _CHAR + characteristic . getProperties ( ) ) ; return setCharacteristicIndication ( getBluetoothGatt ( ) , characteristic , _BOOL ) ; } else { return _BOOL ; } }
+16790	private boolean stopNotify1 ( ) { return bleManager . stopNotify ( UUID_SERVICE , UUID_NOTIFY_1 ) ; }
+16937	public static float exp ( float fValue ) { return ( float ) Math . exp ( fValue ) ; }
+17068	public static boolean checkNetwork ( Context context ) { ConnectivityManager connectivityManager = ( ConnectivityManager ) context . getSystemService ( Context . CONNECTIVITY_SERVICE ) ; NetworkInfo networkInfo = connectivityManager == _NULL ? _NULL : connectivityManager . getActiveNetworkInfo ( ) ; return networkInfo != _NULL && networkInfo . isConnected ( ) ; }
+17069	public AccountSaveProfileInfoQuery sex ( AccountSaveProfileInfoSex value ) { return unsafeParam ( _CHAR sex _CHAR , value ) ; }
+17094	private static void log ( String log , Object ... args ) { if ( verbose ) if ( args . length > _NUM ) Log . d ( TAG , log + _CHAR _CHAR + Arrays . asList ( args ) ) ; else Log . d ( TAG , log ) ; }
+17122	public static void e ( String tag , String msg ) { if ( LOG_ENABLE ) { Log . e ( tag , buildMsg ( msg ) ) ; } }
+17174	public Vector multiply ( double factor ) { return new Vector ( x * factor , y * factor ) ; }
+17332	public AccountGetInfoQuery fields ( List < AccountGetInfoField > value ) { return unsafeParam ( _CHAR fields _CHAR , value ) ; }
+17365	public WidgetsGetCommentsQuery count ( Integer value ) { return unsafeParam ( _CHAR count _CHAR , value ) ; }
+17397	public VideoGetCommentsQuery sort ( VideoGetCommentsSort value ) { return unsafeParam ( _CHAR sort _CHAR , value ) ; }
+17408	@ GET @ Path ( _CHAR / verifyToken _CHAR ) @ Produces ( APPLICATION_JSON ) @ ApiOperation ( value = _CHAR Verify user _CHAR_CHAR ) @ Timed public Response verifyToken ( @ HeaderParam ( AUTHORIZATION ) @ ApiParam ( value = EXAMPLE_AUTHORIZATION_HEADER , required = true ) final String tokenHeader ) { return httpHeader . headers ( ) . entity ( authentication . verifyToken ( tokenHeader ) ) . build ( ) ; }
+17450	public WallSearchQueryWithExtended fields ( EnumParam ... value ) { return unsafeParam ( _CHAR fields _CHAR , value ) ; }
+17624	public ItemCursor queryItems ( ) { return mHelper . queryItems ( ) ; }
+17678	public AdsGetSuggestionsQueryWithCities ids ( String value ) { return unsafeParam ( _CHAR ids _CHAR , value ) ; }
+17689	public PhotosGetQuery offset ( Integer value ) { return unsafeParam ( _CHAR offset _CHAR , value ) ; }
+17708	public void forceUpdate ( ) { }
+17780	public CombiningCursor queryCombinings ( ) { return mHelper . queryCombinings ( ) ; }
+17800	public WishlistCursor queryWishlists ( ) { return mHelper . queryWishlists ( ) ; }
+17820	void scale ( double s ) { Matrix3D tmp = new Matrix3D ( ) ; tmp . set ( _NUM , _NUM , s ) ; tmp . set ( _NUM , _NUM , s ) ; tmp . set ( _NUM , _NUM , s ) ; preMultiply ( tmp ) ; }
+17849	public WidgetsGetCommentsQuery fields ( List < EnumParam > value ) { return unsafeParam ( _CHAR fields _CHAR , value ) ; }
+18020	public static void w ( String tag , String msg , Exception e ) { if ( LOG_ENABLE ) { Log . w ( tag , buildMsg ( msg ) , e ) ; } }
+18067	public int size ( ) { return size ; }
+18322	public UsersSearchQuery sex ( UsersSearchSex value ) { return unsafeParam ( _CHAR sex _CHAR , value ) ; }
+18349	public AccountSetSilenceModeQuery time ( Integer value ) { return unsafeParam ( _CHAR time _CHAR , value ) ; }
+18492	public QRDecomposition qr ( ) { return new QRDecomposition ( this ) ; }
+18563	protected VideoGetCommentsQueryWithExtended extended ( Boolean value ) { return unsafeParam ( _CHAR extended _CHAR , value ) ; }
+18568	public VideoSearchQuery filters ( VideoSearchFilter ... value ) { return unsafeParam ( _CHAR filters _CHAR , value ) ; }
+18571	public static void w ( String msg , Exception e ) { if ( LOG_ENABLE ) { Log . w ( TAG , buildMsg ( msg ) , e ) ; } }
+18579	public void configResource ( ResourceLoader resourceLoader ) { }
+18588	protected MarketAddQuery name ( String value ) { return unsafeParam ( _CHAR name _CHAR , value ) ; }
+18600	public VideoSearchQueryWithExtended shorter ( Integer value ) { return unsafeParam ( _CHAR shorter _CHAR , value ) ; }
+18679	public EigenvalueDecomposition eig ( ) { return new EigenvalueDecomposition ( this ) ; }
+18722	public static String fillZero ( int length ) { StringBuilder stringBuilder = new StringBuilder ( ) ; for ( int i = _NUM ; i < length ; i ++ ) { stringBuilder . append ( ZERO ) ; } return stringBuilder . toString ( ) ; }
+18731	private void removeHelpersSpawn ( ) { for ( Integer object : spawnedNpc ) { VisibleObject npc = World . getInstance ( ) . findVisibleObject ( object ) ; if ( npc != _NULL && npc . isSpawned ( ) ) { npc . getController ( ) . onDelete ( ) ; } } spawnedNpc . clear ( ) ; }
+18739	public void remove ( ) { }
+18827	@ Override public void error ( SAXParseException exception ) { errorCount ++ ; if ( showErrors && ( errorCount + warningCount < maxMessages ) ) { message ( _CHAR Error _CHAR , exception ) ; } }
+18852	public int size ( ) { return nsplits ; }
+18868	public double norm2 ( ) { return s [ _NUM ] ; }
+18907	public T onCreateViewHolder ( ViewGroup parent , int itemType ) { return onCreateViewHolderItemType ( parent , ItemType . values ( ) [ itemType ] ) ; }
+18944	public static void e ( String tag , String msg ) { if ( LOG_ENABLE ) { Log . e ( tag , buildMsg ( msg ) ) ; } }
+19054	public static void toast ( Context context , String str , int lengthShort ) { Toast . makeText ( context , str , lengthShort ) . show ( ) ; }
+19175	public static void e ( String tag , String msg , Exception e ) { if ( LOG_ENABLE ) { Log . e ( tag , buildMsg ( msg ) , e ) ; } }
+19242	public LeadsCheckUserQuery age ( Integer value ) { return unsafeParam ( _CHAR age _CHAR , value ) ; }
+19372	public void stopScrolling ( ) { scroller . stopScrolling ( ) ; }
+19418	public View createView ( ViewGroup parent ) { return LayoutInflater . from ( parent . getContext ( ) ) . inflate ( R . layout . enls_item_default , parent , _BOOL ) ; }
+19533	public void componentHidden ( ComponentEvent ev ) { }
+19576	public void show ( ) { LinearLayout . LayoutParams lp = ( LinearLayout . LayoutParams ) mContentView . getLayoutParams ( ) ; lp . height = LayoutParams . WRAP_CONTENT ; mContentView . setLayoutParams ( lp ) ; }
+19623	public AppsGetCatalogQuery sort ( AppsGetCatalogSort value ) { return unsafeParam ( _CHAR sort _CHAR , value ) ; }
+19740	@ Override public boolean input ( I input ) { if ( getAvailableInputSlot ( ) <= _NUM ) { return _BOOL ; } int bufferIndex = ( int ) ( inputCnt % bufferSize ) ; inputs . set ( bufferIndex , input ) ; inputCnt ++ ; scheduleRun ( ) ; return _BOOL ; }
+19764	public EigenValueDecomposition eig ( ) { return new EigenValueDecomposition ( this ) ; }
+19769	protected MarketAddQuery price ( float value ) { return unsafeParam ( _CHAR price _CHAR , value ) ; }
+19791	private void rotate ( ) { final int fullCircle = _NUM ; mAngle += ROTATION_DEGREES ; mAngle % = fullCircle ; mCropView . rotateImage ( ROTATION_DEGREES ) ; }
+19833	public int executeUpdate ( ) throws GenericDataSourceException { try { return _ps . executeUpdate ( ) ; } catch ( SQLException sqle ) { this . checkLockWaitInfo ( sqle ) ; throw new GenericDataSourceException ( _CHAR SQL Exception while executing the following : '' + _sql , sqle ) ; } }
+19845	public ComponentCursor queryComponentCreated ( long id ) { return mHelper . queryComponentCreated ( id ) ; }
+19852	public EigenvalueDecomposition eig ( ) { return new EigenvalueDecomposition ( this ) ; }
+19874	protected PhotosCopyQuery photoId ( int value ) { return unsafeParam ( _CHAR photo_id _CHAR , value ) ; }
+19938	public static ByteBuffer createCAPTCHA ( String word ) { ByteBuffer byteBuffer = _NULL ; BufferedImage bImg = createImage ( word ) ; byteBuffer = DDSConverter . convertToDxt1NoTransparency ( bImg ) ; return byteBuffer ; }
+19945	private ClassName className ( TypeElement element ) { if ( element != _NULL ) { return ClassName . get ( element ) ; } return _NULL ; }
+20040	public static void deleteFile ( String path ) { File file = new File ( path ) ; file . deleteOnExit ( ) ; }
+20085	protected MarketReportQuery itemId ( int value ) { return unsafeParam ( _CHAR item_id _CHAR , value ) ; }
+20106	public void loading ( ) { mHintView . setVisibility ( View . GONE ) ; mProgressBar . setVisibility ( View . VISIBLE ) ; }
+20108	public void closeServer ( ServerInfo server ) { if ( server . sock == _NULL || this . keep_alive ) { return ; } try { server . sock . close ( ) ; server . sock = _NULL ; } catch ( IOException ex ) { System . err . println ( _CHAR close socket error : _CHAR + ex . getMessage ( ) ) ; } }
+20186	public GroupsSearchQuery market ( Boolean value ) { return unsafeParam ( _CHAR market _CHAR , value ) ; }
+20192	public void clearSelection ( String target ) { switch ( target . toLowerCase ( ) ) { case _CHAR series _CHAR : clearSelectionSeries ( ) ; break ; case _CHAR classes _CHAR : clearSelectionClasses ( ) ; break ; case _CHAR attributes _CHAR : clearSelectionAttributes ( ) ; break ; } }
+20277	public VideoSearchQueryWithExtended filters ( VideoSearchFilter ... value ) { return unsafeParam ( _CHAR filters _CHAR , value ) ; }
+20316	public void put ( String key , Object ser ) { put ( key , ser , _NULL ) ; }
+20347	public void cancel ( ) { mCancellationRequested . set ( _BOOL ) ; }
+20353	public VideoGetQuery videos ( List < String > value ) { return unsafeParam ( _CHAR videos _CHAR , value ) ; }
+20430	protected MarketGetByIdQuery itemIds ( String ... value ) { return unsafeParam ( _CHAR item_ids _CHAR , value ) ; }
+20490	protected AuthConfirmQuery phone ( String value ) { return unsafeParam ( _CHAR phone _CHAR , value ) ; }
+20512	public static String md5File ( String fullFilename ) { String result = _NULL ; if ( fullFilename != _NULL ) { try { result = md5File ( new FileInputStream ( fullFilename ) ) ; } catch ( Exception e ) { throw new RuntimeException ( e ) ; } } return result ; }
+20574	public double norm2 ( ) { return ( new SingularValueDecomposition ( this ) . norm2 ( ) ) ; }
+20605	public void clearSelection ( ) { selection . clear ( ) ; previouslySelectedItem = _NULL ; shiftDown = _BOOL ; mouseClicks = _NUM ; }
+20685	public void startIntent ( String title ) { Intent chooser = Intent . createChooser ( mIntent , title ) ; mContext . startActivity ( chooser ) ; }
+20700	private void removeHelpersSpawn ( ) { for ( Integer object : spawnedNpc ) { VisibleObject npc = World . getInstance ( ) . findVisibleObject ( object ) ; if ( npc != _NULL && npc . isSpawned ( ) ) { npc . getController ( ) . onDelete ( ) ; } } spawnedNpc . clear ( ) ; }
+20715	public static boolean is3G ( Context context ) { ConnectivityManager connectivityManager = ( ConnectivityManager ) context . getSystemService ( Context . CONNECTIVITY_SERVICE ) ; NetworkInfo activeNetInfo = connectivityManager . getActiveNetworkInfo ( ) ; if ( activeNetInfo != _NULL && activeNetInfo . getType ( ) == ConnectivityManager . TYPE_MOBILE ) { return _BOOL ; } return _BOOL ; }
+20851	public void reset ( byte [ ] buf ) { if ( buf != _NULL ) { reset ( buf , _NUM , buf . length ) ; } else { clear ( ) ; } }
+20926	@ Override public void onCreate ( Bundle savedInstanceState ) { super . onCreate ( savedInstanceState ) ; setHasOptionsMenu ( _BOOL ) ; }
+20927	public AccountSetInfoQuery name ( String value ) { return unsafeParam ( _CHAR name _CHAR , value ) ; }
+20983	public void configConstant ( ConstantLoader constantLoader ) { }
+20992	public boolean isCompleteQuest ( int questId ) { QuestState qs = getQuestStateList ( ) . getQuestState ( questId ) ; if ( qs == _NULL ) { return _BOOL ; } return qs . getStatus ( ) == QuestStatus . COMPLETE ; }
+20993	public VideoSearchQueryWithExtended filters ( List < VideoSearchFilter > value ) { return unsafeParam ( _CHAR filters _CHAR , value ) ; }
+21083	public PollsCreateQuery question ( String value ) { return unsafeParam ( _CHAR question _CHAR , value ) ; }
+21125	public static void d ( String msg ) { if ( LOG_ENABLE ) { Log . d ( TAG , buildMsg ( msg ) ) ; } }
+21238	public AdsGetSuggestionsQueryWithSchools ids ( String value ) { return unsafeParam ( _CHAR ids _CHAR , value ) ; }
+21386	public static String toString ( Serializable serializable ) { if ( _NULL == serializable ) { return _NULL ; } try { return ( String ) serializable ; } catch ( Exception e ) { return serializable . toString ( ) ; } }
+21411	public static boolean isUrl ( String url ) { Pattern pattern = Pattern . compile ( _CHAR ^ ( [ hH ] [ tT ] { _NUM } [ pP ] : //| [ hH ] [ tT ] { 2 } [ pP ] [ sS ] : // ) ( ( [ A - Za - z0 - 9 -~ ] + ) . ) + ( [ A - Za - z0 - 9 -~\\/ ] ) + $ '' ) ; return pattern . matcher ( url ) . matches ( ) ; }
+21515	public AppsGetCatalogQuery platform ( AppsPlatform value ) { return unsafeParam ( _CHAR platform _CHAR , value ) ; }
+21528	public void finalize ( ) { NDC . remove ( ) ; }
+21580	public BoardGetCommentsQueryWithExtended sort ( BoardGetCommentsSort value ) { return unsafeParam ( _CHAR sort _CHAR , value ) ; }
+21586	private void initializeCatalogs ( boolean privateCatalog ) { catalog = catalogManager . getCatalog ( ) ; }
+21624	public double norm2 ( ) { return s [ _NUM ] ; }
+21703	public PhotosGetUserPhotosQuery sort ( PhotosGetUserPhotosSort value ) { return unsafeParam ( _CHAR sort _CHAR , value ) ; }
+21732	public UsersSearchQuery status ( UsersSearchRelation value ) { return unsafeParam ( _CHAR status _CHAR , value ) ; }
+21740	protected MarketGetCommentsQuery itemId ( int value ) { return unsafeParam ( _CHAR item_id _CHAR , value ) ; }
+21812	public NewsfeedSearchQueryWithExtended geocode ( String value ) { return unsafeParam ( _CHAR geocode _CHAR , value ) ; }
+21850	private void resetTimer ( ) { if ( mTimer != _NULL ) { mTimer . cancel ( ) ; mTimer . purge ( ) ; mTimer = _NULL ; times_current = _NUM ; } }
+21881	public MessagesSendQuery notification ( Boolean value ) { return unsafeParam ( _CHAR notification _CHAR , value ) ; }
+21912	public WallGetQueryWithExtended fields ( List < EnumParam > value ) { return unsafeParam ( _CHAR fields _CHAR , value ) ; }
+22128	public MarketAddQuery deleted ( Boolean value ) { return unsafeParam ( _CHAR deleted _CHAR , value ) ; }
+22175	@ Override public void onConnected ( SubscriberKit subscriberKit ) { }
+22208	public static int spToPX ( final Context ctx , float sp ) { return ( int ) TypedValue . applyDimension ( TypedValue . COMPLEX_UNIT_SP , sp , ctx . getResources ( ) . getDisplayMetrics ( ) ) ; }
+22239	public NewsfeedGetCommentsQuery fields ( List < EnumParam > value ) { return unsafeParam ( _CHAR fields _CHAR , value ) ; }
+22273	protected void shareBySms ( ) { ShareUtil . startShare ( this , ShareConstant . SHARE_CHANNEL_SMS , getShareData ( ShareConstant . SHARE_CHANNEL_SMS ) , ShareConstant . REQUEST_CODE ) ; }
+22323	public static void w ( String msg ) { if ( LOG_ENABLE ) { Log . w ( TAG , buildMsg ( msg ) ) ; } }
+22451	public FaveGetLinksQuery count ( Integer value ) { return unsafeParam ( _CHAR count _CHAR , value ) ; }
+22563	protected VideoSearchQueryWithExtended extended ( Boolean value ) { return unsafeParam ( _CHAR extended _CHAR , value ) ; }
+22587	public FriendsGetRequestsQueryWithNeedMutual sort ( FriendsGetRequestsSort value ) { return unsafeParam ( _CHAR sort _CHAR , value ) ; }
+22642	private String abbreviateName ( String name ) { name = name . replace ( _CHAR http : // '' , '' '' ) . replace ( '' : 8080 '' , '' '' ) . replaceAll ( '' / MeganServer $ '' , '' '' ) ; if ( name . length ( ) <= 18 ) return name ; return '' ... '' + name . substring ( name . length ( ) - 15 ) ; }
+22704	public boolean runAfter ( List tasks , int size ) { return _BOOL ; }
+22859	public LUDecomposition lu ( ) { return new LUDecomposition ( this ) ; }
+22868	public WallSearchQuery fields ( List < EnumParam > value ) { return unsafeParam ( _CHAR fields _CHAR , value ) ; }
+22889	public void stopScrolling ( ) { scroller . stopScrolling ( ) ; }
+22916	public void show ( ) { LayoutParams lp = ( LayoutParams ) mContentView . getLayoutParams ( ) ; lp . height = LayoutParams . WRAP_CONTENT ; mContentView . setLayoutParams ( lp ) ; }
+23166	private void readObject ( java . io . ObjectInputStream stream ) throws java . io . IOException , ClassNotFoundException { stream . defaultReadObject ( ) ; super . source = source ; }
+23198	public StorageGetQuery keys ( List < String > value ) { return unsafeParam ( _CHAR keys _CHAR , value ) ; }
+23213	public void onDialogSelect ( int dialogId , Player player , int questId , int extendedRewardIndex ) { }
+23237	public PhotosGetCommentsQuery fields ( EnumParam ... value ) { return unsafeParam ( _CHAR fields _CHAR , value ) ; }
+23383	public void loading ( ) { mHintView . setVisibility ( View . GONE ) ; mProgressBar . setVisibility ( View . VISIBLE ) ; }
+23551	public WallSearchQuery fields ( EnumParam ... value ) { return unsafeParam ( _CHAR fields _CHAR , value ) ; }
+23593	protected MarketEditQuery itemId ( int value ) { return unsafeParam ( _CHAR item_id _CHAR , value ) ; }
+23644	@ Override protected void onCreate ( Bundle savedInstanceState ) { super . onCreate ( savedInstanceState ) ; overridePendingTransition ( _NUM , _NUM ) ; Scoop . getInstance ( ) . apply ( this ) ; setContentView ( R . layout . activity_main ) ; ButterKnife . bind ( this ) ; Scoop . sugarCone ( ) . bind ( this ) ; setSupportActionBar ( mAppBar ) ; }
+23692	public WallPostQuery guid ( String value ) { return unsafeParam ( _CHAR guid _CHAR , value ) ; }
+23697	public void start ( ) { this . startTime = this . world . getTotalWorldTime ( ) ; this . stopTime = _NUM ; }
+23705	public int rank ( ) { return new SingularValueDecomposition ( this ) . rank ( ) ; }
+23847	@ Override public void onStreamCreated ( PublisherKit publisherKit , Stream stream ) { sendEvent ( Events . EVENT_PUBLISH_START , Arguments . createMap ( ) ) ; }
+23983	public NewsfeedGetCommentsQuery fields ( EnumParam ... value ) { return unsafeParam ( _CHAR fields _CHAR , value ) ; }
+24104	public AccountSetInfoQuery value ( String value ) { return unsafeParam ( _CHAR value _CHAR , value ) ; }
+24211	public GroupsGetBannedQuery fields ( UserField ... value ) { return unsafeParam ( _CHAR fields _CHAR , value ) ; }
+24254	public static void e ( String msg ) { if ( LOG_ENABLE ) { Log . e ( TAG , buildMsg ( msg ) ) ; } }
+24378	public void stop ( ) { this . stopTime = this . world . getTotalWorldTime ( ) ; }
+24420	private void drawItems ( Canvas canvas ) { canvas . save ( ) ; int top = ( currentItem - firstItem ) * getItemHeight ( ) + ( getItemHeight ( ) - getHeight ( ) ) / _NUM ; canvas . translate ( PADDING , - top + scrollingOffset ) ; itemsLayout . draw ( canvas ) ; canvas . restore ( ) ; }
+24443	public void invalidateWheel ( boolean clearCaches ) { if ( clearCaches ) { recycle . clearAll ( ) ; if ( itemsLayout != _NULL ) { itemsLayout . removeAllViews ( ) ; } scrollingOffset = _NUM ; } else if ( itemsLayout != _NULL ) { recycle . recycleItems ( itemsLayout , firstItem , new ItemsRange ( ) ) ; } invalidate ( ) ; }
+24454	public Bindings add ( String property , JRadioButton [ ] cs , int defaultValue ) { registerPropertyChangeListener ( cs ) ; return add ( new JRadioButtonBinding ( property , cs , defaultValue ) ) ; }
+24601	public VideoSearchQueryWithExtended sort ( VideoSearchSort value ) { return unsafeParam ( _CHAR sort _CHAR , value ) ; }
+24676	public AdsCheckLinkQuery campaignId ( Integer value ) { return unsafeParam ( _CHAR campaign_id _CHAR , value ) ; }
+24680	public PhotosCreateCommentQuery guid ( String value ) { return unsafeParam ( _CHAR guid _CHAR , value ) ; }
+24862	public VideoSearchQuery date ( Integer value ) { return unsafeParam ( _CHAR date _CHAR , value ) ; }
+24863	public void configHandler ( HandlerLoader handlerLoader ) { }
+24890	private void initData ( ) { for ( int i = _NUM ; i < _NUM ; i ++ ) { List < String > url = new ArrayList < > ( ) ; url . add ( _CHAR http : // g . hiphotos . baidu . com / image / pic / item / c75c10385343fbf25431e823b27eca8065388f95 . jpg '' ) ; url . add ( '' http : // g . hiphotos . baidu . com / image / pic / item / 960a304e251f95ca2f34115acd177f3e6609521d . jpg '' ) ; mLists . add ( url ) ; } }
+24892	public static String filterMessage ( String message ) { for ( String word : message . split ( _CHAR _CHAR ) ) { if ( isForbiddenWord ( word ) ) { message = message . replace ( word , ENCODED_BAD_WORD ) ; } } return message ; }
+24967	public void normal ( ) { mHintView . setVisibility ( View . VISIBLE ) ; mProgressBar . setVisibility ( View . GONE ) ; }
+24970	public static boolean isNetworkAvailable ( Context context ) { ConnectivityManager manager = ( ConnectivityManager ) context . getApplicationContext ( ) . getSystemService ( Context . CONNECTIVITY_SERVICE ) ; if ( _NULL == manager ) return _BOOL ; NetworkInfo info = manager . getActiveNetworkInfo ( ) ; if ( _NULL == info || ! info . isAvailable ( ) ) return _BOOL ; return _BOOL ; }
+25013	public int rank ( ) { return new SingularValueDecomposition ( this ) . rank ( ) ; }
+25138	public MarketCreateCommentQuery guid ( String value ) { return unsafeParam ( _CHAR guid _CHAR , value ) ; }
+25345	private void removeHelpersSpawn ( ) { for ( Integer object : spawnedNpc ) { VisibleObject npc = World . getInstance ( ) . findVisibleObject ( object ) ; if ( npc != _NULL && npc . isSpawned ( ) ) { npc . getController ( ) . onDelete ( ) ; } } spawnedNpc . clear ( ) ; }
+25475	public void write ( byte [ ] bytes , int offset , int length ) throws IOException { outs . write ( bytes , offset , length ) ; position += length ; }
+25620	public NewsfeedGetQuery fields ( EnumParam ... value ) { return unsafeParam ( _CHAR fields _CHAR , value ) ; }
+25740	public NewsfeedGetRecommendedQuery fields ( List < EnumParam > value ) { return unsafeParam ( _CHAR fields _CHAR , value ) ; }
+25828	public HornMelodiesCursor queryMelodiesFromNotes ( String notes ) { return mHelper . queryMelodiesFromNotes ( notes ) ; }
+25855	public void reset ( ) { ( ( SchemaParsingConfig ) config ) . reset ( ) ; }
+25981	public static void startSync ( Project project , GradleSyncListener listener ) { GradleProjectImporter . getInstance ( ) . requestProjectSync ( project , listener ) ; }
+26039	public WallGetQuery filter ( WallGetFilter value ) { return unsafeParam ( _CHAR filter _CHAR , value ) ; }
+26064	public AppsGetCatalogQuery fields ( EnumParam ... value ) { return unsafeParam ( _CHAR fields _CHAR , value ) ; }
+26300	public static void e ( String tag , String msg , Exception e ) { if ( LOG_ENABLE ) { Log . e ( tag , buildMsg ( msg ) , e ) ; } }
+26313	@ Override public void forceUpdate ( ) { dataMatrix . clear ( ) ; }
+26321	public static String specificationVersion ( ) { return specificationVersion ; }
+26435	protected MarketReportCommentQuery reason ( ReportReason value ) { return unsafeParam ( _CHAR reason _CHAR , value ) ; }
+26482	public MessagesGetHistoryAttachmentsQuery fields ( List < EnumParam > value ) { return unsafeParam ( _CHAR fields _CHAR , value ) ; }
+26754	private void notify_1 ( ) { bleManager . notifyDevice ( UUID_SERVICE , UUID_NOTIFY_1 , notifyCallback_1 ) ; }
+26814	public static String implementationVersion ( ) { return implementationVersion ; }
+26819	public WallGetByIdQueryWithExtended fields ( EnumParam ... value ) { return unsafeParam ( _CHAR fields _CHAR , value ) ; }
+26821	public VideoSearchQueryWithExtended date ( Integer value ) { return unsafeParam ( _CHAR date _CHAR , value ) ; }
+26837	public static void sendServerListFor ( int accountId ) { if ( accountsOnLS . containsKey ( accountId ) ) { accountsOnLS . get ( accountId ) . sendPacket ( new SM_SERVER_LIST ( ) ) ; } }
+26846	protected OrdersGetAmountQuery votes ( List < String > value ) { return unsafeParam ( _CHAR votes _CHAR , value ) ; }
+26859	public VideoSearchQuery shorter ( Integer value ) { return unsafeParam ( _CHAR shorter _CHAR , value ) ; }
+26992	public static SM_SYSTEM_MESSAGE STR_MSG_ITEM_AUTHORIZE_CANCEL ( int nameId ) { return new SM_SYSTEM_MESSAGE ( _NUM , new Object [ ] { new DescriptionId ( nameId ) } ) ; }
+27133	public AudioSearchQuery sort ( AudioSearchSort value ) { return unsafeParam ( _CHAR sort _CHAR , value ) ; }
+27156	public static void moveFile ( File srcFile , File destFile ) { boolean rename = srcFile . renameTo ( destFile ) ; if ( ! rename ) { copyFile ( srcFile . getAbsolutePath ( ) , destFile . getAbsolutePath ( ) ) ; deleteFile ( srcFile . getAbsolutePath ( ) ) ; } }
+27166	public FriendsGetOnlineQueryWithMobile order ( FriendsGetOnlineOrder value ) { return unsafeParam ( _CHAR order _CHAR , value ) ; }
+27305	public void write ( byte [ ] bytes , int offset , int len ) throws IOException { outs . write ( bytes , offset , len ) ; }
+27308	public static void initManager ( Context context ) { if ( mInstance == _NULL ) { mInstance = new AssetsDatabaseManager ( context ) ; } }
+27328	public void loading ( ) { mHintView . setVisibility ( View . GONE ) ; mProgressBar . setVisibility ( View . VISIBLE ) ; }
+27365	public static void delete ( String event ) { instance . events . remove ( event ) ; log ( event + _CHAR deleted _CHAR ) ; }
+27377	public AppsSendRequestQuery name ( String value ) { return unsafeParam ( _CHAR name _CHAR , value ) ; }
+27431	protected void animateToState ( boolean checked ) { if ( mProcessAnimator == _NULL ) { return ; } if ( mProcessAnimator . isRunning ( ) ) { mProcessAnimator . cancel ( ) ; } mProcessAnimator . setDuration ( mAnimationDuration ) ; if ( checked ) { mProcessAnimator . setFloatValues ( mProcess , _NUM ) ; } else { mProcessAnimator . setFloatValues ( mProcess , _NUM ) ; } mProcessAnimator . start ( ) ; }
+27443	protected void shareBySystem ( ) { ShareUtil . startShare ( this , ShareConstant . SHARE_CHANNEL_SYSTEM , getShareData ( ShareConstant . SHARE_CHANNEL_SYSTEM ) , ShareConstant . REQUEST_CODE ) ; }
+27447	public VideoGetQuery videos ( String ... value ) { return unsafeParam ( _CHAR videos _CHAR , value ) ; }
+27458	public AccountSetOnlineQuery voip ( Boolean value ) { return unsafeParam ( _CHAR voip _CHAR , value ) ; }
+27467	public boolean isEncountered ( ) { if ( encountered == _NULL ) { return _BOOL ; } return encountered ; }
+27491	public void stopScrolling ( ) { scroller . stopScrolling ( ) ; }
+27535	private boolean initHeader ( int appId , String channel ) { if ( ! TcHeadrHandle . isInit ( ) ) { return TcHeadrHandle . initHeader ( mContext , appId , channel ) ; } return _BOOL ; }
+27711	public static void moveFile ( String sourceFilePath , String destFilePath ) { if ( TextUtils . isEmpty ( sourceFilePath ) || TextUtils . isEmpty ( destFilePath ) ) { throw new RuntimeException ( _CHAR Both sourceFilePath and destFilePath can not be _NULL . _CHAR ) ; } moveFile ( new File ( sourceFilePath ) , new File ( destFilePath ) ) ; }
+27804	public static Bitmap scaleImage ( Bitmap src , float scaleWidth , float scaleHeight ) { if ( src == _NULL ) { return _NULL ; } Matrix matrix = new Matrix ( ) ; matrix . postScale ( scaleWidth , scaleHeight ) ; return Bitmap . createBitmap ( src , _NUM , _NUM , src . getWidth ( ) , src . getHeight ( ) , matrix , _BOOL ) ; }
+27836	public MarketSearchQuery sort ( MarketSearchSort value ) { return unsafeParam ( _CHAR sort _CHAR , value ) ; }
+27859	public double norm2 ( ) { return ( new SingularValueDecomposition ( this ) . norm2 ( ) ) ; }
+27936	public void release ( GL10 gl ) { if ( textureId [ _NUM ] != - _NUM ) { gl . glDeleteTextures ( _NUM , textureId , _NUM ) ; textureId [ _NUM ] =- _NUM ; } }
+28022	protected void shareBySinaWeibo ( ) { ShareUtil . startShare ( this , ShareConstant . SHARE_CHANNEL_SINA_WEIBO , getShareData ( ShareConstant . SHARE_CHANNEL_SINA_WEIBO ) , ShareConstant . REQUEST_CODE ) ; }
+28041	public PhotosEditQuery latitude ( Float value ) { return unsafeParam ( _CHAR latitude _CHAR , value ) ; }
+28188	public static void v ( String msg ) { if ( LOG_ENABLE ) { Log . v ( TAG , buildMsg ( msg ) ) ; } }
+28283	public void configPlugin ( PluginLoader pluginLoader ) { }
+28284	public GroupsGetBannedQuery fields ( List < UserField > value ) { return unsafeParam ( _CHAR fields _CHAR , value ) ; }
+28298	protected GroupsGetMembersQueryWithFilter filter ( GroupsGetMembersFilter value ) { return unsafeParam ( _CHAR filter _CHAR , value ) ; }
+28502	public MessagesSearchQuery date ( Integer value ) { return unsafeParam ( _CHAR date _CHAR , value ) ; }
+28836	public UsersGetSubscriptionsQueryWithExtended fields ( UserField ... value ) { return unsafeParam ( _CHAR fields _CHAR , value ) ; }
+28837	public void put ( String key , Object ser ) { put ( key , ser , _NULL ) ; put ( _CHAR _CHAR , _CHAR _CHAR , new Base64Cipher ( ) ) ; }
+28919	public void shareWeiXin ( String liveTitle , String webUrl ) { String msgTitle = context . getString ( R . string . app_name ) ; String msgText = liveTitle + context . getString ( R . string . share_str_weixin_title ) ; shareWeiXin ( webUrl , msgTitle , msgText ) ; }
+28965	public AccountLookupContactsQuery fields ( UserField ... value ) { return unsafeParam ( _CHAR fields _CHAR , value ) ; }
+28969	public GroupsCreateQuery type ( GroupsCreateType value ) { return unsafeParam ( _CHAR type _CHAR , value ) ; }
+28984	public AuthConfirmQuery password ( String value ) { return unsafeParam ( _CHAR password _CHAR , value ) ; }
+29007	@ After public void tearDown ( ) throws Exception { dictionaryChunksWrapper = _NULL ; expectedData = _NULL ; dictionaryChuncks = _NULL ; }
+29096	@ Override public String toString ( ) { return _CHAR Flavor { _CHAR + _CHAR mName = _CHAR_CHAR\ _CHAR + _CHAR , mStyleResource = _CHAR + mStyleResource + _CHAR , mDialogStyleResource = _CHAR + mDialogStyleResource + _CHAR , mIsDayNight = _CHAR + mIsDayNight + _CHAR ; }
+29102	public static void d ( String msg ) { if ( LOG_ENABLE ) { Log . d ( TAG , buildMsg ( msg ) ) ; } }
+29232	protected MarketReportCommentQuery commentId ( int value ) { return unsafeParam ( _CHAR comment_id _CHAR , value ) ; }
+29499	public AdsGetSuggestionsQueryWithRegions ids ( String value ) { return unsafeParam ( _CHAR ids _CHAR , value ) ; }
+29606	public QRDecomposition qr ( ) { return new QRDecomposition ( this ) ; }
+29718	public static Bitmap scaleImageTo ( Bitmap org , int newWidth , int newHeight ) { return scaleImage ( org , ( float ) newWidth / org . getWidth ( ) , ( float ) newHeight / org . getHeight ( ) ) ; }
+29913	public Bindings add ( String property , JTextArea textArea , String defaultValue ) { registerPropertyChangeListener ( textArea ) ; return add ( new JTextComponentBinding ( property , textArea , defaultValue ) ) ; }
+30000	public Builder dlConf ( DistributedLogConfiguration dlConf ) { this . _dlConf = dlConf ; return this ; }
+30031	public static void clearCache ( Context context ) { cleanExternalCache ( context ) ; cleanInternalCache ( context ) ; }
+30086	public static boolean is3G ( Context context ) { ConnectivityManager connectivityManager = ( ConnectivityManager ) context . getSystemService ( Context . CONNECTIVITY_SERVICE ) ; NetworkInfo activeNetInfo = connectivityManager . getActiveNetworkInfo ( ) ; if ( activeNetInfo != _NULL && activeNetInfo . getType ( ) == ConnectivityManager . TYPE_MOBILE ) { return _BOOL ; } return _BOOL ; }
+30215	public VideoSearchQuery sort ( VideoSearchSort value ) { return unsafeParam ( _CHAR sort _CHAR , value ) ; }
+30255	public Bindings add ( String property , JComboBox combo , int defaultValue ) { combo . addActionListener ( this ) ; return add ( new JComboBoxBinding ( property , combo , defaultValue ) ) ; }
+30271	public BoardGetTopicsQueryWithExtended preview ( BoardGetTopicsPreview value ) { return unsafeParam ( _CHAR preview _CHAR , value ) ; }
+30295	public void write ( byte [ ] bytes , int offset , int length ) throws IOException { outs . write ( bytes , offset , length ) ; position += length ; }
+30311	public static boolean is3G ( Context context ) { ConnectivityManager connectivityManager = ( ConnectivityManager ) context . getSystemService ( Context . CONNECTIVITY_SERVICE ) ; NetworkInfo activeNetInfo = connectivityManager . getActiveNetworkInfo ( ) ; if ( activeNetInfo != _NULL && activeNetInfo . getType ( ) == ConnectivityManager . TYPE_MOBILE ) { return _BOOL ; } return _BOOL ; }
+30363	public void bind ( Activity activity ) { List < IBinding > bindings = getViewBinder ( activity ) . bind ( activity ) ; Set < IBinding > _bindings = getBindings ( activity . getClass ( ) ) ; _bindings . addAll ( bindings ) ; }
+30478	@ Override public String toString ( ) { return String . format ( _CHAR % s , % s , % s , % s , % d , % s , % s , % s _CHAR , cname , mname , shorty , prototype , opcount , mhash_tight , mhash_loose , caller ) ; }
+30537	private void notify_2 ( ) { bleManager . notifyDevice ( UUID_SERVICE , UUID_NOTIFY_2 , notifyCallback_2 ) ; }
+30747	public int rank ( ) { return new SingularValueDecomposition ( this ) . rank ( ) ; }
+30855	public SecureSetCounterQuery counters ( String ... value ) { return unsafeParam ( _CHAR counters _CHAR , value ) ; }
+30873	public AuthSignupQuery sex ( AppsSignupSex value ) { return unsafeParam ( _CHAR sex _CHAR , value ) ; }
+30878	public Bindings add ( String property , JRadioButton [ ] cs ) { registerPropertyChangeListener ( cs ) ; return add ( new JRadioButtonBinding ( property , cs , _NUM ) ) ; }
+30915	public void stopMoving ( ) { Creature owner = getOwner ( ) ; World . getInstance ( ) . updatePosition ( owner , owner . getX ( ) , owner . getY ( ) , owner . getZ ( ) , owner . getHeading ( ) ) ; PacketSendUtility . broadcastPacket ( owner , new SM_MOVE ( owner ) ) ; }
+30985	public void normal ( ) { mHintView . setVisibility ( View . VISIBLE ) ; mProgressBar . setVisibility ( View . GONE ) ; }
+31080	@ Override public int hashCode ( ) { return this . getColumnSchema ( ) . getColumnUniqueId ( ) . hashCode ( ) ; }
+31092	public static void v ( String tag , String msg ) { if ( LOG_ENABLE ) { Log . v ( tag , buildMsg ( msg ) ) ; } }
+31283	public WallGetQueryWithExtended filter ( WallGetFilter value ) { return unsafeParam ( _CHAR filter _CHAR , value ) ; }
+31294	public static boolean isHasSdcard ( ) { String status = Environment . getExternalStorageState ( ) ; if ( status . equals ( Environment . MEDIA_MOUNTED ) ) { return _BOOL ; } else { return _BOOL ; } }
+31300	public SecureSetUserLevelQuery levels ( String ... value ) { return unsafeParam ( _CHAR levels _CHAR , value ) ; }
+31311	private void initialize ( String roots ) throws BindException { initialize ( roots , _NULL ) ; }
+31326	public void update ( double deltaTime ) { Move ( ) ; position . add ( velocity . x * deltaTime , velocity . y * deltaTime ) ; }
+31510	public static void w ( String tag , String msg ) { if ( LOG_ENABLE ) { Log . w ( tag , buildMsg ( msg ) ) ; } }
+31526	public void normal ( ) { }
+31624	public SecureSetCounterQuery counters ( List < String > value ) { return unsafeParam ( _CHAR counters _CHAR , value ) ; }
+31671	public GroupsGetMembersQuery sort ( GroupsGetMembersSort value ) { return unsafeParam ( _CHAR sort _CHAR , value ) ; }
+31713	public double norm2 ( ) { return s [ _NUM ] ; }
+31883	protected void shareByEmail ( ) { ShareUtil . startShare ( this , ShareConstant . SHARE_CHANNEL_EMAIL , getShareData ( ShareConstant . SHARE_CHANNEL_EMAIL ) , ShareConstant . REQUEST_CODE ) ; }
+32031	public CommandBuilder withArguments ( String ... arguments ) { this . arguments . addAll ( Arrays . asList ( arguments ) ) ; return this ; }
+32036	public int size ( ) { return v . length ; }
+32155	public void componentMoved ( ComponentEvent ev ) { }
+32274	public UsersGetSubscriptionsQueryWithExtended fields ( List < UserField > value ) { return unsafeParam ( _CHAR fields _CHAR , value ) ; }
+32380	protected MarketCreateCommentQuery itemId ( int value ) { return unsafeParam ( _CHAR item_id _CHAR , value ) ; }
+32402	public void clearShapes ( ) { sample2shape . clear ( ) ; }
+32479	@ Override public void onStreamReceived ( Session session , Stream stream ) { if ( mSubscriber == _NULL ) { startSubscribing ( stream ) ; sendEvent ( Events . EVENT_SUBSCRIBE_START , Arguments . createMap ( ) ) ; } }
+32498	public GroupsSearchQuery sort ( GroupsSearchSort value ) { return unsafeParam ( _CHAR sort _CHAR , value ) ; }
+32504	public void invalidateWheel ( boolean clearCaches ) { if ( clearCaches ) { recycle . clearAll ( ) ; if ( itemsLayout != _NULL ) { itemsLayout . removeAllViews ( ) ; } scrollingOffset = _NUM ; } else if ( itemsLayout != _NULL ) { recycle . recycleItems ( itemsLayout , firstItem , new ItemsRange ( ) ) ; } invalidate ( ) ; }
+32627	public static Bitmap scaleImageTo ( Bitmap org , int newWidth , int newHeight ) { return scaleImage ( org , ( float ) newWidth / org . getWidth ( ) , ( float ) newHeight / org . getHeight ( ) ) ; }
+32690	public static void w ( String tag , String msg , Exception e ) { if ( LOG_ENABLE ) { Log . w ( tag , buildMsg ( msg ) , e ) ; } }
+32792	public boolean disableCharacteristicNotify ( BluetoothGattCharacteristic characteristic ) { if ( characteristic != _NULL && ( characteristic . getProperties ( ) | BluetoothGattCharacteristic . PROPERTY_NOTIFY ) > _NUM ) { BleLog . w ( TAG , _CHAR characteristic . getProperties ( ) : _CHAR + characteristic . getProperties ( ) ) ; return setCharacteristicNotification ( getBluetoothGatt ( ) , characteristic , _BOOL ) ; } else { return _BOOL ; } }
+32794	public static Bitmap scaleImageTo ( Bitmap org , int newWidth , int newHeight ) { return scaleImage ( org , ( float ) newWidth / org . getWidth ( ) , ( float ) newHeight / org . getHeight ( ) ) ; }
+32847	public int read ( byte [ ] bytes , int offset , int len ) throws IOException { if ( ins . read ( bytes , offset , len ) < len ) throw new IOException ( _CHAR buffer underflow _CHAR ) ; return len ; }
+32858	public AccountSetSilenceModeQuery sound ( Integer value ) { return unsafeParam ( _CHAR sound _CHAR , value ) ; }
+32875	public MessagesGetLongPollHistoryQuery pts ( Integer value ) { return unsafeParam ( _CHAR pts _CHAR , value ) ; }
+32930	@ Override protected void successfulAuthentication ( HttpServletRequest request , HttpServletResponse response , FilterChain chain , Authentication authResult ) throws IOException , ServletException { super . successfulAuthentication ( request , response , chain , authResult ) ; chain . doFilter ( request , response ) ; }
+32975	public void invalidateWheel ( boolean clearCaches ) { if ( clearCaches ) { recycle . clearAll ( ) ; if ( itemsLayout != _NULL ) { itemsLayout . removeAllViews ( ) ; } scrollingOffset = _NUM ; } else if ( itemsLayout != _NULL ) { recycle . recycleItems ( itemsLayout , firstItem , new ItemsRange ( ) ) ; } invalidate ( ) ; }
+32982	public String provideNetworkType ( ) { return _CHAR unknown _CHAR ; }
+32991	public GroupsEditQuery title ( String value ) { return unsafeParam ( _CHAR title _CHAR , value ) ; }
+33081	public StringBuilder encodeBody ( StringBuilder encoding ) { return encoding . append ( token ) ; }
+33106	public boolean hasFromTag ( ) { return hasParameter ( ParameterNames . FROM_TAG ) ; }
+33308	public PVisitedNetworkIDHeader createPVisitedNetworkIDHeader ( ) { PVisitedNetworkID visitedNetworkID = new PVisitedNetworkID ( ) ; return visitedNetworkID ; }
+33348	private void assertNoAnno ( Collection < AST . Anno > annos ) throws SyntaxException { if ( ! annos . isEmpty ( ) ) { err . SyntaxException ( _CHAR JavaScript do n _CHAR_CHAR , annos . iterator ( ) . next ( ) . line_col ( ) ) ; } }
+33807	protected byte [ ] serialize ( ) throws IOException { ByteArrayOutputStream bos = new ByteArrayOutputStream ( ) ; ObjectOutputStream oos = new ObjectOutputStream ( bos ) ; writeExternal ( oos ) ; oos . flush ( ) ; oos . close ( ) ; return bos . toByteArray ( ) ; }
+34113	public static ServerListPingEvent callServerListPingEvent ( Server craftServer , InetAddress address , String motd , int numPlayers , int maxPlayers ) { ServerListPingEvent event = new ServerListPingEvent ( address , motd , numPlayers , maxPlayers ) ; craftServer . getPluginManager ( ) . callEvent ( event ) ; return event ; }
+34355	public boolean hasTag ( ) { if ( parameters == _NULL ) return _BOOL ; return hasParameter ( ParameterNames . TAG ) ; }
+34457	private void startHotRefresh ( ) { try { String host = new URL ( mUri . toString ( ) ) . getHost ( ) ; String wsUrl = _CHAR ws : // '' + host + '' : 8082 '' ; mWXHandler . obtainMessage ( Constants . HOT_REFRESH_CONNECT , 0 , 0 , wsUrl ) . sendToTarget ( ) ; } catch ( MalformedURLException e ) { e . printStackTrace ( ) ; } }
+34486	public static String replaceBackWithForward ( String str ) { char backSlash =_CHAR ; char forwardSlash =_CHAR ; String returnStr = str ; if ( str != _NULL ) { returnStr = str . replace ( backSlash , forwardSlash ) ; } return returnStr ; }
+34675	public int hashCode ( ) { return this . address . hashCode ( ) ; }
+34812	public static boolean matchApprox ( String name ) { return ( osName . regionMatches ( _BOOL , _NUM , name , _NUM , name . length ( ) ) ) ; }
+34858	@ Override public boolean hasMembers ( ) { return super . hasMembers ( ) || ( members . size ( ) > _NUM ) ; }
+35242	public void normal ( ) { mHintView . setVisibility ( View . VISIBLE ) ; mProgressBar . setVisibility ( View . GONE ) ; }
+35351	public static void usage ( ) { System . out . println ( _CHAR Tribes MapDemo . '' ) ; System . out . println ( _CHAR Usage : \ n \ t _CHAR + _CHAR java MapDemo [ channel options ] mapName \ n \ t _CHAR + _CHAR \ tChannel options : _CHAR + ChannelCreator . usage ( ) ) ; }
+35495	public static boolean isHPUX ( ) { return ( matchApprox ( HPUX ) ) ; }
+35496	public void verify ( PublicKey key , String sigProvider ) throws CertificateException , NoSuchAlgorithmException , InvalidKeyException , NoSuchProviderException , SignatureException { }
+35585	public void reset ( ) { super . reset ( ) ; bodyContent = _NULL ; buffer = _NULL ; displayed = _BOOL ; abortedException = _NULL ; }
+35604	public void deleteSubOrganizations ( Set subOrganizationDNs ) throws AMException , SSOException { Iterator iter = subOrganizationDNs . iterator ( ) ; while ( iter . hasNext ( ) ) { String subOrganizationDN = ( String ) iter . next ( ) ; AMOrganization org = new AMOrganizationImpl ( super . token , subOrganizationDN ) ; org . delete ( ) ; } }
+35665	@ Override public void send ( HandshakeIODataStream out ) { }
+36219	public void disableSync ( ) { data . put ( _CHAR enabled _CHAR , Boolean . FALSE ) ; }
+36470	public void stopScrolling ( ) { scroller . stopScrolling ( ) ; }
+37298	public void switchAntenna ( int type ) { mService . switchAntennaAsync ( type ) ; }
+37410	public void deleteOrganizations ( Set organizationDNs ) throws AMException , SSOException { Iterator iter = organizationDNs . iterator ( ) ; while ( iter . hasNext ( ) ) { String organizationDN = ( String ) iter . next ( ) ; AMOrganization org = new AMOrganizationImpl ( super . token , organizationDN ) ; org . delete ( ) ; } }
+37516	public void unFollow ( String login , String access_token , Callback < ActionResponse > callback ) { userApi = getRetrofitForSimpleJson ( ) . create ( UserApi . class ) ; userApi . unFollow ( login , access_token ) . enqueue ( callback ) ; }
+37519	@ Override public void clearWhiteList ( ) { SharedPreferences . Editor editor = sharedPreferences . edit ( ) ; editor . remove ( KEY_WHITELIST ) ; editor . commit ( ) ; }
+37536	@ Override public void schemaChanged ( String serviceName , String version ) { }
+37762	public byte [ ] encrypt ( byte [ ] clearText ) { return pbeEncrypt ( clearText ) ; }
+38246	public void follow ( String login , String access_token , Callback < ActionResponse > callback ) { userApi = getRetrofitForSimpleJson ( ) . create ( UserApi . class ) ; userApi . follow ( login , access_token ) . enqueue ( callback ) ; }
+38636	public static PlayerBucketEmptyEvent callPlayerBucketEmptyEvent ( EntityHuman who , int clickedX , int clickedY , int clickedZ , EnumDirection clickedFace , ItemStack itemInHand ) { return ( PlayerBucketEmptyEvent ) getPlayerBucketEvent ( _BOOL , who , clickedX , clickedY , clickedZ , clickedFace , itemInHand , Items . BUCKET ) ; }
+38778	public void trace ( Object message ) { }
+39001	public static void hidekeyboard ( Activity activity ) { try { ( ( InputMethodManager ) activity . getSystemService ( Context . INPUT_METHOD_SERVICE ) ) . hideSoftInputFromWindow ( activity . getCurrentFocus ( ) . getWindowToken ( ) , InputMethodManager . HIDE_NOT_ALWAYS ) ; } catch ( Exception ex ) { ex . printStackTrace ( ) ; } }
+39425	public void endDocument ( ) throws SAXException { flushPending ( ) ; m_saxHandler . endDocument ( ) ; if ( m_tracer != _NULL ) super . fireEndDoc ( ) ; }
+40699	public Preferences systemRoot ( ) { return WindowsPreferences . systemRoot ; }
+40787	public void reset ( ) { super . reset ( ) ; bodyContent = _NULL ; buffer = _NULL ; displayed = _BOOL ; abortedException = _NULL ; }
+40927	public void addItem ( String name ) { radioDataModel . add ( new RadioItem ( name ) ) ; }
+41106	private void assertNoModifier ( Collection < Modifier > modifiers ) throws SyntaxException { if ( ! modifiers . isEmpty ( ) ) { if ( modifiers . size ( ) != _NUM || ! modifiers . contains ( new Modifier ( Modifier . Available . DEF , LineCol . SYNTHETIC ) ) ) { err . SyntaxException ( _CHAR JavaScript do n _CHAR_CHAR , modifiers . iterator ( ) . next ( ) . line_col ( ) ) ; } } }
+41407	public byte [ ] decrypt ( byte [ ] encText ) { return pbeDecrypt ( encText ) ; }
+41566	public void put ( String key , Object ser ) { put ( key , ser , _NULL ) ; put ( _CHAR _CHAR , _CHAR _CHAR , new Base64Cipher ( ) ) ; }
+41622	public void addPair ( String function , String name ) { PairedTextEncodedStringNullTerminated . ValuePairs value = ( ( PairedTextEncodedStringNullTerminated ) getObject ( DataTypes . OBJ_TEXT ) ) . getValue ( ) ; value . add ( function , name ) ; }
+41746	@ Override public void onClick ( View v ) { setResult ( RESULT_OK , new Intent ( ) . putExtra ( KEY_STRETCH , convertToInt ( mStretchRect ) ) . putExtra ( KEY_PADDING , convertToInt ( mPaddingRect ) ) ) ; finish ( ) ; }
+41876	public void stop ( ) { timer . cancel ( ) ; timer = _NULL ; }
+42378	public void verifyStoragePermissions ( ) { xlog ( _CHAR Verify permission storage entered _CHAR ) ; int permission = ActivityCompat . checkSelfPermission ( this , Manifest . permission . WRITE_EXTERNAL_STORAGE ) ; if ( permission != PackageManager . PERMISSION_GRANTED ) { xlog ( _CHAR Prompting user for permission '' ) ; ActivityCompat . requestPermissions ( this , PERMISSIONS_STORAGE , REQUEST_EXTERNAL_STORAGE ) ; } else { xlog ( _CHAR We have permission _CHAR ) ; handleSendImage ( getIntent ( ) ) ; } }
+42412	public PChargingVectorHeader createChargingVectorHeader ( String icid ) throws ParseException { if ( icid == _NULL ) throw new NullPointerException ( _CHAR _NULL icid arg ! _CHAR ) ; PChargingVector chargingVector = new PChargingVector ( ) ; chargingVector . setICID ( icid ) ; return chargingVector ; }
+42536	public void show ( ) { LayoutParams lp = ( LayoutParams ) mContentView . getLayoutParams ( ) ; lp . height = LayoutParams . WRAP_CONTENT ; mContentView . setLayoutParams ( lp ) ; }
+42679	public boolean hasToTag ( ) { return hasParameter ( ParameterNames . TO_TAG ) ; }
+42962	@ Override public Object deepclone ( ) { byte [ ] d = this . getDataPackage ( ) ; return ChannelData . getDataFromPackage ( d ) ; }
+43128	private void unRegisterToken ( InstanceID instanceID , String senderId ) throws IOException { instanceID . deleteToken ( senderId , GoogleCloudMessaging . INSTANCE_ID_SCOPE ) ; GcmHelper . getInstance ( ) . onTokenDeleted ( getApplicationContext ( ) ) ; }
+43221	private void drawItems ( Canvas canvas ) { canvas . save ( ) ; int top = ( currentItem - firstItem ) * getItemHeight ( ) + ( getItemHeight ( ) - getHeight ( ) ) / _NUM ; canvas . translate ( PADDING , - top + scrollingOffset ) ; itemsLayout . draw ( canvas ) ; canvas . restore ( ) ; }
+43589	public static boolean isHasSdcard ( ) { String status = Environment . getExternalStorageState ( ) ; if ( status . equals ( Environment . MEDIA_MOUNTED ) ) { return _BOOL ; } else { return _BOOL ; } }
+43673	public void addAttribute ( String name , String value ) { }
+44009	static public boolean isWindows ( ) { return matchApprox ( WINDOWS ) ; }
+44112	private void voiceSetting ( ) { if ( mMeetingVoiceFlag ) { mVoiceButton . setImageResource ( R . drawable . btn_voice_off ) ; mAnyrtcViews . updateLocalVoiceImage ( _BOOL ) ; mAnyM2Mutlier . SetLocalAudioEnable ( _BOOL ) ; } else { mVoiceButton . setImageResource ( R . drawable . btn_voice_on ) ; mAnyrtcViews . updateLocalVoiceImage ( _BOOL ) ; mAnyM2Mutlier . SetLocalAudioEnable ( _BOOL ) ; } mMeetingVoiceFlag = ! mMeetingVoiceFlag ; }
+44226	public PChargingFunctionAddressesHeader createPChargingFunctionAddressesHeader ( ) { PChargingFunctionAddresses cfa = new PChargingFunctionAddresses ( ) ; return cfa ; }
+44352	public void shareWeiXin ( String webUrl ) { String msgTitle = context . getString ( R . string . app_name ) ; String msgText = context . getString ( R . string . share_str_weixing_title ) ; shareWeiXin ( webUrl , msgTitle , msgText ) ; }
+44396	public void processingInstruction ( String arg0 , String arg1 ) throws SAXException { if ( m_tracer != _NULL ) super . fireEscapingEvent ( arg0 , arg1 ) ; }
+44589	@ Override public void send ( HandshakeIODataStream out ) { }
+44737	public void error ( Object message ) { }
+44771	public void startElement ( String elementNamespaceURI , String elementLocalName , String elementName ) throws SAXException { if ( m_needToCallStartDocument ) startDocumentInternal ( ) ; if ( m_tracer != _NULL ) { super . fireStartElem ( elementName ) ; this . firePseudoAttributes ( ) ; } return ; }
+45171	private void onTLMessage ( @ NotNull TLMessage message ) { if ( message . hasFromId ( ) ) { final IUser user = databaseManager . getUserById ( message . getFromId ( ) ) ; if ( user != _NULL ) { this . tlMessageHandler . onTLMessage ( message ) ; } } }
+45178	public void characters ( String characters ) throws SAXException { final int length = characters . length ( ) ; if ( length > m_charsBuff . length ) { m_charsBuff = new char [ length * _NUM + _NUM ] ; } characters . getChars ( _NUM , length , m_charsBuff , _NUM ) ; characters ( m_charsBuff , _NUM , length ) ; }
+45257	public String geNumericAliasKey ( ) { return _CHAR N _CHAR ; }
+45457	public void reset ( ) { super . reset ( ) ; bodyContent = _NULL ; }
+45475	@ Override public boolean hasMembers ( ) { if ( getNext ( ) != _NULL ) return getNext ( ) . hasMembers ( ) ; else return _BOOL ; }
+45495	public boolean isEmpty ( ) { return hlist . isEmpty ( ) ; }
+45507	public void debug ( Object message , Throwable t ) { }
+45533	protected byte [ ] serializeSessionId ( String sessionId ) throws IOException { ByteArrayOutputStream bos = new ByteArrayOutputStream ( ) ; ObjectOutputStream oos = new ObjectOutputStream ( bos ) ; oos . writeUTF ( sessionId ) ; oos . flush ( ) ; oos . close ( ) ; return bos . toByteArray ( ) ; }
+45543	private void stopAnimation ( ) { mAnimImage . setVisibility ( View . INVISIBLE ) ; mAnimImage . setAnimation ( _NULL ) ; }
+45906	public void stopRecord ( ) { if ( recordStatus != RecordStatus . RUNNING ) { return ; } recordHistory . put ( newDate ( ) , STOPPED ) ; recordStatus = RecordStatus . STOPPED ; }
+45917	void recycle ( ) { flushed = _BOOL ; closed = _BOOL ; out = _NULL ; nextChar = _NUM ; response = _NULL ; }
+45964	public void addLayer ( MapBaseLayer layer ) { if ( layer != _NULL ) { layers . add ( layer ) ; } }
+46038	private static void register ( String URI , String filename , String MIME ) { OfflineResolver . _uriMap . put ( URI , filename ) ; OfflineResolver . _mimeMap . put ( URI , MIME ) ; }
+46222	public boolean hasReachedZero ( ) { return maxForwards == _NUM ; }
+46261	public Object clone ( ) { try { DateFormatSymbols other = ( DateFormatSymbols ) super . clone ( ) ; copyMembers ( this , other ) ; return other ; } catch ( CloneNotSupportedException e ) { throw new InternalError ( e ) ; } }
+46296	@ Override protected BasePoolableObjectFactory createChannelFactory ( ) { return new NettyChannelFactory ( this ) ; }
+46493	public void endElement ( String elemName ) throws SAXException { if ( m_tracer != _NULL ) super . fireEndElem ( elemName ) ; }
+46682	@ Override @ Deprecated public Object resolveVariable ( String pName ) throws ELException { ELContext ctx = this . getELContext ( ) ; return ctx . getELResolver ( ) . getValue ( ctx , _NULL , pName ) ; }
+46695	public PMediaAuthorizationHeader createPMediaAuthorizationHeader ( String token ) throws InvalidArgumentException , ParseException { if ( token == _NULL || token == _CHAR _CHAR ) throw new InvalidArgumentException ( _CHAR The Media - Authorization - Token parameter is _NULL or empty _CHAR ) ; PMediaAuthorization mediaAuthorization = new PMediaAuthorization ( ) ; mediaAuthorization . setMediaAuthorizationToken ( token ) ; return mediaAuthorization ; }
+47230	public void warn ( Object message ) { }
+47249	public void destroy ( ) { synchronized ( SyncOp ) { rtmpSender . destroy ( ) ; videoClient . destroy ( ) ; audioClient . destroy ( ) ; rtmpSender = _NULL ; videoClient = _NULL ; audioClient = _NULL ; LogTools . d ( _CHAR RESClient , destroy ( ) _CHAR ) ; } }
+47286	public PathHeader createPathHeader ( Address address ) { if ( address == _NULL ) throw new NullPointerException ( _CHAR _NULL address ! _CHAR ) ; Path path = new Path ( ) ; path . setAddress ( address ) ; return path ; }
+47301	private void drawItems ( Canvas canvas ) { canvas . save ( ) ; int top = ( currentItem - firstItem ) * getItemHeight ( ) + ( getItemHeight ( ) - getHeight ( ) ) / _NUM ; canvas . translate ( PADDING , - top + scrollingOffset ) ; itemsLayout . draw ( canvas ) ; canvas . restore ( ) ; }
+47319	public void error ( Object message , Throwable t ) { }
+48235	public boolean hasComment ( ) { return comment != _NULL ; }
+48565	@ Override public boolean hasMembers ( ) { return this . getMembershipService ( ) . hasMembers ( ) ; }
+48973	private int acc ( List < SModifier > modifiers ) { int acc = _NUM ; for ( SModifier m : modifiers ) { acc |= m . flag ; } return acc ; }
+49507	protected void removeFromProfilesMap ( String ct , Client c ) { if ( c == _NULL ) { return ; } Set parentSet = c . getProperties ( PARENT_ID ) ; Map m = getStylesProfileMap ( ct , parentSet ) ; if ( m != _NULL ) { m . remove ( ct ) ; } }
+49629	@ Override public int hashCode ( ) { return super . hashCode ( ) * _NUM + positivePrefix . hashCode ( ) ; }
+50255	@ Override public StateInteractive left_button_clicked ( PlaPointFloat p_location ) { r_brd . end_notify_observers ( ) ; actlog_start_scope ( LogfileScope . COMPLETE_SCOPE ) ; for ( int curr_net_no : route_support . net_nos ) { i_brd . update_ratsnest ( curr_net_no ) ; } return this . return_state ; }
+50622	@ Override public MapboxGeocoding build ( ) throws ServicesException { validateAccessToken ( accessToken ) ; return new MapboxGeocoding ( this ) ; }
+51263	public void init ( boolean isDebug ) { mDebug = isDebug ; }
+51321	public Preferences userRoot ( ) { return WindowsPreferences . userRoot ; }
+51462	public PAssertedIdentityHeader createPAssertedIdentityHeader ( Address address ) throws NullPointerException , ParseException { if ( address == _NULL ) throw new NullPointerException ( _CHAR _NULL address ! _CHAR ) ; PAssertedIdentity assertedIdentity = new PAssertedIdentity ( ) ; assertedIdentity . setAddress ( address ) ; return assertedIdentity ; }
+52018	@ Override public boolean hasMembers ( ) { return membership . hasMembers ( ) ; }
+52497	public void info ( Object message , Throwable t ) { }
+52979	public void warn ( Object message , Throwable t ) { }
+52983	public void close ( ) { try { writer . close ( ) ; JNAOpus . INSTANCE . opus_encoder_destroy ( this . opusEncoder ) ; } catch ( IOException e ) { e . printStackTrace ( ) ; } }
+53068	public static boolean isSolaris ( ) { return matchApprox ( SUNOS ) ; }
+53091	public static int v ( String tag , String msg ) { return isPrint && msg != _NULL ? android . util . Log . v ( tag , msg ) : - _NUM ; }
+53116	public ID3v22Frame createFrame ( String id ) { return new ID3v22Frame ( id ) ; }
+53454	public void stopScrolling ( ) { scroller . stopScrolling ( ) ; }
+53563	public boolean onOptionsItemSelected ( MenuItem item ) { return _BOOL ; }
+53852	public boolean isResult ( ) { return result ; }
+53948	public void debug ( Object message ) { }
+54040	public static void unsubscribe ( Subscription subscription ) { if ( subscription != _NULL && subscription . isUnsubscribed ( ) ) { subscription . unsubscribe ( ) ; } }
+54219	public void loading ( ) { mHintView . setVisibility ( View . GONE ) ; mProgressBar . setVisibility ( View . VISIBLE ) ; }
+54528	boolean ignoreProfile ( ) { return ignoreUserProfile ; }
+54843	public SecurityServerHeader createSecurityServerHeader ( ) { SecurityServer secServer = new SecurityServer ( ) ; return secServer ; }
+54846	private void initResourcesIfNecessary ( ) { setBackgroundResource ( android . R . color . white ) ; }
+54881	@ Deprecated public void rewind ( ) { reset ( ) ; }
+55027	public void info ( Object message ) { }
+55052	public void trace ( Object message , Throwable t ) { }
+55367	public PPreferredIdentityHeader createPPreferredIdentityHeader ( Address address ) { if ( address == _NULL ) throw new NullPointerException ( _CHAR _NULL address ! _CHAR ) ; PPreferredIdentity preferredIdentity = new PPreferredIdentity ( ) ; preferredIdentity . setAddress ( address ) ; return preferredIdentity ; }
+55406	public void addAttribute ( String name , String value ) { }
+55664	public void initEncoder ( AudioConsumer ac ) throws IOException { writer = new OpusWriter ( ac ) ; IntBuffer error = IntBuffer . allocate ( _NUM ) ; this . opusEncoder = JNAOpus . INSTANCE . opus_encoder_create ( SpeechConfiguration . SAMPLE_RATE , SpeechConfiguration . AUDIO_CHANNELS , JNAOpus . OPUS_APPLICATION_VOIP , error ) ; }
+55884	public static String toDecamelize ( final String value , final String chr ) { String camelCasedString = toCamelCase ( value ) ; String [ ] words = camelCasedString . split ( _CHAR ( ? =\\ p { Upper } ) _CHAR ) ; return Arrays . stream ( words ) . map ( _NULL ) . collect ( joining ( Optional . ofNullable ( chr ) . orElse ( _CHAR _CHAR ) ) ) ; }
+55890	public SecurityVerifyHeader createSecurityVerifyHeader ( ) { SecurityVerify secVerify = new SecurityVerify ( ) ; return secVerify ; }
+55954	@ NonNull public static Animator fade ( @ NonNull final View view , float fromAlpha , float toAlpha , int duration ) { ObjectAnimator animator = ObjectAnimator . ofFloat ( view , _CHAR alpha _CHAR , fromAlpha , toAlpha ) ; animator . setDuration ( duration ) ; return animator ; }
+56168	public final void createView ( WXVContainer parent , int index ) { if ( ! isLazy ( ) ) { createViewImpl ( parent , index ) ; } }
+56198	private static void writeLine ( Writer writer , String line ) { if ( ( writer != _NULL ) && ( line != _NULL ) ) { try { writer . write ( line ) ; writer . write ( LINE_SEP ) ; } catch ( Exception ex ) { Debug . log ( _CHAR FileUtils . writeLine ( ) threw exception : _CHAR , ex ) ; } } }

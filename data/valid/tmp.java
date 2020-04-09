@@ -1,0 +1,1 @@
+private AttributeTypePropertyDefinition createPropertyDefinition ( ) { AttributeTypePropertyDefinition . Builder builder = AttributeTypePropertyDefinition . createBuilder ( RootCfgDefn . getInstance ( ) , '' test - property '' ) ; return builder . getInstance ( ) ; }
